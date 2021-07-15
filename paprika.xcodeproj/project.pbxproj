@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		896D7E9B26A0550C005CBCBA /* paprikaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D7E9A26A0550C005CBCBA /* paprikaApp.swift */; };
+		896D7E9D26A0550C005CBCBA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D7E9C26A0550C005CBCBA /* ContentView.swift */; };
+		896D7E9F26A0550D005CBCBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896D7E9E26A0550D005CBCBA /* Assets.xcassets */; };
+		896D7EA226A0550D005CBCBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896D7EA126A0550D005CBCBA /* Preview Assets.xcassets */; };
+		896D7EA426A0550D005CBCBA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D7EA326A0550D005CBCBA /* Persistence.swift */; };
+		896D7EA726A0550D005CBCBA /* paprika.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 896D7EA526A0550D005CBCBA /* paprika.xcdatamodeld */; };
+		896D7EB226A0550D005CBCBA /* paprikaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D7EB126A0550D005CBCBA /* paprikaTests.swift */; };
+		896D7EBD26A0550D005CBCBA /* paprikaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D7EBC26A0550D005CBCBA /* paprikaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		896D7EAE26A0550D005CBCBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 896D7E8F26A0550C005CBCBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 896D7E9626A0550C005CBCBA;
+			remoteInfo = paprika;
+		};
+		896D7EB926A0550D005CBCBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 896D7E8F26A0550C005CBCBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 896D7E9626A0550C005CBCBA;
+			remoteInfo = paprika;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		896D7E9726A0550C005CBCBA /* paprika.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = paprika.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		896D7E9A26A0550C005CBCBA /* paprikaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paprikaApp.swift; sourceTree = "<group>"; };
+		896D7E9C26A0550C005CBCBA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		896D7E9E26A0550D005CBCBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		896D7EA126A0550D005CBCBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		896D7EA326A0550D005CBCBA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		896D7EA626A0550D005CBCBA /* paprika.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = paprika.xcdatamodel; sourceTree = "<group>"; };
+		896D7EA826A0550D005CBCBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		896D7EAD26A0550D005CBCBA /* paprikaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = paprikaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		896D7EB126A0550D005CBCBA /* paprikaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paprikaTests.swift; sourceTree = "<group>"; };
+		896D7EB326A0550D005CBCBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		896D7EB826A0550D005CBCBA /* paprikaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = paprikaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		896D7EBC26A0550D005CBCBA /* paprikaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paprikaUITests.swift; sourceTree = "<group>"; };
+		896D7EBE26A0550D005CBCBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		896D7E9426A0550C005CBCBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		896D7EAA26A0550D005CBCBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		896D7EB526A0550D005CBCBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		896D7E8E26A0550C005CBCBA = {
+			isa = PBXGroup;
+			children = (
+				896D7E9926A0550C005CBCBA /* paprika */,
+				896D7EB026A0550D005CBCBA /* paprikaTests */,
+				896D7EBB26A0550D005CBCBA /* paprikaUITests */,
+				896D7E9826A0550C005CBCBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		896D7E9826A0550C005CBCBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				896D7E9726A0550C005CBCBA /* paprika.app */,
+				896D7EAD26A0550D005CBCBA /* paprikaTests.xctest */,
+				896D7EB826A0550D005CBCBA /* paprikaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		896D7E9926A0550C005CBCBA /* paprika */ = {
+			isa = PBXGroup;
+			children = (
+				896D7E9A26A0550C005CBCBA /* paprikaApp.swift */,
+				896D7E9C26A0550C005CBCBA /* ContentView.swift */,
+				896D7E9E26A0550D005CBCBA /* Assets.xcassets */,
+				896D7EA326A0550D005CBCBA /* Persistence.swift */,
+				896D7EA826A0550D005CBCBA /* Info.plist */,
+				896D7EA526A0550D005CBCBA /* paprika.xcdatamodeld */,
+				896D7EA026A0550D005CBCBA /* Preview Content */,
+			);
+			path = paprika;
+			sourceTree = "<group>";
+		};
+		896D7EA026A0550D005CBCBA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				896D7EA126A0550D005CBCBA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		896D7EB026A0550D005CBCBA /* paprikaTests */ = {
+			isa = PBXGroup;
+			children = (
+				896D7EB126A0550D005CBCBA /* paprikaTests.swift */,
+				896D7EB326A0550D005CBCBA /* Info.plist */,
+			);
+			path = paprikaTests;
+			sourceTree = "<group>";
+		};
+		896D7EBB26A0550D005CBCBA /* paprikaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				896D7EBC26A0550D005CBCBA /* paprikaUITests.swift */,
+				896D7EBE26A0550D005CBCBA /* Info.plist */,
+			);
+			path = paprikaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		896D7E9626A0550C005CBCBA /* paprika */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 896D7EC126A0550D005CBCBA /* Build configuration list for PBXNativeTarget "paprika" */;
+			buildPhases = (
+				896D7E9326A0550C005CBCBA /* Sources */,
+				896D7E9426A0550C005CBCBA /* Frameworks */,
+				896D7E9526A0550C005CBCBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = paprika;
+			productName = paprika;
+			productReference = 896D7E9726A0550C005CBCBA /* paprika.app */;
+			productType = "com.apple.product-type.application";
+		};
+		896D7EAC26A0550D005CBCBA /* paprikaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 896D7EC426A0550D005CBCBA /* Build configuration list for PBXNativeTarget "paprikaTests" */;
+			buildPhases = (
+				896D7EA926A0550D005CBCBA /* Sources */,
+				896D7EAA26A0550D005CBCBA /* Frameworks */,
+				896D7EAB26A0550D005CBCBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				896D7EAF26A0550D005CBCBA /* PBXTargetDependency */,
+			);
+			name = paprikaTests;
+			productName = paprikaTests;
+			productReference = 896D7EAD26A0550D005CBCBA /* paprikaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		896D7EB726A0550D005CBCBA /* paprikaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 896D7EC726A0550D005CBCBA /* Build configuration list for PBXNativeTarget "paprikaUITests" */;
+			buildPhases = (
+				896D7EB426A0550D005CBCBA /* Sources */,
+				896D7EB526A0550D005CBCBA /* Frameworks */,
+				896D7EB626A0550D005CBCBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				896D7EBA26A0550D005CBCBA /* PBXTargetDependency */,
+			);
+			name = paprikaUITests;
+			productName = paprikaUITests;
+			productReference = 896D7EB826A0550D005CBCBA /* paprikaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		896D7E8F26A0550C005CBCBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					896D7E9626A0550C005CBCBA = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					896D7EAC26A0550D005CBCBA = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 896D7E9626A0550C005CBCBA;
+					};
+					896D7EB726A0550D005CBCBA = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 896D7E9626A0550C005CBCBA;
+					};
+				};
+			};
+			buildConfigurationList = 896D7E9226A0550C005CBCBA /* Build configuration list for PBXProject "paprika" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 896D7E8E26A0550C005CBCBA;
+			productRefGroup = 896D7E9826A0550C005CBCBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				896D7E9626A0550C005CBCBA /* paprika */,
+				896D7EAC26A0550D005CBCBA /* paprikaTests */,
+				896D7EB726A0550D005CBCBA /* paprikaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		896D7E9526A0550C005CBCBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				896D7EA226A0550D005CBCBA /* Preview Assets.xcassets in Resources */,
+				896D7E9F26A0550D005CBCBA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		896D7EAB26A0550D005CBCBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		896D7EB626A0550D005CBCBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		896D7E9326A0550C005CBCBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				896D7EA726A0550D005CBCBA /* paprika.xcdatamodeld in Sources */,
+				896D7EA426A0550D005CBCBA /* Persistence.swift in Sources */,
+				896D7E9D26A0550C005CBCBA /* ContentView.swift in Sources */,
+				896D7E9B26A0550C005CBCBA /* paprikaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		896D7EA926A0550D005CBCBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				896D7EB226A0550D005CBCBA /* paprikaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		896D7EB426A0550D005CBCBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				896D7EBD26A0550D005CBCBA /* paprikaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		896D7EAF26A0550D005CBCBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 896D7E9626A0550C005CBCBA /* paprika */;
+			targetProxy = 896D7EAE26A0550D005CBCBA /* PBXContainerItemProxy */;
+		};
+		896D7EBA26A0550D005CBCBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 896D7E9626A0550C005CBCBA /* paprika */;
+			targetProxy = 896D7EB926A0550D005CBCBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		896D7EBF26A0550D005CBCBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		896D7EC026A0550D005CBCBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		896D7EC226A0550D005CBCBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"paprika/Preview Content\"";
+				DEVELOPMENT_TEAM = D84M4LK87S;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = paprika/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = academyufpe.paprika;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		896D7EC326A0550D005CBCBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"paprika/Preview Content\"";
+				DEVELOPMENT_TEAM = D84M4LK87S;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = paprika/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = academyufpe.paprika;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		896D7EC526A0550D005CBCBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D84M4LK87S;
+				INFOPLIST_FILE = paprikaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = academyufpe.paprikaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/paprika.app/paprika";
+			};
+			name = Debug;
+		};
+		896D7EC626A0550D005CBCBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D84M4LK87S;
+				INFOPLIST_FILE = paprikaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = academyufpe.paprikaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/paprika.app/paprika";
+			};
+			name = Release;
+		};
+		896D7EC826A0550D005CBCBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D84M4LK87S;
+				INFOPLIST_FILE = paprikaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = academyufpe.paprikaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = paprika;
+			};
+			name = Debug;
+		};
+		896D7EC926A0550D005CBCBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D84M4LK87S;
+				INFOPLIST_FILE = paprikaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = academyufpe.paprikaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = paprika;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		896D7E9226A0550C005CBCBA /* Build configuration list for PBXProject "paprika" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				896D7EBF26A0550D005CBCBA /* Debug */,
+				896D7EC026A0550D005CBCBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		896D7EC126A0550D005CBCBA /* Build configuration list for PBXNativeTarget "paprika" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				896D7EC226A0550D005CBCBA /* Debug */,
+				896D7EC326A0550D005CBCBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		896D7EC426A0550D005CBCBA /* Build configuration list for PBXNativeTarget "paprikaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				896D7EC526A0550D005CBCBA /* Debug */,
+				896D7EC626A0550D005CBCBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		896D7EC726A0550D005CBCBA /* Build configuration list for PBXNativeTarget "paprikaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				896D7EC826A0550D005CBCBA /* Debug */,
+				896D7EC926A0550D005CBCBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		896D7EA526A0550D005CBCBA /* paprika.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				896D7EA626A0550D005CBCBA /* paprika.xcdatamodel */,
+			);
+			currentVersion = 896D7EA626A0550D005CBCBA /* paprika.xcdatamodel */;
+			path = paprika.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 896D7E8F26A0550C005CBCBA /* Project object */;
+}
