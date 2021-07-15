@@ -16,6 +16,7 @@
 		896D7EA726A0550D005CBCBA /* paprika.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 896D7EA526A0550D005CBCBA /* paprika.xcdatamodeld */; };
 		896D7EB226A0550D005CBCBA /* paprikaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D7EB126A0550D005CBCBA /* paprikaTests.swift */; };
 		896D7EBD26A0550D005CBCBA /* paprikaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D7EBC26A0550D005CBCBA /* paprikaUITests.swift */; };
+		896D7ED126A05965005CBCBA /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D7ED026A05965005CBCBA /* Recipe.swift */; };
 		AA59733AE8BEE44F5243572B /* Pods_paprikaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409B22D5003A6595D4699654 /* Pods_paprikaTests.framework */; };
 		F8C1D8A3EB4D64700418467E /* Pods_paprika_paprikaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A269BCE61A1B0FC1A5DA04 /* Pods_paprika_paprikaUITests.framework */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,7 @@
 		896D7EB826A0550D005CBCBA /* paprikaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = paprikaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		896D7EBC26A0550D005CBCBA /* paprikaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paprikaUITests.swift; sourceTree = "<group>"; };
 		896D7EBE26A0550D005CBCBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		896D7ED026A05965005CBCBA /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../../../../Desktop/Recipe.swift; sourceTree = "<group>"; };
 		D82B4B8A660D57A0B1FD3E93 /* Pods-paprikaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paprikaTests.release.xcconfig"; path = "Target Support Files/Pods-paprikaTests/Pods-paprikaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +178,7 @@
 			children = (
 				896D7EA326A0550D005CBCBA /* Persistence.swift */,
 				896D7EA526A0550D005CBCBA /* paprika.xcdatamodeld */,
+				896D7ED026A05965005CBCBA /* Recipe.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				896D7EA426A0550D005CBCBA /* Persistence.swift in Sources */,
 				896D7E9D26A0550C005CBCBA /* ContentView.swift in Sources */,
 				896D7E9B26A0550C005CBCBA /* paprikaApp.swift in Sources */,
+				896D7ED126A05965005CBCBA /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
