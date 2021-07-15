@@ -1,0 +1,6 @@
+framework module Pods_paprika {
+  umbrella header "Pods-paprika-umbrella.h"
+
+  export *
+  module * { export * }
+}

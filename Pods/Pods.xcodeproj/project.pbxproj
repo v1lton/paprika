@@ -1,0 +1,1034 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C36A280CC73E4C266F284A07D18E133 /* StepperView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4E833B7F22AB7A3761D749D2911744 /* StepperView-dummy.m */; };
+		1586333C345586084A897DD37D9FD185 /* Pods-paprika-paprikaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DABA6D163BE2D16BC5207F1B73766E5 /* Pods-paprika-paprikaUITests-dummy.m */; };
+		187DF4DBE295B00E2F718B3262796995 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		194AEEEDA96ABD2A57609630556D165D /* StepIndicatorHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0F4E9DC455A1FBDDC77524E496675A /* StepIndicatorHorizontalView.swift */; };
+		2227BBA85A87D9408CDAA42FDB672F90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		245755C671F8EC1575F7BD7C0AA2A83C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		26448A7FB477FA4D093192C9856972B3 /* Pods-paprika-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E15CA1F44190152D802977AFB92CC831 /* Pods-paprika-dummy.m */; };
+		399F571AF1238A4BBE9DD55D57F1BAEA /* HorizontalLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE4B1BB2F9F19A4D623603CF27B0153 /* HorizontalLineView.swift */; };
+		3DCC08434332238487D4D5EADB6E0FB2 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7483EB53E5800A98A13CCBCDA3B228 /* TextView.swift */; };
+		40FC06986CB09A30FE06DD38494A8C81 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090B8ED1F736E1CB3F427C3D840BF23B /* Utils.swift */; };
+		5F660E44B23D144537BA435833788068 /* NumberedCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0547EC23AB322BE8407CAA58D21FC57 /* NumberedCircleView.swift */; };
+		610E1E8DAC0FB21C6F2E90150F63361C /* Pods-paprikaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B198A4B72B3B85D1B49282CD1C3710B /* Pods-paprikaTests-dummy.m */; };
+		701B035C0A788322B9B4F2E092B60A84 /* EnvironmentValues+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EE9F694BB4E4DD8F20D4B1D02A310D /* EnvironmentValues+Extension.swift */; };
+		767D1D266096D8A5445A20B40C4F0564 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E473CBDAE2DDE11460A07B4B7F1D028E /* View+Extensions.swift */; };
+		76BFF58B6BCBB72DEDE7756D5E025E80 /* Pods-paprika-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AC522A99B89B3430D90342D84B22EF3 /* Pods-paprika-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81E18280C8DE550A3115232F1125D042 /* CircledIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879F23CB472EE1781326245B146B48E2 /* CircledIconView.swift */; };
+		83933A6CB91E8747E75729674EDDDB22 /* PitStopLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F699DA74AC41994D09C6A109CB7BC048 /* PitStopLineView.swift */; };
+		842D4B45AEC02F1D4BC04819F7C55F50 /* Pods-paprikaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D30DF4F1054CAF44DBBEFD5DE46A4D5C /* Pods-paprikaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		854ADFFDF2B3FAF68626C23B65707DE6 /* Pods-paprika-paprikaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E02513F90534A663877E0A36058FC112 /* Pods-paprika-paprikaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8605442460E500E7CAFB27CC69E2F2D5 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170749E3656CE997339653DCB8E6D290 /* IndicatorView.swift */; };
+		93E8A8ED4CC56B243814F27612F45BC9 /* LoadingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C381D06DBF6D4C784035764CC90CE37C /* LoadingTimer.swift */; };
+		9C7C733714777BF376A156FE444DF4A6 /* StepIndicatorVerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448280F03DC3922EC131BB14B162E8DA /* StepIndicatorVerticalView.swift */; };
+		A0310B7390F6F636A61A2B102D10EDD0 /* PreferenceKey+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4FC5C95733F65105CD81CB612FC707 /* PreferenceKey+Extension.swift */; };
+		B56906CA4FAD1586BD60394EB6883FDC /* PitStopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0CF0DBA719C83CECCAC9485DDA1EA6 /* PitStopView.swift */; };
+		CA225CF212A0C846DDA0F72D5B4B39AB /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D1A24FCC9A00420AF5D059EAC50D3 /* StepperView.swift */; };
+		D0314E70BD4D37B55EDF0CD3A8BE8DF8 /* VerticalAlignment+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9EEDD1A4DEB8485A6FD9578A6B26E7 /* VerticalAlignment+Extension.swift */; };
+		E112251297EA93235F2C5E88AA209C66 /* VerticalLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81613480B298C07F7C55055334364E3C /* VerticalLineView.swift */; };
+		E73FD118AA8912EF6D85A8C6402F3F1A /* Colors+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEC8FA0F8FA8050C6DC589A0364E980 /* Colors+Extension.swift */; };
+		F111DD50B9FDEB29EB521409FA1638BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F43AB1D852FB855150732B1C8B041FAA /* StepperView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B77B723F836D7CC083BDC108BC27238 /* StepperView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		404815A5994D965937FE566CFA56F91F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 168A52CD2EC5A2263BAF15EFF9FB166E;
+			remoteInfo = StepperView;
+		};
+		CE94435F138AE67BB3177D8E1D14EA30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DC7882D1C9F6149CD29905D9FE62880;
+			remoteInfo = "Pods-paprika";
+		};
+		D9381DC6901DE0890DE1DC25A365107E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 168A52CD2EC5A2263BAF15EFF9FB166E;
+			remoteInfo = StepperView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00EE9F694BB4E4DD8F20D4B1D02A310D /* EnvironmentValues+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "EnvironmentValues+Extension.swift"; path = "Sources/StepperView/Extension/EnvironmentValues+Extension.swift"; sourceTree = "<group>"; };
+		03D9CE46F9C4ADF4A3D98127C6D35E67 /* Pods_paprika_paprikaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_paprika_paprikaUITests.framework; path = "Pods-paprika-paprikaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		090B8ED1F736E1CB3F427C3D840BF23B /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/StepperView/Utils/Utils.swift; sourceTree = "<group>"; };
+		097B68FC9CED777F343BA28B90BB5589 /* Pods-paprika-paprikaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-paprika-paprikaUITests-frameworks.sh"; sourceTree = "<group>"; };
+		0B4E833B7F22AB7A3761D749D2911744 /* StepperView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StepperView-dummy.m"; sourceTree = "<group>"; };
+		0B76BC7D0C2C3FA2DB609CE53D5C0C37 /* StepperView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = StepperView.framework; path = StepperView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DEC8FA0F8FA8050C6DC589A0364E980 /* Colors+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Colors+Extension.swift"; path = "Sources/StepperView/Extension/Colors+Extension.swift"; sourceTree = "<group>"; };
+		0F9EEDD1A4DEB8485A6FD9578A6B26E7 /* VerticalAlignment+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "VerticalAlignment+Extension.swift"; path = "Sources/StepperView/Extension/VerticalAlignment+Extension.swift"; sourceTree = "<group>"; };
+		12BC4C49F8A7042EE9EC21AA193A5CD9 /* StepperView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StepperView.debug.xcconfig; sourceTree = "<group>"; };
+		170749E3656CE997339653DCB8E6D290 /* IndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorView.swift; path = Sources/StepperView/Views/Indicators/IndicatorView.swift; sourceTree = "<group>"; };
+		1AC522A99B89B3430D90342D84B22EF3 /* Pods-paprika-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-paprika-umbrella.h"; sourceTree = "<group>"; };
+		24B1F56E90F343088685FC059227E052 /* Pods-paprikaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-paprikaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		270D1A24FCC9A00420AF5D059EAC50D3 /* StepperView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StepperView.swift; path = Sources/StepperView/Views/StepperView.swift; sourceTree = "<group>"; };
+		281628D8EED67F8A3345EC1A40E693BB /* StepperView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "StepperView-Info.plist"; sourceTree = "<group>"; };
+		2B0E4A0ED15E7779779025DB7A0D26F1 /* Pods-paprika.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-paprika.modulemap"; sourceTree = "<group>"; };
+		2E0F4E9DC455A1FBDDC77524E496675A /* StepIndicatorHorizontalView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StepIndicatorHorizontalView.swift; path = Sources/StepperView/Views/StepIndicatorHorizontalView.swift; sourceTree = "<group>"; };
+		2E214251B5336D8096B212DE84411091 /* Pods-paprika.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-paprika.debug.xcconfig"; sourceTree = "<group>"; };
+		2F7483EB53E5800A98A13CCBCDA3B228 /* TextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextView.swift; path = Sources/StepperView/Views/Components/TextView.swift; sourceTree = "<group>"; };
+		2FF606ABD7467CFB99E3FBBB9FC00EE7 /* Pods-paprikaTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-paprikaTests-Info.plist"; sourceTree = "<group>"; };
+		3BC85BED074ACA2CE36FFE960AF99A1F /* Pods-paprika-paprikaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-paprika-paprikaUITests.modulemap"; sourceTree = "<group>"; };
+		3E0CF0DBA719C83CECCAC9485DDA1EA6 /* PitStopView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PitStopView.swift; path = Sources/StepperView/Views/PitStopView.swift; sourceTree = "<group>"; };
+		40149B682ADAF58E7BFF4D6848AF4407 /* Pods-paprika-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-paprika-Info.plist"; sourceTree = "<group>"; };
+		448280F03DC3922EC131BB14B162E8DA /* StepIndicatorVerticalView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StepIndicatorVerticalView.swift; path = Sources/StepperView/Views/StepIndicatorVerticalView.swift; sourceTree = "<group>"; };
+		497F4CB22D3B7544C0BF4E24BD2D183B /* Pods-paprika-paprikaUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-paprika-paprikaUITests-Info.plist"; sourceTree = "<group>"; };
+		521F52121DF5C43829BAC2220EC27B02 /* Pods-paprikaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-paprikaTests.modulemap"; sourceTree = "<group>"; };
+		53FF5E1FA87322B4031D8D6E78EE1F1C /* StepperView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = StepperView.modulemap; sourceTree = "<group>"; };
+		59F3427FF950B5A16B6223720B827591 /* Pods-paprika-paprikaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-paprika-paprikaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5ACFFEE3AFC1F9249CF624E312836E42 /* Pods_paprikaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_paprikaTests.framework; path = "Pods-paprikaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69D745CB460FC7C2EDB163BE2D2F15DA /* StepperView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StepperView.release.xcconfig; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7B77B723F836D7CC083BDC108BC27238 /* StepperView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StepperView-umbrella.h"; sourceTree = "<group>"; };
+		7FB530D1248F64A0206215AFCC2618ED /* Pods-paprikaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-paprikaTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		81613480B298C07F7C55055334364E3C /* VerticalLineView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerticalLineView.swift; path = Sources/StepperView/Views/Lines/VerticalLineView.swift; sourceTree = "<group>"; };
+		8511938726F4856C91D565B2A5AB2418 /* Pods-paprika-paprikaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-paprika-paprikaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		86E4CB969DF53C3577DBCA828025701D /* Pods_paprika.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_paprika.framework; path = "Pods-paprika.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		879F23CB472EE1781326245B146B48E2 /* CircledIconView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircledIconView.swift; path = Sources/StepperView/Views/Indicators/CircledIconView.swift; sourceTree = "<group>"; };
+		8D3825DC86881C5F8EB5483C6B36EFA0 /* StepperView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StepperView-prefix.pch"; sourceTree = "<group>"; };
+		8DABA6D163BE2D16BC5207F1B73766E5 /* Pods-paprika-paprikaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-paprika-paprikaUITests-dummy.m"; sourceTree = "<group>"; };
+		91108083953F62D0AB929785AE59A91F /* Pods-paprikaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-paprikaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		98FBFC15A4CCFC43F9FD1D5348C71A42 /* Pods-paprika-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-paprika-acknowledgements.plist"; sourceTree = "<group>"; };
+		9B198A4B72B3B85D1B49282CD1C3710B /* Pods-paprikaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-paprikaTests-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A281F559D069775DE555A2CB0ABF859B /* Pods-paprika-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-paprika-frameworks.sh"; sourceTree = "<group>"; };
+		A67594D55109E6D8E9E45987B49DE3B2 /* Pods-paprika-paprikaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-paprika-paprikaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A7788F0DF699BB6D05E7FCCDAADE510D /* Pods-paprika.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-paprika.release.xcconfig"; sourceTree = "<group>"; };
+		AA4FC5C95733F65105CD81CB612FC707 /* PreferenceKey+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PreferenceKey+Extension.swift"; path = "Sources/StepperView/Extension/PreferenceKey+Extension.swift"; sourceTree = "<group>"; };
+		BFB811EDB665346CC45B8237E1C89C28 /* Pods-paprika-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-paprika-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C0547EC23AB322BE8407CAA58D21FC57 /* NumberedCircleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NumberedCircleView.swift; path = Sources/StepperView/Views/Indicators/NumberedCircleView.swift; sourceTree = "<group>"; };
+		C381D06DBF6D4C784035764CC90CE37C /* LoadingTimer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoadingTimer.swift; path = Sources/StepperView/Utils/LoadingTimer.swift; sourceTree = "<group>"; };
+		D30DF4F1054CAF44DBBEFD5DE46A4D5C /* Pods-paprikaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-paprikaTests-umbrella.h"; sourceTree = "<group>"; };
+		DAE4B1BB2F9F19A4D623603CF27B0153 /* HorizontalLineView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HorizontalLineView.swift; path = Sources/StepperView/Views/Lines/HorizontalLineView.swift; sourceTree = "<group>"; };
+		DB5E89F63039C12D63F034F143596695 /* Pods-paprika-paprikaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-paprika-paprikaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E02513F90534A663877E0A36058FC112 /* Pods-paprika-paprikaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-paprika-paprikaUITests-umbrella.h"; sourceTree = "<group>"; };
+		E15CA1F44190152D802977AFB92CC831 /* Pods-paprika-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-paprika-dummy.m"; sourceTree = "<group>"; };
+		E473CBDAE2DDE11460A07B4B7F1D028E /* View+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+Extensions.swift"; path = "Sources/StepperView/Extension/View+Extensions.swift"; sourceTree = "<group>"; };
+		F51E418E360053A87793A15611C9D662 /* Pods-paprikaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-paprikaTests.release.xcconfig"; sourceTree = "<group>"; };
+		F699DA74AC41994D09C6A109CB7BC048 /* PitStopLineView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PitStopLineView.swift; path = Sources/StepperView/Views/Lines/PitStopLineView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CEC44891E3EF69316DD08BA718C24EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				245755C671F8EC1575F7BD7C0AA2A83C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EDE730C576BC98305B484208B552F1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F111DD50B9FDEB29EB521409FA1638BB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D30B02961C8C9F8419077DB97830E36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2227BBA85A87D9408CDAA42FDB672F90 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9B935D86CCD68F3C3D4D0197E282075 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187DF4DBE295B00E2F718B3262796995 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2292F33EF1721C12DC2748C7322C36C5 /* Pods-paprika-paprikaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3BC85BED074ACA2CE36FFE960AF99A1F /* Pods-paprika-paprikaUITests.modulemap */,
+				59F3427FF950B5A16B6223720B827591 /* Pods-paprika-paprikaUITests-acknowledgements.markdown */,
+				A67594D55109E6D8E9E45987B49DE3B2 /* Pods-paprika-paprikaUITests-acknowledgements.plist */,
+				8DABA6D163BE2D16BC5207F1B73766E5 /* Pods-paprika-paprikaUITests-dummy.m */,
+				097B68FC9CED777F343BA28B90BB5589 /* Pods-paprika-paprikaUITests-frameworks.sh */,
+				497F4CB22D3B7544C0BF4E24BD2D183B /* Pods-paprika-paprikaUITests-Info.plist */,
+				E02513F90534A663877E0A36058FC112 /* Pods-paprika-paprikaUITests-umbrella.h */,
+				DB5E89F63039C12D63F034F143596695 /* Pods-paprika-paprikaUITests.debug.xcconfig */,
+				8511938726F4856C91D565B2A5AB2418 /* Pods-paprika-paprikaUITests.release.xcconfig */,
+			);
+			name = "Pods-paprika-paprikaUITests";
+			path = "Target Support Files/Pods-paprika-paprikaUITests";
+			sourceTree = "<group>";
+		};
+		45503B4544C9D0E41BFD77C3144334DB /* Pods-paprika */ = {
+			isa = PBXGroup;
+			children = (
+				2B0E4A0ED15E7779779025DB7A0D26F1 /* Pods-paprika.modulemap */,
+				BFB811EDB665346CC45B8237E1C89C28 /* Pods-paprika-acknowledgements.markdown */,
+				98FBFC15A4CCFC43F9FD1D5348C71A42 /* Pods-paprika-acknowledgements.plist */,
+				E15CA1F44190152D802977AFB92CC831 /* Pods-paprika-dummy.m */,
+				A281F559D069775DE555A2CB0ABF859B /* Pods-paprika-frameworks.sh */,
+				40149B682ADAF58E7BFF4D6848AF4407 /* Pods-paprika-Info.plist */,
+				1AC522A99B89B3430D90342D84B22EF3 /* Pods-paprika-umbrella.h */,
+				2E214251B5336D8096B212DE84411091 /* Pods-paprika.debug.xcconfig */,
+				A7788F0DF699BB6D05E7FCCDAADE510D /* Pods-paprika.release.xcconfig */,
+			);
+			name = "Pods-paprika";
+			path = "Target Support Files/Pods-paprika";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6EF095429A64D8CD8FDF69AB7DA129F4 /* StepperView */ = {
+			isa = PBXGroup;
+			children = (
+				879F23CB472EE1781326245B146B48E2 /* CircledIconView.swift */,
+				0DEC8FA0F8FA8050C6DC589A0364E980 /* Colors+Extension.swift */,
+				00EE9F694BB4E4DD8F20D4B1D02A310D /* EnvironmentValues+Extension.swift */,
+				DAE4B1BB2F9F19A4D623603CF27B0153 /* HorizontalLineView.swift */,
+				170749E3656CE997339653DCB8E6D290 /* IndicatorView.swift */,
+				C381D06DBF6D4C784035764CC90CE37C /* LoadingTimer.swift */,
+				C0547EC23AB322BE8407CAA58D21FC57 /* NumberedCircleView.swift */,
+				F699DA74AC41994D09C6A109CB7BC048 /* PitStopLineView.swift */,
+				3E0CF0DBA719C83CECCAC9485DDA1EA6 /* PitStopView.swift */,
+				AA4FC5C95733F65105CD81CB612FC707 /* PreferenceKey+Extension.swift */,
+				2E0F4E9DC455A1FBDDC77524E496675A /* StepIndicatorHorizontalView.swift */,
+				448280F03DC3922EC131BB14B162E8DA /* StepIndicatorVerticalView.swift */,
+				270D1A24FCC9A00420AF5D059EAC50D3 /* StepperView.swift */,
+				2F7483EB53E5800A98A13CCBCDA3B228 /* TextView.swift */,
+				090B8ED1F736E1CB3F427C3D840BF23B /* Utils.swift */,
+				0F9EEDD1A4DEB8485A6FD9578A6B26E7 /* VerticalAlignment+Extension.swift */,
+				81613480B298C07F7C55055334364E3C /* VerticalLineView.swift */,
+				E473CBDAE2DDE11460A07B4B7F1D028E /* View+Extensions.swift */,
+				C989F59EA9BDD2E1442CB0AEC6D990BE /* Support Files */,
+			);
+			name = StepperView;
+			path = StepperView;
+			sourceTree = "<group>";
+		};
+		703BB3FD9EE850BC6EAA757C6F6D92CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EF095429A64D8CD8FDF69AB7DA129F4 /* StepperView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		72929FBB72DC72A865018EACC00535E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86E4CB969DF53C3577DBCA828025701D /* Pods_paprika.framework */,
+				03D9CE46F9C4ADF4A3D98127C6D35E67 /* Pods_paprika_paprikaUITests.framework */,
+				5ACFFEE3AFC1F9249CF624E312836E42 /* Pods_paprikaTests.framework */,
+				0B76BC7D0C2C3FA2DB609CE53D5C0C37 /* StepperView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8261F8759828ADFD9319E32E3C326D1A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				45503B4544C9D0E41BFD77C3144334DB /* Pods-paprika */,
+				2292F33EF1721C12DC2748C7322C36C5 /* Pods-paprika-paprikaUITests */,
+				9E316FC8DC52C4579301028FF458D446 /* Pods-paprikaTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9E316FC8DC52C4579301028FF458D446 /* Pods-paprikaTests */ = {
+			isa = PBXGroup;
+			children = (
+				521F52121DF5C43829BAC2220EC27B02 /* Pods-paprikaTests.modulemap */,
+				24B1F56E90F343088685FC059227E052 /* Pods-paprikaTests-acknowledgements.markdown */,
+				7FB530D1248F64A0206215AFCC2618ED /* Pods-paprikaTests-acknowledgements.plist */,
+				9B198A4B72B3B85D1B49282CD1C3710B /* Pods-paprikaTests-dummy.m */,
+				2FF606ABD7467CFB99E3FBBB9FC00EE7 /* Pods-paprikaTests-Info.plist */,
+				D30DF4F1054CAF44DBBEFD5DE46A4D5C /* Pods-paprikaTests-umbrella.h */,
+				91108083953F62D0AB929785AE59A91F /* Pods-paprikaTests.debug.xcconfig */,
+				F51E418E360053A87793A15611C9D662 /* Pods-paprikaTests.release.xcconfig */,
+			);
+			name = "Pods-paprikaTests";
+			path = "Target Support Files/Pods-paprikaTests";
+			sourceTree = "<group>";
+		};
+		C989F59EA9BDD2E1442CB0AEC6D990BE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				53FF5E1FA87322B4031D8D6E78EE1F1C /* StepperView.modulemap */,
+				0B4E833B7F22AB7A3761D749D2911744 /* StepperView-dummy.m */,
+				281628D8EED67F8A3345EC1A40E693BB /* StepperView-Info.plist */,
+				8D3825DC86881C5F8EB5483C6B36EFA0 /* StepperView-prefix.pch */,
+				7B77B723F836D7CC083BDC108BC27238 /* StepperView-umbrella.h */,
+				12BC4C49F8A7042EE9EC21AA193A5CD9 /* StepperView.debug.xcconfig */,
+				69D745CB460FC7C2EDB163BE2D2F15DA /* StepperView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/StepperView";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				703BB3FD9EE850BC6EAA757C6F6D92CB /* Pods */,
+				72929FBB72DC72A865018EACC00535E7 /* Products */,
+				8261F8759828ADFD9319E32E3C326D1A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1A647270C947DF71B2AAFFDFD244E860 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				842D4B45AEC02F1D4BC04819F7C55F50 /* Pods-paprikaTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DAAB837E51E8B0CDCA9FE455D9DA1D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76BFF58B6BCBB72DEDE7756D5E025E80 /* Pods-paprika-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C23FF604B355F269FF2F09E7EDA88D2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F43AB1D852FB855150732B1C8B041FAA /* StepperView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E302B18CC4C941205532B65B218D4056 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854ADFFDF2B3FAF68626C23B65707DE6 /* Pods-paprika-paprikaUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		168A52CD2EC5A2263BAF15EFF9FB166E /* StepperView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFF88DA6F0CFBD1D5B5CE499745E6B2A /* Build configuration list for PBXNativeTarget "StepperView" */;
+			buildPhases = (
+				9C23FF604B355F269FF2F09E7EDA88D2 /* Headers */,
+				6116C9CEAA16D9E116438C2DEBB98AC3 /* Sources */,
+				3CEC44891E3EF69316DD08BA718C24EC /* Frameworks */,
+				AA8985AECB090556953435A1455EDEFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StepperView;
+			productName = StepperView;
+			productReference = 0B76BC7D0C2C3FA2DB609CE53D5C0C37 /* StepperView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7DC7882D1C9F6149CD29905D9FE62880 /* Pods-paprika */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E52B921CB1CC81BFB453F274A4C09464 /* Build configuration list for PBXNativeTarget "Pods-paprika" */;
+			buildPhases = (
+				7DAAB837E51E8B0CDCA9FE455D9DA1D0 /* Headers */,
+				9AFD01001571114DC48703104E5C0979 /* Sources */,
+				5EDE730C576BC98305B484208B552F1F /* Frameworks */,
+				D8C0E12D34BBAA0156801C8CC80ECF4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FC21D51680CCD5E4D17FDD2457F20B9 /* PBXTargetDependency */,
+			);
+			name = "Pods-paprika";
+			productName = "Pods-paprika";
+			productReference = 86E4CB969DF53C3577DBCA828025701D /* Pods_paprika.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B21B0444E170ADB2E119BCD8E8D55882 /* Pods-paprika-paprikaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B201C16339447032DEBA5838C88ECE2F /* Build configuration list for PBXNativeTarget "Pods-paprika-paprikaUITests" */;
+			buildPhases = (
+				E302B18CC4C941205532B65B218D4056 /* Headers */,
+				DF72A57FE4A253075FC3B8EEAAAB2E3E /* Sources */,
+				8D30B02961C8C9F8419077DB97830E36 /* Frameworks */,
+				CC9B6E54AEAC9A39533B8C66E56C8388 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C6F31750DD9EEC209F7D0D4C1BCDAB2 /* PBXTargetDependency */,
+			);
+			name = "Pods-paprika-paprikaUITests";
+			productName = "Pods-paprika-paprikaUITests";
+			productReference = 03D9CE46F9C4ADF4A3D98127C6D35E67 /* Pods_paprika_paprikaUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B6F81726024587D71D6CE98F1EF2BB65 /* Pods-paprikaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30AF9AD763AB788F3C0E805FB439738A /* Build configuration list for PBXNativeTarget "Pods-paprikaTests" */;
+			buildPhases = (
+				1A647270C947DF71B2AAFFDFD244E860 /* Headers */,
+				CB6C915F238767C7B1DA14C5978E1768 /* Sources */,
+				C9B935D86CCD68F3C3D4D0197E282075 /* Frameworks */,
+				C058AA047C83DA1BE9BF831152538094 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				244A2D2957D8AEB2EB76100A35FD3E30 /* PBXTargetDependency */,
+			);
+			name = "Pods-paprikaTests";
+			productName = "Pods-paprikaTests";
+			productReference = 5ACFFEE3AFC1F9249CF624E312836E42 /* Pods_paprikaTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 72929FBB72DC72A865018EACC00535E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DC7882D1C9F6149CD29905D9FE62880 /* Pods-paprika */,
+				B21B0444E170ADB2E119BCD8E8D55882 /* Pods-paprika-paprikaUITests */,
+				B6F81726024587D71D6CE98F1EF2BB65 /* Pods-paprikaTests */,
+				168A52CD2EC5A2263BAF15EFF9FB166E /* StepperView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA8985AECB090556953435A1455EDEFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C058AA047C83DA1BE9BF831152538094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC9B6E54AEAC9A39533B8C66E56C8388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C0E12D34BBAA0156801C8CC80ECF4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6116C9CEAA16D9E116438C2DEBB98AC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81E18280C8DE550A3115232F1125D042 /* CircledIconView.swift in Sources */,
+				E73FD118AA8912EF6D85A8C6402F3F1A /* Colors+Extension.swift in Sources */,
+				701B035C0A788322B9B4F2E092B60A84 /* EnvironmentValues+Extension.swift in Sources */,
+				399F571AF1238A4BBE9DD55D57F1BAEA /* HorizontalLineView.swift in Sources */,
+				8605442460E500E7CAFB27CC69E2F2D5 /* IndicatorView.swift in Sources */,
+				93E8A8ED4CC56B243814F27612F45BC9 /* LoadingTimer.swift in Sources */,
+				5F660E44B23D144537BA435833788068 /* NumberedCircleView.swift in Sources */,
+				83933A6CB91E8747E75729674EDDDB22 /* PitStopLineView.swift in Sources */,
+				B56906CA4FAD1586BD60394EB6883FDC /* PitStopView.swift in Sources */,
+				A0310B7390F6F636A61A2B102D10EDD0 /* PreferenceKey+Extension.swift in Sources */,
+				194AEEEDA96ABD2A57609630556D165D /* StepIndicatorHorizontalView.swift in Sources */,
+				9C7C733714777BF376A156FE444DF4A6 /* StepIndicatorVerticalView.swift in Sources */,
+				0C36A280CC73E4C266F284A07D18E133 /* StepperView-dummy.m in Sources */,
+				CA225CF212A0C846DDA0F72D5B4B39AB /* StepperView.swift in Sources */,
+				3DCC08434332238487D4D5EADB6E0FB2 /* TextView.swift in Sources */,
+				40FC06986CB09A30FE06DD38494A8C81 /* Utils.swift in Sources */,
+				D0314E70BD4D37B55EDF0CD3A8BE8DF8 /* VerticalAlignment+Extension.swift in Sources */,
+				E112251297EA93235F2C5E88AA209C66 /* VerticalLineView.swift in Sources */,
+				767D1D266096D8A5445A20B40C4F0564 /* View+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AFD01001571114DC48703104E5C0979 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26448A7FB477FA4D093192C9856972B3 /* Pods-paprika-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6C915F238767C7B1DA14C5978E1768 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				610E1E8DAC0FB21C6F2E90150F63361C /* Pods-paprikaTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF72A57FE4A253075FC3B8EEAAAB2E3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1586333C345586084A897DD37D9FD185 /* Pods-paprika-paprikaUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		244A2D2957D8AEB2EB76100A35FD3E30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-paprika";
+			target = 7DC7882D1C9F6149CD29905D9FE62880 /* Pods-paprika */;
+			targetProxy = CE94435F138AE67BB3177D8E1D14EA30 /* PBXContainerItemProxy */;
+		};
+		6C6F31750DD9EEC209F7D0D4C1BCDAB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StepperView;
+			target = 168A52CD2EC5A2263BAF15EFF9FB166E /* StepperView */;
+			targetProxy = 404815A5994D965937FE566CFA56F91F /* PBXContainerItemProxy */;
+		};
+		8FC21D51680CCD5E4D17FDD2457F20B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StepperView;
+			target = 168A52CD2EC5A2263BAF15EFF9FB166E /* StepperView */;
+			targetProxy = D9381DC6901DE0890DE1DC25A365107E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12917106440C5C54C1AEF97802086E19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E214251B5336D8096B212DE84411091 /* Pods-paprika.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-paprika/Pods-paprika-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-paprika/Pods-paprika.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		35594895782248103AFA314A1FB7B213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91108083953F62D0AB929785AE59A91F /* Pods-paprikaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-paprikaTests/Pods-paprikaTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-paprikaTests/Pods-paprikaTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7AFC1F05A4FBC1DC14E8115D5E808E09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8511938726F4856C91D565B2A5AB2418 /* Pods-paprika-paprikaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-paprika-paprikaUITests/Pods-paprika-paprikaUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-paprika-paprikaUITests/Pods-paprika-paprikaUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9557A076C065D7F86415CA03682DFADF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F51E418E360053A87793A15611C9D662 /* Pods-paprikaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-paprikaTests/Pods-paprikaTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-paprikaTests/Pods-paprikaTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A78F3A8ADE1B4ECE6907FBDB132054CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12BC4C49F8A7042EE9EC21AA193A5CD9 /* StepperView.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/StepperView/StepperView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StepperView/StepperView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/StepperView/StepperView.modulemap";
+				PRODUCT_MODULE_NAME = StepperView;
+				PRODUCT_NAME = StepperView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ABEFDC8486AF7B40DC216B5E7C599A0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69D745CB460FC7C2EDB163BE2D2F15DA /* StepperView.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/StepperView/StepperView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StepperView/StepperView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/StepperView/StepperView.modulemap";
+				PRODUCT_MODULE_NAME = StepperView;
+				PRODUCT_NAME = StepperView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BCE848EFA501027E10EF627559E65610 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB5E89F63039C12D63F034F143596695 /* Pods-paprika-paprikaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-paprika-paprikaUITests/Pods-paprika-paprikaUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-paprika-paprikaUITests/Pods-paprika-paprikaUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C04E3103AA40E41E78148B2A92E6CD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7788F0DF699BB6D05E7FCCDAADE510D /* Pods-paprika.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-paprika/Pods-paprika-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-paprika/Pods-paprika.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30AF9AD763AB788F3C0E805FB439738A /* Build configuration list for PBXNativeTarget "Pods-paprikaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35594895782248103AFA314A1FB7B213 /* Debug */,
+				9557A076C065D7F86415CA03682DFADF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
+				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFF88DA6F0CFBD1D5B5CE499745E6B2A /* Build configuration list for PBXNativeTarget "StepperView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A78F3A8ADE1B4ECE6907FBDB132054CC /* Debug */,
+				ABEFDC8486AF7B40DC216B5E7C599A0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B201C16339447032DEBA5838C88ECE2F /* Build configuration list for PBXNativeTarget "Pods-paprika-paprikaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCE848EFA501027E10EF627559E65610 /* Debug */,
+				7AFC1F05A4FBC1DC14E8115D5E808E09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E52B921CB1CC81BFB453F274A4C09464 /* Build configuration list for PBXNativeTarget "Pods-paprika" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12917106440C5C54C1AEF97802086E19 /* Debug */,
+				C04E3103AA40E41E78148B2A92E6CD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
