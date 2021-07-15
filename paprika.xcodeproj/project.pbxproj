@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -126,12 +126,12 @@
 		896D7E9926A0550C005CBCBA /* paprika */ = {
 			isa = PBXGroup;
 			children = (
-				896D7E9A26A0550C005CBCBA /* paprikaApp.swift */,
-				896D7E9C26A0550C005CBCBA /* ContentView.swift */,
-				896D7E9E26A0550D005CBCBA /* Assets.xcassets */,
-				896D7EA326A0550D005CBCBA /* Persistence.swift */,
 				896D7EA826A0550D005CBCBA /* Info.plist */,
-				896D7EA526A0550D005CBCBA /* paprika.xcdatamodeld */,
+				896D7E9E26A0550D005CBCBA /* Assets.xcassets */,
+				896D7E9A26A0550C005CBCBA /* paprikaApp.swift */,
+				896D7ECE26A057D9005CBCBA /* Models */,
+				896D7ECD26A057D4005CBCBA /* Views */,
+				896D7ECF26A057EE005CBCBA /* View Models */,
 				896D7EA026A0550D005CBCBA /* Preview Content */,
 			);
 			path = paprika;
@@ -163,6 +163,30 @@
 			path = paprikaUITests;
 			sourceTree = "<group>";
 		};
+		896D7ECD26A057D4005CBCBA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				896D7E9C26A0550C005CBCBA /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		896D7ECE26A057D9005CBCBA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				896D7EA326A0550D005CBCBA /* Persistence.swift */,
+				896D7EA526A0550D005CBCBA /* paprika.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		896D7ECF26A057EE005CBCBA /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		8CBEC0830CE7C82DE152176E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,7 +197,6 @@
 				30D098D79184387B590BDA8C /* Pods-paprikaTests.debug.xcconfig */,
 				D82B4B8A660D57A0B1FD3E93 /* Pods-paprikaTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
