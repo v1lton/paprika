@@ -13,7 +13,7 @@ struct paprikaApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginScreen()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
