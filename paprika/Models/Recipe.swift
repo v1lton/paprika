@@ -1,37 +1,50 @@
-// This file was generated from JSON Schema using quicktype, do not modify it directly.
-// To parse the JSON, add this file to your project and do:
-//
-//   let welcome = try? newJSONDecoder().decode(Recipe.self, from: jsonData)
+//// This file was generated from JSON Schema using quicktype, do not modify it directly.
+//// To parse the JSON, add this file to your project and do:
+////
+////   let welcome = try? newJSONDecoder().decode(Recipe.self, from: jsonData)
 
 import Foundation
 
 // MARK: - Recipe
 struct Recipe: Codable {
+    let recipes: [RecipeElement]
+}
+
+// MARK: - RecipeElement
+struct RecipeElement: Codable {
     let name: String
     let id: Int
     let image: String
-    let lvl: LvlEnum
-    let favorited: Bool
+    let creditsURL, author, lvl, favorited: String
     let category: [CategoryEnum]
-    let ingredients: [[Ingredient]]
+    let ingredients: [Ingredient]
     let portion: Int
     let tools: [String]
-    let timer: [[Int]]
+    let timer: [Timer]
     let totalTime: Int
-    let stepByStep: [[StepByStep]]
+    let stepByStep: [StepByStep]
 }
 
 // MARK: - Ingredient
 struct Ingredient: Codable {
     let name: String
-    let amount: Float
+    let amount: Double
     let measure: String
 }
 
 // MARK: - StepByStep
 struct StepByStep: Codable {
-    let title: String
-    let description: String
+    let title, stepByStepDescription: String
+
+    enum CodingKeys: String, CodingKey {
+        case title
+        case stepByStepDescription = "description"
+    }
+}
+
+// MARK: - Timer
+struct Timer: Codable {
+    let step, timeInMinutes: Int
 }
 
 // MARK: - LvlEnum
@@ -50,7 +63,3 @@ enum CategoryEnum: String, Codable {
     case vegano = "Vegano"
     case vegetariano = "Vegetariano"
 }
-
-
-
-
