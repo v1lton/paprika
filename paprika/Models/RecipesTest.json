@@ -1,0 +1,73 @@
+{
+    "recipes": [
+      {
+        "name": "Panqueca de Aveia",
+        "id": 1,
+        "image": "https://images.unsplash.com/photo-1568240464340-261c0f65a455?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
+        "creditsURL": "",
+        "author": "",
+        "lvl": "Fácil",
+        "favorited": "false",
+        "category": ["Café da manhã", "Vegetariano"],
+        "ingredients": [
+        {
+            "name": "Banana",
+            "amount": 1,
+            "measure": "unidade"
+        },
+        {
+            "name": "Ovo",
+            "amount": 1,
+            "measure": "unidade"
+        },
+        {
+            "name": "Aveia",
+            "amount": 2,
+            "measure": "colher de sopa"
+        },
+        {
+            "name": "Canela",
+            "amount": 1,
+            "measure": "pitada"
+        },
+        {
+            "name": "Óleo de coco",
+            "amount": 0.5,
+            "measure": "colher de sopa"
+        },
+        {
+            "name": "Fermento biológico",
+            "amount": 0.5,
+            "measure": "colher de chá"
+        }
+        ],
+        "portion": 1,
+        "tools": ["vasilha", "garfo", "espátula", "frigideira"],
+        "timer": [
+        {
+            "step": 4,
+            "timeInMinutes": 4
+        }
+        ],
+        "totalTime": 5,
+        "stepByStep": [
+        {
+            "title": "Amassar a banana",
+            "description": "Amasse a banana até virar uma pasta. Dê preferência à banana madura"
+        },
+        {
+            "title": "Bater o ovo",
+            "description": "Em uma vasilha, bata o ovo até ele começar a espumar."
+        },
+        {
+            "title": "Juntar os ingredientes",
+            "description": "Junte ao ovo batido a banana amassada, a aveia, a canela, o óleo de coco e o fermento. Misture até forma uma massa homogênea."
+        },
+        {
+            "title": "Ir ao fogo",
+            "description": "Esquente a frigideira. Quando ela estivar quente, espalhe um pouco de óleo de coco e, em seguida, coloque a misture. Deixe cada lado por cerca de 2 minutos."
+        }
+        ]
+      }
+    ]
+}
