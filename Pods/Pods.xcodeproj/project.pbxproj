@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -65,11 +65,11 @@
 
 /* Begin PBXFileReference section */
 		00EE9F694BB4E4DD8F20D4B1D02A310D /* EnvironmentValues+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "EnvironmentValues+Extension.swift"; path = "Sources/StepperView/Extension/EnvironmentValues+Extension.swift"; sourceTree = "<group>"; };
-		03D9CE46F9C4ADF4A3D98127C6D35E67 /* Pods_paprika_paprikaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_paprika_paprikaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		03D9CE46F9C4ADF4A3D98127C6D35E67 /* Pods_paprika_paprikaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_paprika_paprikaUITests.framework; path = "Pods-paprika-paprikaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		090B8ED1F736E1CB3F427C3D840BF23B /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/StepperView/Utils/Utils.swift; sourceTree = "<group>"; };
 		097B68FC9CED777F343BA28B90BB5589 /* Pods-paprika-paprikaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-paprika-paprikaUITests-frameworks.sh"; sourceTree = "<group>"; };
 		0B4E833B7F22AB7A3761D749D2911744 /* StepperView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StepperView-dummy.m"; sourceTree = "<group>"; };
-		0B76BC7D0C2C3FA2DB609CE53D5C0C37 /* StepperView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StepperView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B76BC7D0C2C3FA2DB609CE53D5C0C37 /* StepperView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = StepperView.framework; path = StepperView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DEC8FA0F8FA8050C6DC589A0364E980 /* Colors+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Colors+Extension.swift"; path = "Sources/StepperView/Extension/Colors+Extension.swift"; sourceTree = "<group>"; };
 		0F9EEDD1A4DEB8485A6FD9578A6B26E7 /* VerticalAlignment+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "VerticalAlignment+Extension.swift"; path = "Sources/StepperView/Extension/VerticalAlignment+Extension.swift"; sourceTree = "<group>"; };
 		12BC4C49F8A7042EE9EC21AA193A5CD9 /* StepperView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StepperView.debug.xcconfig; sourceTree = "<group>"; };
@@ -91,21 +91,21 @@
 		521F52121DF5C43829BAC2220EC27B02 /* Pods-paprikaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-paprikaTests.modulemap"; sourceTree = "<group>"; };
 		53FF5E1FA87322B4031D8D6E78EE1F1C /* StepperView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = StepperView.modulemap; sourceTree = "<group>"; };
 		59F3427FF950B5A16B6223720B827591 /* Pods-paprika-paprikaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-paprika-paprikaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5ACFFEE3AFC1F9249CF624E312836E42 /* Pods_paprikaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_paprikaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ACFFEE3AFC1F9249CF624E312836E42 /* Pods_paprikaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_paprikaTests.framework; path = "Pods-paprikaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D745CB460FC7C2EDB163BE2D2F15DA /* StepperView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StepperView.release.xcconfig; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7B77B723F836D7CC083BDC108BC27238 /* StepperView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StepperView-umbrella.h"; sourceTree = "<group>"; };
 		7FB530D1248F64A0206215AFCC2618ED /* Pods-paprikaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-paprikaTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		81613480B298C07F7C55055334364E3C /* VerticalLineView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerticalLineView.swift; path = Sources/StepperView/Views/Lines/VerticalLineView.swift; sourceTree = "<group>"; };
 		8511938726F4856C91D565B2A5AB2418 /* Pods-paprika-paprikaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-paprika-paprikaUITests.release.xcconfig"; sourceTree = "<group>"; };
-		86E4CB969DF53C3577DBCA828025701D /* Pods_paprika.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_paprika.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86E4CB969DF53C3577DBCA828025701D /* Pods_paprika.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_paprika.framework; path = "Pods-paprika.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		879F23CB472EE1781326245B146B48E2 /* CircledIconView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircledIconView.swift; path = Sources/StepperView/Views/Indicators/CircledIconView.swift; sourceTree = "<group>"; };
 		8D3825DC86881C5F8EB5483C6B36EFA0 /* StepperView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StepperView-prefix.pch"; sourceTree = "<group>"; };
 		8DABA6D163BE2D16BC5207F1B73766E5 /* Pods-paprika-paprikaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-paprika-paprikaUITests-dummy.m"; sourceTree = "<group>"; };
 		91108083953F62D0AB929785AE59A91F /* Pods-paprikaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-paprikaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		98FBFC15A4CCFC43F9FD1D5348C71A42 /* Pods-paprika-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-paprika-acknowledgements.plist"; sourceTree = "<group>"; };
 		9B198A4B72B3B85D1B49282CD1C3710B /* Pods-paprikaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-paprikaTests-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A281F559D069775DE555A2CB0ABF859B /* Pods-paprika-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-paprika-frameworks.sh"; sourceTree = "<group>"; };
 		A67594D55109E6D8E9E45987B49DE3B2 /* Pods-paprika-paprikaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-paprika-paprikaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A7788F0DF699BB6D05E7FCCDAADE510D /* Pods-paprika.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-paprika.release.xcconfig"; sourceTree = "<group>"; };
@@ -224,6 +224,7 @@
 				E473CBDAE2DDE11460A07B4B7F1D028E /* View+Extensions.swift */,
 				C989F59EA9BDD2E1442CB0AEC6D990BE /* Support Files */,
 			);
+			name = StepperView;
 			path = StepperView;
 			sourceTree = "<group>";
 		};
@@ -426,10 +427,10 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -849,7 +850,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/StepperView/StepperView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/StepperView/StepperView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -884,7 +885,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/StepperView/StepperView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/StepperView/StepperView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
