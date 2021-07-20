@@ -17,7 +17,7 @@ struct RecipeStepsView: View {
     }
     
     var body: some View {
-        
+
         GeometryReader { geometry in
             
             TabView {
@@ -26,7 +26,9 @@ struct RecipeStepsView: View {
                         
                         //Title box
                         VStack {
-                            Text(step[0]).font(.largeTitle).fontWeight(.black)
+                            Text(step[0])
+                                .font(.custom("Albra Semi", size: 56))
+                                .foregroundColor(Color("BrandSecondary400"))
                         }.frame(width: geometry.size.width * 0.3, height: geometry.size.height, alignment: .topLeading)
                         
                         Spacer()
@@ -34,8 +36,9 @@ struct RecipeStepsView: View {
                         //Recipe box
                         VStack {
                             Text(step[1])
-                                .font(.largeTitle)
-                                .fontWeight(.bold)
+                                .fontWeight(.regular)
+                                .lineSpacing(10)
+                                .font(.system(size: 32))
                         }.frame(width: geometry.size.width * 0.65, height: geometry.size.height, alignment: .topLeading)
                         
                     }.frame(height: geometry.size.height, alignment: .topLeading)
@@ -46,7 +49,8 @@ struct RecipeStepsView: View {
                 
             }.tabViewStyle(PageTabViewStyle())
             .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
-        }
+            
+        }.background(Color("Primitive50")).edgesIgnoringSafeArea(.all)
     }
 }
 

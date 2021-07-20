@@ -2,6 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Albra Semi.otf</string>
+		<string>Albra Black.otf</string>
+		<string>Albra Light.otf</string>
+		<string>Albra Medium.otf</string>
+		<string>Albra Regular.otf</string>
+		<string>Albra Text Black.otf</string>
+		<string>Albra Text Bold.otf</string>
+		<string>Albra Text Light.otf</string>
+		<string>Albra Text Medium.otf</string>
+		<string>Albra Text Regular.otf</string>
+		<string>Albra Text Semi.otf</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
