@@ -8,42 +8,17 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var isActive = false
     
     enum Screen: Hashable {
         case recipe, steps
     }
-    
     var body: some View {
-        
         NavigationView {
-            
-            //MARK: - SideBar
-            List {
-                NavigationLink(
-                    destination: HomeView(),
-                    label: {
-                        Label("Página Inicial", systemImage: "house")
-                    })
-                NavigationLink(
-                    destination: RecipeStepsView(viewModel: RecipeStepsView.ViewModel()),
-                    label: {
-                        Label("Favoritos", systemImage: "heart")
-                    })
-            }.navigationTitle("Descobrir")
-            .listStyle(SidebarListStyle())
-            
-            //MARK: - DetailView
-            VStack {
-                NavigationLink(
-                    destination: RecipeView(),
-                    label: {
-                        Text("Ver receita")
-                    })
-                    
-            }
+            SideBarView()
+            RootView()
         }
     }
-    
 }
 
 
@@ -52,3 +27,4 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
     }
 }
+
