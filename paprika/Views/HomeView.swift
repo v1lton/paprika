@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    enum Screen: Hashable {
+        case recipe, steps
+    }
+    
     var body: some View {
         
         NavigationView {
@@ -15,16 +20,17 @@ struct HomeView: View {
             //MARK: - SideBar
             List {
                 NavigationLink(
-                    destination: RecipeView(),
+                    destination: HomeView(),
                     label: {
-                        Label("Receita", systemImage: "book")
+                        Label("Página Inicial", systemImage: "house")
                     })
                 NavigationLink(
                     destination: RecipeStepsView(viewModel: RecipeStepsView.ViewModel()),
                     label: {
-                        Label("Passo a passo", systemImage: "book")
+                        Label("Favoritos", systemImage: "heart")
                     })
             }.navigationTitle("Descobrir")
+            .listStyle(SidebarListStyle())
             
             //MARK: - DetailView
             VStack {
@@ -33,9 +39,9 @@ struct HomeView: View {
                     label: {
                         Text("Ver receita")
                     })
+                    
             }
         }
-        
     }
     
 }
