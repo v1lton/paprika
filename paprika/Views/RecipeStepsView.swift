@@ -21,6 +21,7 @@ struct RecipeStepsView: View {
         GeometryReader { geometry in
             
             TabView {
+                //TODO: id:\.title
                 ForEach(viewModel.recipeSteps, id:\.self) { step in
                     AdaptiveStack {
                         
