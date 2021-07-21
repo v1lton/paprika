@@ -20,3 +20,5 @@ struct paprikaApp: App {
         }
     }
 }
+
+//TODO: [] Carregar aqui?
