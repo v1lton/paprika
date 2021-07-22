@@ -6,3 +6,25 @@
 //
 
 import Foundation
+
+class AppDataService {
+    
+    func getRecipes(completion:@escaping ([RecipeElement]) -> ()) {
+        if let path = Bundle.main.path(forResource: "RecipesTest", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let decoder = JSONDecoder()
+                let jsonData = try decoder.decode(Recipe.self, from: data)
+                
+                DispatchQueue.main.async {
+                    let recipes = jsonData.recipes
+                    completion(recipes)
+                }
+                
+            } catch {
+                print("Erro na leitura do Json")
+            }
+        }
+    }
+    
+}
