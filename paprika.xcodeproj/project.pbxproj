@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03C2264226A8D4BD00485B18 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C2264126A8D4BD00485B18 /* RootView.swift */; };
+		03C2264426A8D4E200485B18 /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C2264326A8D4E200485B18 /* SideBarView.swift */; };
 		18DA758F8284C93ACA598C0F /* Pods_paprika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47BFB28C13677287D8EF9251 /* Pods_paprika.framework */; };
 		89406A6226A1C7C2003829E4 /* RecipeStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89406A6126A1C7C2003829E4 /* RecipeStepsView.swift */; };
 		896122DB26A7123E00938B6E /* Albra Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 896122CF26A7123D00938B6E /* Albra Bold.otf */; };
@@ -30,6 +32,7 @@
 		896D7ED326A059FE005CBCBA /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D7ED226A059FE005CBCBA /* Recipe.swift */; };
 		899BD6C326A337B700E5119D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899BD6C226A337B700E5119D /* HomeView.swift */; };
 		899BD6C526A3598D00E5119D /* RecipeStepsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899BD6C426A3598D00E5119D /* RecipeStepsViewModel.swift */; };
+		89C9F91026A9A18500CA5B1D /* AppDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C9F90F26A9A18500CA5B1D /* AppDataService.swift */; };
 		89D7C64526A8396F00D138E8 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D7C64426A8396F00D138E8 /* RecipeView.swift */; };
 		89F6F93E26A5A5380055D4B6 /* RecipesTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 89F6F93D26A5A5380055D4B6 /* RecipesTest.json */; };
 		AA59733AE8BEE44F5243572B /* Pods_paprikaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409B22D5003A6595D4699654 /* Pods_paprikaTests.framework */; };
@@ -54,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03C2264126A8D4BD00485B18 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		03C2264326A8D4E200485B18 /* SideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarView.swift; sourceTree = "<group>"; };
 		1821DAC7FD8C3C5359C33AC1 /* Pods-paprika-paprikaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paprika-paprikaUITests.release.xcconfig"; path = "Target Support Files/Pods-paprika-paprikaUITests/Pods-paprika-paprikaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		231B644CA898F6D8823260E3 /* Pods-paprika.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paprika.release.xcconfig"; path = "Target Support Files/Pods-paprika/Pods-paprika.release.xcconfig"; sourceTree = "<group>"; };
 		30D098D79184387B590BDA8C /* Pods-paprikaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paprikaTests.debug.xcconfig"; path = "Target Support Files/Pods-paprikaTests/Pods-paprikaTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +95,7 @@
 		896D7ED226A059FE005CBCBA /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		899BD6C226A337B700E5119D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		899BD6C426A3598D00E5119D /* RecipeStepsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepsViewModel.swift; sourceTree = "<group>"; };
+		89C9F90F26A9A18500CA5B1D /* AppDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataService.swift; sourceTree = "<group>"; };
 		89D7C64426A8396F00D138E8 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		89F6F93D26A5A5380055D4B6 /* RecipesTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RecipesTest.json; sourceTree = "<group>"; };
 		D82B4B8A660D57A0B1FD3E93 /* Pods-paprikaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paprikaTests.release.xcconfig"; path = "Target Support Files/Pods-paprikaTests/Pods-paprikaTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -210,6 +216,8 @@
 			isa = PBXGroup;
 			children = (
 				899BD6C226A337B700E5119D /* HomeView.swift */,
+				03C2264326A8D4E200485B18 /* SideBarView.swift */,
+				03C2264126A8D4BD00485B18 /* RootView.swift */,
 				89D7C64426A8396F00D138E8 /* RecipeView.swift */,
 				89406A6126A1C7C2003829E4 /* RecipeStepsView.swift */,
 			);
@@ -223,6 +231,7 @@
 				896D7EA526A0550D005CBCBA /* paprika.xcdatamodeld */,
 				896D7ED226A059FE005CBCBA /* Recipe.swift */,
 				89F6F93D26A5A5380055D4B6 /* RecipesTest.json */,
+				89C9F90F26A9A18500CA5B1D /* AppDataService.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -497,11 +506,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C9F91026A9A18500CA5B1D /* AppDataService.swift in Sources */,
 				896D7EA726A0550D005CBCBA /* paprika.xcdatamodeld in Sources */,
 				899BD6C526A3598D00E5119D /* RecipeStepsViewModel.swift in Sources */,
 				896D7EA426A0550D005CBCBA /* Persistence.swift in Sources */,
+				03C2264426A8D4E200485B18 /* SideBarView.swift in Sources */,
 				89406A6226A1C7C2003829E4 /* RecipeStepsView.swift in Sources */,
 				899BD6C326A337B700E5119D /* HomeView.swift in Sources */,
+				03C2264226A8D4BD00485B18 /* RootView.swift in Sources */,
 				896D7E9B26A0550C005CBCBA /* paprikaApp.swift in Sources */,
 				89D7C64526A8396F00D138E8 /* RecipeView.swift in Sources */,
 				896D7ED326A059FE005CBCBA /* Recipe.swift in Sources */,

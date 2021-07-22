@@ -8,23 +8,23 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var isActive = false
+    
+    enum Screen: Hashable {
+        case recipe, steps
+    }
     var body: some View {
-        
         NavigationView {
-            
-            NavigationLink(
-                destination: RecipeStepsView(viewModel: RecipeStepsView.ViewModel()),
-                label: {
-                    Text("Ver receita")
-                })
-            
-        }.navigationTitle("Menu")
-        
+            SideBarView()
+            RootView()
+        }
     }
 }
+
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
     }
 }
+
