@@ -11,11 +11,12 @@ struct Recipe: Codable {
 }
 
 // MARK: - RecipeElement
-struct RecipeElement: Codable {
+struct RecipeElement: Codable, Identifiable {
     let name: String
     let id: Int
     let image: String
-    let creditsURL, author, lvl, favorited: String
+    let creditsURL, author, lvl:  String
+    let favorited: Bool
     let category: [CategoryEnum]
     let ingredients: [Ingredient]
     let portion: Int
@@ -33,7 +34,7 @@ struct Ingredient: Codable {
 }
 
 // MARK: - StepByStep
-struct StepByStep: Codable {
+struct StepByStep: Codable, Hashable {
     let title, stepByStepDescription: String
 
     enum CodingKeys: String, CodingKey {
