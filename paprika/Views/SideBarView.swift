@@ -16,7 +16,7 @@ struct SideBarView: View {
                     Label("Página Inicial", systemImage: "house")
                 })
             NavigationLink(
-                destination: RecipeStepsView(viewModel: RecipeStepsView.ViewModel()),
+                destination: RecipeStepsView(viewModel: RecipeStepsView.ViewModel(), recipeSteps: [StepByStep]()),
                 label: {
                     Label("Favoritos", systemImage: "heart")
                 })

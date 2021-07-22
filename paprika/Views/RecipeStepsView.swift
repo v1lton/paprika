@@ -11,9 +11,11 @@ import StepperView
 struct RecipeStepsView: View {
     
     @StateObject var viewModel: ViewModel
+    var recipeSteps: [StepByStep]
     
-    init(viewModel: ViewModel) {
+    init(viewModel: ViewModel, recipeSteps steps: [StepByStep]) {
         _viewModel = StateObject(wrappedValue: viewModel)
+        recipeSteps = steps
     }
     
     var body: some View {
@@ -21,13 +23,12 @@ struct RecipeStepsView: View {
         GeometryReader { geometry in
             
             TabView {
-                //TODO: id:\.title
-                ForEach(viewModel.recipeSteps, id:\.self) { step in
-                    AdaptiveStack {
+                ForEach(recipeSteps, id:\.self) { step in
+                    HStack{
                         
                         //Title box
                         VStack {
-                            Text(step[0])
+                            Text(step.title)
                                 .font(.custom("Albra Semi", size: 56))
                                 .foregroundColor(Color("BrandSecondary400"))
                         }.frame(width: geometry.size.width * 0.3, height: geometry.size.height, alignment: .topLeading)
@@ -36,7 +37,7 @@ struct RecipeStepsView: View {
                         
                         //Recipe box
                         VStack {
-                            Text(step[1])
+                            Text(step.stepByStepDescription)
                                 .fontWeight(.regular)
                                 .lineSpacing(10)
                                 .font(.system(size: 32))
@@ -55,44 +56,19 @@ struct RecipeStepsView: View {
     }
 }
 
-struct RecipeStepsView_Previews: PreviewProvider {
-    static var previews: some View {
-        
-        let viewModel = RecipeStepsView.ViewModel()
-        
-        Group {
-            RecipeStepsView(viewModel: viewModel)
-            RecipeStepsView(viewModel: viewModel)
-                .previewDevice("iPad Pro (12.9-inch) (5th generation)")
-        }
-        
-    }
-}
-
-struct AdaptiveStack<Content: View>: View {
-    @Environment(\.horizontalSizeClass) var sizeClass
-    let horizontalAlignment: HorizontalAlignment
-    let verticalAlignment: VerticalAlignment
-    let spacing: CGFloat?
-    let content: () -> Content
-
-    init(horizontalAlignment: HorizontalAlignment = .center, verticalAlignment: VerticalAlignment = .center, spacing: CGFloat? = nil, @ViewBuilder content: @escaping () -> Content) {
-        self.horizontalAlignment = horizontalAlignment
-        self.verticalAlignment = verticalAlignment
-        self.spacing = spacing
-        self.content = content
-    }
-
-    var body: some View {
-        Group {
-            if sizeClass == .compact {
-                VStack(alignment: horizontalAlignment, spacing: spacing, content: content)
-            } else {
-                HStack(alignment: verticalAlignment, spacing: spacing, content: content)
-            }
-        }
-    }
-}
+//struct RecipeStepsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        
+//        let viewModel = RecipeStepsView.ViewModel()
+//        
+//        Group {
+//            RecipeStepsView(viewModel: viewModel)
+//            RecipeStepsView(viewModel: viewModel)
+//                .previewDevice("iPad Pro (12.9-inch) (5th generation)")
+//        }
+//        
+//    }
+//}
 
 //TODO: Fazer um adapative stack baseado no geometryReader
-//FIXME: OI SWIFTUI
+
