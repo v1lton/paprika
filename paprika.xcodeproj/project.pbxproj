@@ -7,15 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03C2264226A8D4BD00485B18 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C2264126A8D4BD00485B18 /* RootView.swift */; };
+		03C2264426A8D4E200485B18 /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C2264326A8D4E200485B18 /* SideBarView.swift */; };
 		18DA758F8284C93ACA598C0F /* Pods_paprika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47BFB28C13677287D8EF9251 /* Pods_paprika.framework */; };
+		89406A6226A1C7C2003829E4 /* RecipeStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89406A6126A1C7C2003829E4 /* RecipeStepsView.swift */; };
+		896122DB26A7123E00938B6E /* Albra Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 896122CF26A7123D00938B6E /* Albra Bold.otf */; };
+		896122DC26A7123E00938B6E /* Albra Semi.otf in Resources */ = {isa = PBXBuildFile; fileRef = 896122D026A7123E00938B6E /* Albra Semi.otf */; };
+		896122DD26A7123E00938B6E /* Albra Text Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 896122D126A7123E00938B6E /* Albra Text Black.otf */; };
+		896122DE26A7123E00938B6E /* Albra Text Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 896122D226A7123E00938B6E /* Albra Text Bold.otf */; };
+		896122DF26A7123E00938B6E /* Albra Text Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 896122D326A7123E00938B6E /* Albra Text Medium.otf */; };
+		896122E026A7123E00938B6E /* Albra Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 896122D426A7123E00938B6E /* Albra Regular.otf */; };
+		896122E126A7123E00938B6E /* Albra Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 896122D526A7123E00938B6E /* Albra Black.otf */; };
+		896122E226A7123E00938B6E /* Albra Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 896122D626A7123E00938B6E /* Albra Medium.otf */; };
+		896122E326A7123E00938B6E /* Albra Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 896122D726A7123E00938B6E /* Albra Light.otf */; };
+		896122E426A7123E00938B6E /* Albra Text Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 896122D826A7123E00938B6E /* Albra Text Light.otf */; };
+		896122E526A7123E00938B6E /* Albra Text Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 896122D926A7123E00938B6E /* Albra Text Regular.otf */; };
+		896122E626A7123E00938B6E /* Albra Text Semi.otf in Resources */ = {isa = PBXBuildFile; fileRef = 896122DA26A7123E00938B6E /* Albra Text Semi.otf */; };
 		896D7E9B26A0550C005CBCBA /* paprikaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D7E9A26A0550C005CBCBA /* paprikaApp.swift */; };
-		896D7E9D26A0550C005CBCBA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D7E9C26A0550C005CBCBA /* ContentView.swift */; };
 		896D7E9F26A0550D005CBCBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896D7E9E26A0550D005CBCBA /* Assets.xcassets */; };
-		896D7EA226A0550D005CBCBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896D7EA126A0550D005CBCBA /* Preview Assets.xcassets */; };
 		896D7EA426A0550D005CBCBA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D7EA326A0550D005CBCBA /* Persistence.swift */; };
 		896D7EA726A0550D005CBCBA /* paprika.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 896D7EA526A0550D005CBCBA /* paprika.xcdatamodeld */; };
 		896D7EB226A0550D005CBCBA /* paprikaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D7EB126A0550D005CBCBA /* paprikaTests.swift */; };
 		896D7EBD26A0550D005CBCBA /* paprikaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D7EBC26A0550D005CBCBA /* paprikaUITests.swift */; };
+		896D7ED326A059FE005CBCBA /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D7ED226A059FE005CBCBA /* Recipe.swift */; };
+		899BD6C326A337B700E5119D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899BD6C226A337B700E5119D /* HomeView.swift */; };
+		899BD6C526A3598D00E5119D /* RecipeStepsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899BD6C426A3598D00E5119D /* RecipeStepsViewModel.swift */; };
+		89C9F91026A9A18500CA5B1D /* AppDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C9F90F26A9A18500CA5B1D /* AppDataService.swift */; };
+		89D7C64526A8396F00D138E8 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D7C64426A8396F00D138E8 /* RecipeView.swift */; };
+		89F6F93E26A5A5380055D4B6 /* RecipesTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 89F6F93D26A5A5380055D4B6 /* RecipesTest.json */; };
 		AA59733AE8BEE44F5243572B /* Pods_paprikaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409B22D5003A6595D4699654 /* Pods_paprikaTests.framework */; };
 		F8C1D8A3EB4D64700418467E /* Pods_paprika_paprikaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A269BCE61A1B0FC1A5DA04 /* Pods_paprika_paprikaUITests.framework */; };
 /* End PBXBuildFile section */
@@ -38,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03C2264126A8D4BD00485B18 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		03C2264326A8D4E200485B18 /* SideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarView.swift; sourceTree = "<group>"; };
 		1821DAC7FD8C3C5359C33AC1 /* Pods-paprika-paprikaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paprika-paprikaUITests.release.xcconfig"; path = "Target Support Files/Pods-paprika-paprikaUITests/Pods-paprika-paprikaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		231B644CA898F6D8823260E3 /* Pods-paprika.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paprika.release.xcconfig"; path = "Target Support Files/Pods-paprika/Pods-paprika.release.xcconfig"; sourceTree = "<group>"; };
 		30D098D79184387B590BDA8C /* Pods-paprikaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paprikaTests.debug.xcconfig"; path = "Target Support Files/Pods-paprikaTests/Pods-paprikaTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -46,11 +67,22 @@
 		678AB5D1FC6DFB42D4DDB9AD /* Pods-paprika.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paprika.debug.xcconfig"; path = "Target Support Files/Pods-paprika/Pods-paprika.debug.xcconfig"; sourceTree = "<group>"; };
 		7A2553217925822744DEADE3 /* Pods-paprika-paprikaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paprika-paprikaUITests.debug.xcconfig"; path = "Target Support Files/Pods-paprika-paprikaUITests/Pods-paprika-paprikaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		87A269BCE61A1B0FC1A5DA04 /* Pods_paprika_paprikaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_paprika_paprikaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89406A6126A1C7C2003829E4 /* RecipeStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepsView.swift; sourceTree = "<group>"; };
+		896122CF26A7123D00938B6E /* Albra Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Albra Bold.otf"; sourceTree = "<group>"; };
+		896122D026A7123E00938B6E /* Albra Semi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Albra Semi.otf"; sourceTree = "<group>"; };
+		896122D126A7123E00938B6E /* Albra Text Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Albra Text Black.otf"; sourceTree = "<group>"; };
+		896122D226A7123E00938B6E /* Albra Text Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Albra Text Bold.otf"; sourceTree = "<group>"; };
+		896122D326A7123E00938B6E /* Albra Text Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Albra Text Medium.otf"; sourceTree = "<group>"; };
+		896122D426A7123E00938B6E /* Albra Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Albra Regular.otf"; sourceTree = "<group>"; };
+		896122D526A7123E00938B6E /* Albra Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Albra Black.otf"; sourceTree = "<group>"; };
+		896122D626A7123E00938B6E /* Albra Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Albra Medium.otf"; sourceTree = "<group>"; };
+		896122D726A7123E00938B6E /* Albra Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Albra Light.otf"; sourceTree = "<group>"; };
+		896122D826A7123E00938B6E /* Albra Text Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Albra Text Light.otf"; sourceTree = "<group>"; };
+		896122D926A7123E00938B6E /* Albra Text Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Albra Text Regular.otf"; sourceTree = "<group>"; };
+		896122DA26A7123E00938B6E /* Albra Text Semi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Albra Text Semi.otf"; sourceTree = "<group>"; };
 		896D7E9726A0550C005CBCBA /* paprika.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = paprika.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		896D7E9A26A0550C005CBCBA /* paprikaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paprikaApp.swift; sourceTree = "<group>"; };
-		896D7E9C26A0550C005CBCBA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		896D7E9E26A0550D005CBCBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		896D7EA126A0550D005CBCBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		896D7EA326A0550D005CBCBA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		896D7EA626A0550D005CBCBA /* paprika.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = paprika.xcdatamodel; sourceTree = "<group>"; };
 		896D7EA826A0550D005CBCBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +92,12 @@
 		896D7EB826A0550D005CBCBA /* paprikaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = paprikaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		896D7EBC26A0550D005CBCBA /* paprikaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paprikaUITests.swift; sourceTree = "<group>"; };
 		896D7EBE26A0550D005CBCBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		896D7ED226A059FE005CBCBA /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		899BD6C226A337B700E5119D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		899BD6C426A3598D00E5119D /* RecipeStepsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepsViewModel.swift; sourceTree = "<group>"; };
+		89C9F90F26A9A18500CA5B1D /* AppDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataService.swift; sourceTree = "<group>"; };
+		89D7C64426A8396F00D138E8 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		89F6F93D26A5A5380055D4B6 /* RecipesTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RecipesTest.json; sourceTree = "<group>"; };
 		D82B4B8A660D57A0B1FD3E93 /* Pods-paprikaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paprikaTests.release.xcconfig"; path = "Target Support Files/Pods-paprikaTests/Pods-paprikaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +139,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		896122CE26A7122100938B6E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				896122D526A7123E00938B6E /* Albra Black.otf */,
+				896122CF26A7123D00938B6E /* Albra Bold.otf */,
+				896122D726A7123E00938B6E /* Albra Light.otf */,
+				896122D626A7123E00938B6E /* Albra Medium.otf */,
+				896122D426A7123E00938B6E /* Albra Regular.otf */,
+				896122D026A7123E00938B6E /* Albra Semi.otf */,
+				896122D126A7123E00938B6E /* Albra Text Black.otf */,
+				896122D226A7123E00938B6E /* Albra Text Bold.otf */,
+				896122D826A7123E00938B6E /* Albra Text Light.otf */,
+				896122D326A7123E00938B6E /* Albra Text Medium.otf */,
+				896122D926A7123E00938B6E /* Albra Text Regular.otf */,
+				896122DA26A7123E00938B6E /* Albra Text Semi.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		896D7E8E26A0550C005CBCBA = {
 			isa = PBXGroup;
 			children = (
@@ -132,17 +189,9 @@
 				896D7ECE26A057D9005CBCBA /* Models */,
 				896D7ECD26A057D4005CBCBA /* Views */,
 				896D7ECF26A057EE005CBCBA /* View Models */,
-				896D7EA026A0550D005CBCBA /* Preview Content */,
+				896122CE26A7122100938B6E /* Fonts */,
 			);
 			path = paprika;
-			sourceTree = "<group>";
-		};
-		896D7EA026A0550D005CBCBA /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				896D7EA126A0550D005CBCBA /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		896D7EB026A0550D005CBCBA /* paprikaTests */ = {
@@ -166,7 +215,11 @@
 		896D7ECD26A057D4005CBCBA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				896D7E9C26A0550C005CBCBA /* ContentView.swift */,
+				899BD6C226A337B700E5119D /* HomeView.swift */,
+				03C2264326A8D4E200485B18 /* SideBarView.swift */,
+				03C2264126A8D4BD00485B18 /* RootView.swift */,
+				89D7C64426A8396F00D138E8 /* RecipeView.swift */,
+				89406A6126A1C7C2003829E4 /* RecipeStepsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,6 +229,9 @@
 			children = (
 				896D7EA326A0550D005CBCBA /* Persistence.swift */,
 				896D7EA526A0550D005CBCBA /* paprika.xcdatamodeld */,
+				896D7ED226A059FE005CBCBA /* Recipe.swift */,
+				89F6F93D26A5A5380055D4B6 /* RecipesTest.json */,
+				89C9F90F26A9A18500CA5B1D /* AppDataService.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,6 +239,7 @@
 		896D7ECF26A057EE005CBCBA /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				899BD6C426A3598D00E5119D /* RecipeStepsViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -308,7 +365,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				896D7EA226A0550D005CBCBA /* Preview Assets.xcassets in Resources */,
+				896122E326A7123E00938B6E /* Albra Light.otf in Resources */,
+				89F6F93E26A5A5380055D4B6 /* RecipesTest.json in Resources */,
+				896122E526A7123E00938B6E /* Albra Text Regular.otf in Resources */,
+				896122E626A7123E00938B6E /* Albra Text Semi.otf in Resources */,
+				896122DC26A7123E00938B6E /* Albra Semi.otf in Resources */,
+				896122DF26A7123E00938B6E /* Albra Text Medium.otf in Resources */,
+				896122DB26A7123E00938B6E /* Albra Bold.otf in Resources */,
+				896122E026A7123E00938B6E /* Albra Regular.otf in Resources */,
+				896122E426A7123E00938B6E /* Albra Text Light.otf in Resources */,
+				896122DD26A7123E00938B6E /* Albra Text Black.otf in Resources */,
+				896122E126A7123E00938B6E /* Albra Black.otf in Resources */,
+				896122DE26A7123E00938B6E /* Albra Text Bold.otf in Resources */,
+				896122E226A7123E00938B6E /* Albra Medium.otf in Resources */,
 				896D7E9F26A0550D005CBCBA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,10 +506,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C9F91026A9A18500CA5B1D /* AppDataService.swift in Sources */,
 				896D7EA726A0550D005CBCBA /* paprika.xcdatamodeld in Sources */,
+				899BD6C526A3598D00E5119D /* RecipeStepsViewModel.swift in Sources */,
 				896D7EA426A0550D005CBCBA /* Persistence.swift in Sources */,
-				896D7E9D26A0550C005CBCBA /* ContentView.swift in Sources */,
+				03C2264426A8D4E200485B18 /* SideBarView.swift in Sources */,
+				89406A6226A1C7C2003829E4 /* RecipeStepsView.swift in Sources */,
+				899BD6C326A337B700E5119D /* HomeView.swift in Sources */,
+				03C2264226A8D4BD00485B18 /* RootView.swift in Sources */,
 				896D7E9B26A0550C005CBCBA /* paprikaApp.swift in Sources */,
+				89D7C64526A8396F00D138E8 /* RecipeView.swift in Sources */,
+				896D7ED326A059FE005CBCBA /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,7 +675,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"paprika/Preview Content\"";
 				DEVELOPMENT_TEAM = D84M4LK87S;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = paprika/Info.plist;
@@ -608,7 +683,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = academyufpe.paprika;
+				PRODUCT_BUNDLE_IDENTIFIER = academyufpe.paprikaapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -622,7 +697,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"paprika/Preview Content\"";
 				DEVELOPMENT_TEAM = D84M4LK87S;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = paprika/Info.plist;
@@ -631,7 +705,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = academyufpe.paprika;
+				PRODUCT_BUNDLE_IDENTIFIER = academyufpe.paprikaapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

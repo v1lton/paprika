@@ -1,0 +1,148 @@
+{
+    "recipes": [
+      {
+        "name": "Panqueca de Aveia",
+        "id": 1,
+        "image": "https://images.unsplash.com/photo-1568240464340-261c0f65a455?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
+        "creditsURL": "",
+        "author": "",
+        "lvl": "Fácil",
+        "favorited": false,
+        "category": ["Café da manhã", "Vegetariano"],
+        "ingredients": [
+        {
+            "name": "Banana",
+            "amount": 1,
+            "measure": "unidade"
+        },
+        {
+            "name": "Ovo",
+            "amount": 1,
+            "measure": "unidade"
+        },
+        {
+            "name": "Aveia",
+            "amount": 2,
+            "measure": "colher de sopa"
+        },
+        {
+            "name": "Canela",
+            "amount": 1,
+            "measure": "pitada"
+        },
+        {
+            "name": "Óleo de coco",
+            "amount": 0.5,
+            "measure": "colher de sopa"
+        },
+        {
+            "name": "Fermento biológico",
+            "amount": 0.5,
+            "measure": "colher de chá"
+        }
+        ],
+        "portion": 1,
+        "tools": ["vasilha", "garfo", "espátula", "frigideira"],
+        "timer": [
+        {
+            "step": 4,
+            "timeInMinutes": 4
+        }
+        ],
+        "totalTime": 5,
+        "stepByStep": [
+        {
+            "title": "Passo 1",
+            "description": "Amasse a banana até virar uma pasta. Dê preferência à banana madura"
+        },
+        {
+            "title": "Passo 2",
+            "description": "Em uma vasilha, bata o ovo até ele começar a espumar."
+        },
+        {
+            "title": "Passo 3",
+            "description": "Junte ao ovo batido a banana amassada, a aveia, a canela, o óleo de coco e o fermento. Misture até forma uma massa homogênea."
+        },
+        {
+            "title": "Passo 4",
+            "description": "Esquente a frigideira. Quando ela estivar quente, espalhe um pouco de óleo de coco e, em seguida, coloque a misture. Deixe cada lado por cerca de 2 minutos."
+        }
+        ]
+      },
+      {
+      "name": "Bolo de banana",
+      "id": 2,
+      "image": "",
+      "creditsURL": "",
+      "author": "",
+      "lvl": "Fácil",
+      "favorited": false,
+      "category": ["Sobremesa", "Vegetariano"],
+      "ingredients": [
+      {
+          "name": "Ovo",
+          "amount": 4,
+          "measure": "unidade"
+      },
+      {
+          "name": "Óleo de coco",
+          "amount": 0.5,
+          "measure": "xícara"
+      },
+      {
+          "name": "Açucar mascavo",
+          "amount": 0.25,
+          "measure": "xícara"
+      },
+      {
+          "name": "Banana",
+          "amount": 4,
+          "measure": "unidade"
+      },
+      {
+          "name": "Canela em pó",
+          "amount": 1,
+          "measure": "colher de chá"
+      },
+      {
+          "name": "Farinha de aveia",
+          "amount": 2,
+          "measure": "xícar"
+      },
+      {
+          "name": "Fermento",
+          "amount": 1,
+          "measure": "colher de sopa"
+      }
+      ],
+      "portion": 1,
+      "tools": ["vasilha", "espátula", "frigideira", "forno"],
+      "timer": [
+      {
+          "step": 4,
+          "timeInMinutes": 35
+      }
+      ],
+      "totalTime": 45,
+      "stepByStep":
+      [
+      {
+          "title": "Passo 1",
+          "description": "Primeiramente, preaqueça o forno a 200°C (temperatura média). Em uma vasilha, bata os ovos na mão até criar espuma. Em seguida, adicione o açucar, o óleo de coco e a canela. Misture os ingredientes."
+      },
+      {
+          "title": "Passo 2",
+          "description": "Amasse as bananas. Com elas amassadas, adicione aos ovos e misture bem"
+      },
+      {
+          "title": "Passo 3",
+          "description": "Na vasilha com a massa, adicione a aveia e o fermento. Misture até ficar uma massa homogênea. Nesse ponto, não precisa misturar mais."
+      },
+      {
+          "title": "Passo 4",
+          "description": "Coloque a mistura em uma forma de bolo que vá ao forno. Leve ao forno já aquecido e deixe por cerca de 35 minutos em 200°C (temperatura média)."
+      }
+      ]
+      }
+    ]
+}
