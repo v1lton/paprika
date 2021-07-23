@@ -8,6 +8,32 @@
 import SwiftUI
 import StepperView
 
+struct FinalStepView: View {
+    var body: some View {
+        
+        GeometryReader { geometry in
+            HStack {
+                
+                VStack {
+                    Image("placeholder")
+                        .resizable()
+                        .frame(width: geometry.size.width * 0.45, height: geometry.size.height * 0.45)
+                }.frame(width: geometry.size.width * 0.45, height: geometry.size.height, alignment: .topLeading)
+                
+                VStack {
+                    Text("Title")
+                        .font(.custom("Albra Semi", size: 56))
+                        .foregroundColor(Color("BrandSecondary400"))
+                    
+                    Text("Lembrou de alguém que também iria gostar dessa receita? Compartilhe! \nVocê também pode salvá-la nos seus Favoritos para ver sempre que quiser.")
+                }.frame(width: geometry.size.width * 0.50, height: geometry.size.height, alignment: .topTrailing)
+                
+            }
+            
+        }
+    }
+}
+
 struct RecipeStepsView: View {
     
     @StateObject var viewModel: ViewModel
@@ -47,12 +73,22 @@ struct RecipeStepsView: View {
                     
                 }
                 
-                Text("Final")
+                FinalStepView()
                 
             }.tabViewStyle(PageTabViewStyle())
             .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
             
         }.background(Color("Primitive50")).edgesIgnoringSafeArea(.all)
+    }
+}
+
+struct FinalStepView_Previes: PreviewProvider {
+    static var previews: some View {
+        Group {
+            FinalStepView()
+            FinalStepView()
+                .previewDevice("iPad Pro (12.9-inch) (5th generation)")
+        }
     }
 }
 
