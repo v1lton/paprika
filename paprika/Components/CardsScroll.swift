@@ -11,9 +11,9 @@ struct CardsScroll: View {
     var body: some View {
         ScrollView(.horizontal) {
             HStack {
-                Card()
+               // Card()
                 Spacer(minLength: 16)
-                Card()
+                //Card()
             }
         }
     }

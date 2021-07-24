@@ -8,30 +8,41 @@
 import SwiftUI
 
 struct Card: View {
-
+    
+    @Binding var photo: String
+    @Binding var title: String
+    @Binding var tag: String
+    @Binding var favorited: Bool
+    
     var body: some View {
         ZStack{
-            Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+            Color.primitiveWhite
+            
             VStack{
                 //TODO: pegar a imagem da api
                 Image("placeholder")
                 
                 VStack{
                     HStack{
-                        //TODO: pegar o titulo da api
-                        Text("Título da Receita")
+                        Text(title)
                             .font(.custom("SF Pro Display Bold", size: 24))
                             .lineLimit(2)
+                            .foregroundColor(.primitiveBlack)
                         Spacer()
                     }
                     Spacer(minLength: 12)
                     HStack{
-                        Tag()
+                        Text((tag == "Fácil") ? "Iniciante" : tag)
+                            .font(Font.system(size: 16))
+                            .foregroundColor((tag == "Fácil") ? .positiveFeedback800 : (tag == "Intermediário") ? .alertFeedback700 : .brandPrimary600)
+                            .padding(.horizontal, 4)
+                            .padding(.vertical, 6)
+                            .background((tag == "Fácil") ? Color.positiveFeedback50 : (tag == "Intermediário") ? Color.alertFeedback50 : Color.alertFeedback50)
+                            .cornerRadius(8)
                         Spacer()
-                        //TODO: if favoritado preencher o coração
-                        Image(systemName: "heart")
+                        Image(systemName: favorited ? "heart.fill" : "heart")
                             .font(Font.system(size: 20, weight: .semibold))
-                            .foregroundColor(Color("favoritedButton"))
+                            .foregroundColor(Color.brandPrimary400)
                     }
                 }.padding(24)
                 
@@ -42,26 +53,13 @@ struct Card: View {
     }
 }
 
-struct Tag: View {
-    var body: some View{
-        //TODO: iniciante, intermediário e dificil
-        Text("Iniciante")
-            .font(Font.system(size: 16))
-            .foregroundColor(Color("inicianteFG"))
-            .padding(.horizontal, 4)
-            .padding(.vertical, 6)
-            .background(Color("inicianteBG"))
-            .cornerRadius(8)
-    }
-}
-
 struct card_Previews: PreviewProvider {
     static var previews: some View {
-        Card()
+        Card(photo: Binding.constant("placeholder"), title: Binding.constant("Omelete"), tag: Binding.constant("Intermediário"), favorited: Binding.constant(true))
             .previewLayout(.sizeThatFits)
             .previewDisplayName("Card")
             .padding()
             .background(Color(.white))
-        
+
     }
 }
