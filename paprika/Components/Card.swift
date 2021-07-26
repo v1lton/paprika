@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct Card: View {
     
@@ -20,7 +21,12 @@ struct Card: View {
             
             VStack{
                 //TODO: pegar a imagem da api
-                Image("placeholder")
+                WebImage(url: URL(string: photo))
+                    .resizable()
+                    .placeholder(Image("placeholder"))
+                    .frame(width: 312, height: 312, alignment: .center)
+                    .scaledToFill()
+                    
                 
                 VStack{
                     HStack{
