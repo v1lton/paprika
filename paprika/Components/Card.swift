@@ -51,11 +51,10 @@ struct Card: View {
                             .foregroundColor(Color.brandPrimary400)
                     }
                 }.padding(24)
-                
             }
         }.frame(width: 312, height: 472)
         .cornerRadius(8)
-        .shadow(color: Color(#colorLiteral(red: 0.07843137255, green: 0.0862745098, blue: 0.1215686275, alpha: 0.102093425)), radius: 40, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
+        .shadow(color: Color(#colorLiteral(red: 0.07843137255, green: 0.0862745098, blue: 0.1215686275, alpha: 0.102093425)), radius: 10, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
     }
 }
 
@@ -64,8 +63,6 @@ struct card_Previews: PreviewProvider {
         Card(photo: Binding.constant("placeholder"), title: Binding.constant("Omelete"), tag: Binding.constant("Intermediário"), favorited: Binding.constant(true))
             .previewLayout(.sizeThatFits)
             .previewDisplayName("Card")
-            .padding()
             .background(Color(.white))
-
     }
 }
