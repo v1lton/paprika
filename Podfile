@@ -7,6 +7,8 @@ target 'paprika' do
 
   # Pods for paprika
 	pod 'StepperView','~> 1.6.6'
+	pod 'SDWebImageSwiftUI'
+
 
 
   target 'paprikaTests' do

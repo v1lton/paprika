@@ -1,16 +1,26 @@
 PODS:
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
+  - SDWebImageSwiftUI (2.0.2):
+    - SDWebImage (~> 5.10)
   - StepperView (1.6.6)
 
 DEPENDENCIES:
+  - SDWebImageSwiftUI
   - StepperView (~> 1.6.6)
 
 SPEC REPOS:
   trunk:
+    - SDWebImage
+    - SDWebImageSwiftUI
     - StepperView
 
 SPEC CHECKSUMS:
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  SDWebImageSwiftUI: 8a3923c95108312b03a599ec1498754af55a6819
   StepperView: a8b9fc8c18d9050090c900e9fe13c73ab8fe97b3
 
-PODFILE CHECKSUM: af15b87ce994fce608a2303e0511f298d022fcab
+PODFILE CHECKSUM: 8b3568742cd129b1f3c524760eb7cdf20922e127
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1
