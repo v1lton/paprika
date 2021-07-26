@@ -24,9 +24,9 @@ struct Card: View {
                 WebImage(url: URL(string: photo))
                     .resizable()
                     .placeholder(Image("placeholder"))
+                    .transition(.fade(duration: 0.5))
                     .frame(width: 312, height: 312, alignment: .center)
                     .scaledToFill()
-                    
                 
                 VStack{
                     HStack{
