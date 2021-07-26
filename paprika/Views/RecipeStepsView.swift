@@ -7,23 +7,30 @@
 
 import SwiftUI
 import StepperView
+import SDWebImageSwiftUI
 
 struct FinalStepView: View {
+    var recipeImage: String
+    
     var body: some View {
         
         GeometryReader { geometry in
             HStack {
                 
                 VStack {
-                    Image("placeholder")
+                    WebImage(url: URL(string: recipeImage))
                         .resizable()
+                        .placeholder(Image("placeholder"))
+                        .transition(.fade(duration: 0.5))
                         .frame(width: geometry.size.width * 0.45, height: geometry.size.height * 0.45)
+                        .scaledToFit()
+                        
                 }.frame(width: geometry.size.width * 0.45, height: geometry.size.height, alignment: .topLeading)
                 
                 VStack {
                     Text("Bom apetite!")
                         .font(.custom("Albra Semi", size: 56))
-                        .foregroundColor(Color("BrandSecondary400"))
+                        .foregroundColor(Color.brandSecondary400)
                         .frame(width: geometry.size.width * 0.50, alignment: .leading)
                     
                     Text("Lembrou de alguém que também iria gostar dessa receita? Compartilhe! \nVocê também pode salvá-la nos seus Favoritos para ver sempre que quiser.")
@@ -33,20 +40,20 @@ struct FinalStepView: View {
                     
                     Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                         Text("Compartilhar essa receita")
-                            .foregroundColor(Color("BrandPrimary400"))
+                            .foregroundColor(Color.brandPrimary400)
                             .font(.custom("SF-Pro-Display-Bold", size: 24))
                                                         
                     })
                     .frame(width: geometry.size.width * 0.50, height: 56, alignment: .center)
-                    .foregroundColor(Color("PrimitiveWhite"))
+                    .foregroundColor(Color.primitiveWhite)
                     
                     Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                         Text("Salvar nos favoritos")
-                            .foregroundColor(Color("BrandPrimary400"))
+                            .foregroundColor(Color.brandPrimary400)
                             .font(.custom("SF-Pro-Display-Bold", size: 24))
                     })
                     .frame(width: geometry.size.width * 0.50, height: 56, alignment: .center)
-                    .foregroundColor(Color("PrimitiveWhite"))
+                    .foregroundColor(Color.primitiveWhite)
                     
                 }.frame(width: geometry.size.width * 0.50, height: geometry.size.height, alignment: .topTrailing)
                 
@@ -60,10 +67,12 @@ struct RecipeStepsView: View {
     
     @StateObject var viewModel: ViewModel
     var recipeSteps: [StepByStep]
+    var recipeImage: String
     
-    init(viewModel: ViewModel, recipeSteps steps: [StepByStep]) {
+    init(viewModel: ViewModel, recipeSteps steps: [StepByStep], recipeImage image: String) {
         _viewModel = StateObject(wrappedValue: viewModel)
         recipeSteps = steps
+        recipeImage = image
     }
     
     var body: some View {
@@ -78,7 +87,7 @@ struct RecipeStepsView: View {
                         VStack {
                             Text(step.title)
                                 .font(.custom("Albra Semi", size: 56))
-                                .foregroundColor(Color("BrandSecondary400"))
+                                .foregroundColor(Color.brandSecondary400)
                         }.frame(width: geometry.size.width * 0.3, height: geometry.size.height, alignment: .topLeading)
                         
                         Spacer()
@@ -94,20 +103,20 @@ struct RecipeStepsView: View {
                     
                 }
                 
-                FinalStepView()
+                FinalStepView(recipeImage: self.recipeImage)
                 
             }.tabViewStyle(PageTabViewStyle())
             .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
             
-        }.background(Color("Primitive50")).edgesIgnoringSafeArea(.all)
+        }.background(Color.primitive50).edgesIgnoringSafeArea(.all)
     }
 }
 
 struct FinalStepView_Previes: PreviewProvider {
     static var previews: some View {
         Group {
-            FinalStepView()
-            FinalStepView()
+            FinalStepView(recipeImage: "")
+            FinalStepView(recipeImage: "")
                 .previewDevice("iPad Pro (12.9-inch) (5th generation)")
         }
     }
