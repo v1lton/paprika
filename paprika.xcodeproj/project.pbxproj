@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		036889F126ACAF3C002B7052 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036889F026ACAF3C002B7052 /* Colors.swift */; };
 		03998ECE26A99A83000E4AD5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03998ECD26A99A83000E4AD5 /* Card.swift */; };
 		03998EE726A9BC4F000E4AD5 /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03998ED526A9BC4D000E4AD5 /* SF-Pro-Display-Light.otf */; };
 		03998EE826A9BC4F000E4AD5 /* SF-Pro-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03998ED626A9BC4D000E4AD5 /* SF-Pro-Display-Black.otf */; };
@@ -77,6 +78,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		036889F026ACAF3C002B7052 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		03998ECD26A99A83000E4AD5 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		03998ED526A9BC4D000E4AD5 /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
 		03998ED626A9BC4D000E4AD5 /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 				896D7E9A26A0550C005CBCBA /* paprikaApp.swift */,
 				896D7ECE26A057D9005CBCBA /* Models */,
 				896D7ECD26A057D4005CBCBA /* Views */,
+				036889F026ACAF3C002B7052 /* Colors.swift */,
 				03998ED026A9AF68000E4AD5 /* Components */,
 				896D7ECF26A057EE005CBCBA /* View Models */,
 				896122CE26A7122100938B6E /* Fonts */,
@@ -611,6 +614,7 @@
 				89C9F91026A9A18500CA5B1D /* AppDataService.swift in Sources */,
 				896D7EA726A0550D005CBCBA /* paprika.xcdatamodeld in Sources */,
 				899BD6C526A3598D00E5119D /* RecipeStepsViewModel.swift in Sources */,
+				036889F126ACAF3C002B7052 /* Colors.swift in Sources */,
 				896D7EA426A0550D005CBCBA /* Persistence.swift in Sources */,
 				03C2264426A8D4E200485B18 /* SideBarView.swift in Sources */,
 				03DF81F426A9F995005BB501 /* CardsScroll.swift in Sources */,
