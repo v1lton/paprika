@@ -22,7 +22,7 @@ struct RootView: View {
                         Card(photo: Binding.constant(recipe.image),
                              title: Binding.constant(recipe.name),
                              tag: Binding.constant(recipe.lvl),
-                             favorited: Binding.constant(recipe.favorited))
+                             favorited: Binding.constant(false))
                     }).navigationTitle("Início")
             }
     

@@ -13,7 +13,7 @@ struct RecipeView: View {
     var body: some View {
         Text(recipe.name)
         NavigationLink(
-            destination: RecipeStepsView(viewModel: RecipeStepsView.ViewModel(), recipeSteps: recipe.stepByStep, recipeImage: recipe.image),
+            destination: RecipeStepsView(viewModel: RecipeStepsView.ViewModel(), recipeSteps: recipe.stepByStep, recipeImage: recipe.image ),
             label: {
                 Text("Iniciar o passo a passo")
             }).navigationTitle("Receita")
