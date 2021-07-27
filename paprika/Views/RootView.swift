@@ -1,14 +1,18 @@
 //
-//  RootView.swift
+//  HomeView.swift
 //  paprika
 //
-//  Created by iris on 21/07/21.
+//  Created by Wilton Ramos on 17/07/21.
 //
 
 import SwiftUI
+
 struct RootView: View {
     var body: some View {
-        CardsScroll()
+        NavigationView {
+            SideBarView()
+            HomeView()
+        }
     }
 }
 

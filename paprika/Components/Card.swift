@@ -20,7 +20,6 @@ struct Card: View {
             Color.primitiveWhite
             
             VStack{
-                //TODO: pegar a imagem da api
                 WebImage(url: URL(string: photo))
                     .resizable()
                     .placeholder(Image("placeholder"))

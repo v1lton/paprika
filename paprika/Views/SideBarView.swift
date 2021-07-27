@@ -11,7 +11,7 @@ struct SideBarView: View {
     var body: some View {
         List {
             NavigationLink(
-                destination: RootView(),
+                destination: HomeView(),
                 label: {
                     Label("Página Inicial", systemImage: "house")
                 })
