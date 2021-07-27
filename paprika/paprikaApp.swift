@@ -13,12 +13,7 @@ struct paprikaApp: App {
 
     var body: some Scene {
         WindowGroup {
-           // ContentView()
-             //   .environment(\.managedObjectContext, persistenceController.container.viewContext)
-            //RecipeStepsView()
-            HomeView()
+          RootView()
         }
     }
 }
-
-//TODO: [] Carregar aqui?
