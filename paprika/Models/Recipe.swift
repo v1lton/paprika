@@ -16,12 +16,10 @@ struct RecipeElement: Codable, Identifiable {
     let id: Int
     let image: String
     let creditsURL, author, lvl:  String
-    let favorited: Bool
     let category: [CategoryEnum]
     let ingredients: [Ingredient]
     let portion: Int
     let tools: [String]
-    let timer: [Timer]
     let totalTime: Int
     let stepByStep: [StepByStep]
 }
@@ -36,16 +34,13 @@ struct Ingredient: Codable {
 // MARK: - StepByStep
 struct StepByStep: Codable, Hashable {
     let title, stepByStepDescription: String
+    let timeInMinutes: Int?
 
     enum CodingKeys: String, CodingKey {
         case title
         case stepByStepDescription = "description"
+        case timeInMinutes
     }
-}
-
-// MARK: - Timer
-struct Timer: Codable {
-    let step, timeInMinutes: Int
 }
 
 // MARK: - LvlEnum
