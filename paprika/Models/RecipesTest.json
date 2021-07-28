@@ -7,7 +7,6 @@
         "creditsURL": "",
         "author": "",
         "lvl": "Fácil",
-        "favorited": false,
         "category": ["Café da manhã", "Vegetariano"],
         "ingredients": [
         {
@@ -43,29 +42,27 @@
         ],
         "portion": 1,
         "tools": ["vasilha", "garfo", "espátula", "frigideira"],
-        "timer": [
-        {
-            "step": 4,
-            "timeInMinutes": 4
-        }
-        ],
         "totalTime": 5,
         "stepByStep": [
         {
             "title": "Passo 1",
-            "description": "Amasse a banana até virar uma pasta. Dê preferência à banana madura"
+            "description": "Amasse a banana até virar uma pasta. Dê preferência à banana madura",
+            "timeInMinutes": null
         },
         {
             "title": "Passo 2",
-            "description": "Em uma vasilha, bata o ovo até ele começar a espumar."
+            "description": "Em uma vasilha, bata o ovo até ele começar a espumar.",
+            "timeInMinutes": null
         },
         {
             "title": "Passo 3",
-            "description": "Junte ao ovo batido a banana amassada, a aveia, a canela, o óleo de coco e o fermento. Misture até forma uma massa homogênea."
+            "description": "Junte ao ovo batido a banana amassada, a aveia, a canela, o óleo de coco e o fermento. Misture até forma uma massa homogênea.",
+            "timeInMinutes": null
         },
         {
             "title": "Passo 4",
-            "description": "Esquente a frigideira. Quando ela estivar quente, espalhe um pouco de óleo de coco e, em seguida, coloque a misture. Deixe cada lado por cerca de 2 minutos."
+            "description": "Esquente a frigideira. Quando ela estivar quente, espalhe um pouco de óleo de coco e, em seguida, coloque a misture. Deixe cada lado por cerca de 2 minutos.",
+            "timeInMinutes": 4
         }
         ]
       },
@@ -76,7 +73,6 @@
       "creditsURL": "",
       "author": "",
       "lvl": "Fácil",
-      "favorited": false,
       "category": ["Sobremesa", "Vegetariano"],
       "ingredients": [
       {
@@ -117,30 +113,28 @@
       ],
       "portion": 1,
       "tools": ["vasilha", "espátula", "frigideira", "forno"],
-      "timer": [
-      {
-          "step": 4,
-          "timeInMinutes": 35
-      }
-      ],
       "totalTime": 45,
       "stepByStep":
       [
       {
           "title": "Passo 1",
-          "description": "Primeiramente, preaqueça o forno a 200°C (temperatura média). Em uma vasilha, bata os ovos na mão até criar espuma. Em seguida, adicione o açucar, o óleo de coco e a canela. Misture os ingredientes."
+          "description": "Primeiramente, preaqueça o forno a 200°C (temperatura média). Em uma vasilha, bata os ovos na mão até criar espuma. Em seguida, adicione o açucar, o óleo de coco e a canela. Misture os ingredientes.",
+          "timeInMinutes": null
       },
       {
           "title": "Passo 2",
-          "description": "Amasse as bananas. Com elas amassadas, adicione aos ovos e misture bem"
+          "description": "Amasse as bananas. Com elas amassadas, adicione aos ovos e misture bem",
+          "timeInMinutes": null
       },
       {
           "title": "Passo 3",
-          "description": "Na vasilha com a massa, adicione a aveia e o fermento. Misture até ficar uma massa homogênea. Nesse ponto, não precisa misturar mais."
+          "description": "Na vasilha com a massa, adicione a aveia e o fermento. Misture até ficar uma massa homogênea. Nesse ponto, não precisa misturar mais.",
+          "timeInMinutes": null
       },
       {
           "title": "Passo 4",
-          "description": "Coloque a mistura em uma forma de bolo que vá ao forno. Leve ao forno já aquecido e deixe por cerca de 35 minutos em 200°C (temperatura média)."
+          "description": "Coloque a mistura em uma forma de bolo que vá ao forno. Leve ao forno já aquecido e deixe por cerca de 35 minutos em 200°C (temperatura média).",
+          "timeInMinutes": 35
       }
       ]
       }
