@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct SideBarView: View {
     
@@ -59,6 +60,16 @@ struct SideBarView: View {
                 })
         }.navigationTitle("Paprika")
         .listStyle(SidebarListStyle())
+        .onAppear {
+            let rootViewController = UIApplication.shared.windows.first { $0.isKeyWindow }!.rootViewController
+            guard
+                let splitViewController = rootViewController?.children.first as? UISplitViewController,
+                let sidebarViewController = splitViewController.viewController(for: .primary) else {
+                return
+            }
+            let tableView = UITableView.appearance(whenContainedInInstancesOf: [type(of: sidebarViewController)])
+            tableView.backgroundColor = UIColor(Color.primitiveWhite)
+        }
     }
 }
 
