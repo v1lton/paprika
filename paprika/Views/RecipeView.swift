@@ -55,6 +55,7 @@ struct LeftView: View {
                         Text(recipe.name)
                             .font(.custom("Albra Semi", size: 44))
                             .foregroundColor(Color.primitiveBlack)
+                            .lineLimit(2)
                             .minimumScaleFactor(0.5)
                         
                         Spacer()
@@ -108,6 +109,8 @@ struct LeftView: View {
                             Text("Nível de dificuldade:")
                                 .font(.custom("SF Pro Display Semibold", size: 20))
                                 .foregroundColor(Color.brandSecondary400)
+                                .lineLimit(1)
+                                .minimumScaleFactor(0.5)
                             
                             Text((recipe.lvl == "Fácil") ? "Iniciante" : recipe.lvl)
                                 .font(Font.system(size: 16))
@@ -129,10 +132,14 @@ struct LeftView: View {
                             Text("Tempo de Preparo:")
                                 .font(.custom("SF Pro Display Semibold", size: 20))
                                 .foregroundColor(Color.brandSecondary400)
+                                .lineLimit(1)
+                                .minimumScaleFactor(0.5)
                             
                             Text((recipe.totalTime) >= 60 ? "~\(recipe.totalTime/60)h" : "~\(recipe.totalTime)min")
                                 .font(.custom("SF Pro Display Semibold", size: 20))
                                 .foregroundColor(Color.primitive700)
+                                .lineLimit(1)
+                                .minimumScaleFactor(0.5)
                         }
                         Spacer()
                     }
@@ -157,14 +164,18 @@ struct LeftView: View {
                             HStack{
                                 Text("Começar o passo a passo")
                                     .font(.custom("SF Pro Display Semibold", size: 20))
+                                    .lineLimit(1)
                                     .minimumScaleFactor(0.3)
-                                
                                 Image(systemName: "play.fill")
                                     .font(.system(size: 20, weight: .semibold))
+                                    .minimumScaleFactor(0.3)
+                                    .lineLimit(1)
                             }
                         }
                     )
-                    .frame(minWidth: 248, maxWidth: 278, minHeight: 40, idealHeight: 48, maxHeight: 48)
+                    .padding(.all, 12)
+                    .minimumScaleFactor(0.5)
+                    //.frame(width: 278, height: 48, alignment: .center)
                     .background(Color.brandPrimary400)
                     .foregroundColor(Color.primitiveWhite)
                     .cornerRadius(8)
@@ -175,12 +186,16 @@ struct LeftView: View {
                         Image(systemName: "square.and.arrow.up")
                             .font(.system(size: 32, weight: .medium))
                             .foregroundColor(Color.brandPrimary400)
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.8)
                     })
                     
                     Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                         Image(systemName: "heart")
                             .font(.system(size: 32, weight: .medium))
                             .foregroundColor(Color.brandPrimary400)
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.8)
                     })
                 }.frame(maxWidth: geometry.size.width)
             }
@@ -222,6 +237,7 @@ struct RightView: View {
                         Text("Ingredientes")
                             .font(.custom("Albra Semi", size: 32))
                             .foregroundColor(Color.primitiveBlack)
+                            .lineLimit(1)
                             .minimumScaleFactor(0.5)
                         
                         
@@ -255,19 +271,40 @@ struct RightView: View {
                 Spacer()
                 
                 //MARK: - Steps
+                //MARK: - Steps Header
                 VStack{
                     HStack {
                         Text("Passo-a-Passo")
                             .font(.custom("Albra Semi", size: 32))
                             .foregroundColor(Color.primitiveBlack)
+                            .lineLimit(1)
                             .minimumScaleFactor(0.5)
-                        
                         Spacer()
                         
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                            Text("Começar agora")
-                            
-                        })
+                        NavigationLink(
+                            destination: RecipeStepsView(viewModel: RecipeStepsView.ViewModel(), recipeSteps: recipe.stepByStep, recipeImage: recipe.image),
+                            label: {
+                                HStack{
+                                    Text("Começar agora")
+                                        .font(.custom("SF Pro Display Semibold", size: 20))
+                                        .lineLimit(1)
+                                        .minimumScaleFactor(0.5)
+                                    
+                                    Image(systemName: "play.fill")
+                                        .font(.system(size: 20, weight: .semibold))
+                                        .lineLimit(1)
+                                        .minimumScaleFactor(0.5)
+                                }
+                            }
+                        )
+                        .padding(.all, 12)
+                        .background(Color.primitiveWhite)
+                        .foregroundColor(Color.brandPrimary400)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 8)
+                                .stroke(Color.primitive200, lineWidth: 1)
+                        )
+
                     }
                     
                     ForEach(recipe.stepByStep, id: \.id) { step in
