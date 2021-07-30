@@ -157,13 +157,14 @@ struct LeftView: View {
                             HStack{
                                 Text("Começar o passo a passo")
                                     .font(.custom("SF Pro Display Semibold", size: 20))
+                                    .minimumScaleFactor(0.3)
                                 
                                 Image(systemName: "play.fill")
                                     .font(.system(size: 20, weight: .semibold))
                             }
                         }
                     )
-                    .frame(width: 278, height: 48, alignment: .center)
+                    .frame(minWidth: 248, maxWidth: 278, minHeight: 40, idealHeight: 48, maxHeight: 48)
                     .background(Color.brandPrimary400)
                     .foregroundColor(Color.primitiveWhite)
                     .cornerRadius(8)
