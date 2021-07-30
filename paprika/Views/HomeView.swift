@@ -19,7 +19,7 @@ struct HomeView: View {
                 //LazyVGrid(columns: columns, spacing:20){
                     HStack(spacing: 16){
                         ForEach(recipes) { recipe in
-                            if recipe.name == text{
+                            if recipe.name.contains(text) && (text.count > 3){
                                 Card(photo: Binding.constant(recipe.image),
                                      title: Binding.constant(recipe.name),
                                      tag: Binding.constant(recipe.lvl),
