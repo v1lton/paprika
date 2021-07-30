@@ -10,31 +10,37 @@
         "category": ["Café da manhã", "Vegetariano"],
         "ingredients": [
         {
+            "id": 1,
             "name": "Banana",
             "amount": 1,
             "measure": "unidade"
         },
         {
+            "id": 2,
             "name": "Ovo",
             "amount": 1,
             "measure": "unidade"
         },
         {
+            "id": 3,
             "name": "Aveia",
             "amount": 2,
             "measure": "colher de sopa"
         },
         {
+            "id": 4,
             "name": "Canela",
             "amount": 1,
             "measure": "pitada"
         },
         {
+            "id": 5,
             "name": "Óleo de coco",
             "amount": 0.5,
             "measure": "colher de sopa"
         },
         {
+            "id": 6,
             "name": "Fermento biológico",
             "amount": 0.5,
             "measure": "colher de chá"
@@ -45,21 +51,25 @@
         "totalTime": 5,
         "stepByStep": [
         {
+            "id": 1,
             "title": "Passo 1",
             "description": "Amasse a banana até virar uma pasta. Dê preferência à banana madura",
             "timeInMinutes": null
         },
         {
+            "id": 2,
             "title": "Passo 2",
             "description": "Em uma vasilha, bata o ovo até ele começar a espumar.",
             "timeInMinutes": null
         },
         {
+            "id": 3,
             "title": "Passo 3",
             "description": "Junte ao ovo batido a banana amassada, a aveia, a canela, o óleo de coco e o fermento. Misture até forma uma massa homogênea.",
             "timeInMinutes": null
         },
         {
+            "id": 4,
             "title": "Passo 4",
             "description": "Esquente a frigideira. Quando ela estivar quente, espalhe um pouco de óleo de coco e, em seguida, coloque a misture. Deixe cada lado por cerca de 2 minutos.",
             "timeInMinutes": 4
@@ -76,36 +86,43 @@
       "category": ["Sobremesa", "Vegetariano"],
       "ingredients": [
       {
+          "id": 1,
           "name": "Ovo",
           "amount": 4,
           "measure": "unidade"
       },
       {
+          "id": 2,
           "name": "Óleo de coco",
           "amount": 0.5,
           "measure": "xícara"
       },
       {
+          "id": 3,
           "name": "Açucar mascavo",
           "amount": 0.25,
           "measure": "xícara"
       },
       {
+          "id": 4,
           "name": "Banana",
           "amount": 4,
           "measure": "unidade"
       },
       {
+          "id": 5,
           "name": "Canela em pó",
           "amount": 1,
           "measure": "colher de chá"
       },
       {
+          "id": 6,
           "name": "Farinha de aveia",
           "amount": 2,
           "measure": "xícar"
       },
       {
+          "id": 6,
           "name": "Fermento",
           "amount": 1,
           "measure": "colher de sopa"
@@ -117,21 +134,25 @@
       "stepByStep":
       [
       {
+          "id": 1,
           "title": "Passo 1",
           "description": "Primeiramente, preaqueça o forno a 200°C (temperatura média). Em uma vasilha, bata os ovos na mão até criar espuma. Em seguida, adicione o açucar, o óleo de coco e a canela. Misture os ingredientes.",
           "timeInMinutes": null
       },
       {
+          "id": 2,
           "title": "Passo 2",
           "description": "Amasse as bananas. Com elas amassadas, adicione aos ovos e misture bem",
           "timeInMinutes": null
       },
       {
+          "id": 3,
           "title": "Passo 3",
           "description": "Na vasilha com a massa, adicione a aveia e o fermento. Misture até ficar uma massa homogênea. Nesse ponto, não precisa misturar mais.",
           "timeInMinutes": null
       },
       {
+          "id": 4,
           "title": "Passo 4",
           "description": "Coloque a mistura em uma forma de bolo que vá ao forno. Leve ao forno já aquecido e deixe por cerca de 35 minutos em 200°C (temperatura média).",
           "timeInMinutes": 35

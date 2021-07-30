@@ -25,18 +25,21 @@ struct RecipeElement: Codable, Identifiable {
 }
 
 // MARK: - Ingredient
-struct Ingredient: Codable {
+struct Ingredient: Codable, Hashable, Identifiable {
+    let id: Int
     let name: String
     let amount: Double
     let measure: String
 }
 
 // MARK: - StepByStep
-struct StepByStep: Codable, Hashable {
+struct StepByStep: Codable, Hashable, Identifiable {
+    let id: Int
     let title, stepByStepDescription: String
     let timeInMinutes: Int?
 
     enum CodingKeys: String, CodingKey {
+        case id
         case title
         case stepByStepDescription = "description"
         case timeInMinutes
