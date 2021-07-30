@@ -136,7 +136,7 @@ struct LeftView: View {
                         }
                         Spacer()
                     }
-                    .frame(width: geometry.size.width * 0.9, height: 100, alignment: .leading)
+                    .frame(maxWidth: geometry.size.width * 0.9, idealHeight: 100, maxHeight: 100, alignment: .leading)
                     .background(Color.primitiveWhite)
                     .overlay(
                         RoundedRectangle(cornerRadius: 8)
