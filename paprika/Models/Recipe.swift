@@ -61,4 +61,9 @@ enum CategoryEnum: String, Codable {
     case janta = "Janta"
     case vegano = "Vegano"
     case vegetariano = "Vegetariano"
+    case acompanhamento = "Acompanhamento"
+    case saladas = "Salada"
+    case carne = "Carne"
+    case bolo = "Bolo"
+    case sopa = "Sopa"
 }
