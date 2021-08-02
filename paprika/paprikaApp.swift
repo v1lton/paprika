@@ -14,7 +14,7 @@ struct paprikaApp: App {
 
     var body: some Scene {
         WindowGroup {
-            RootView()
+            RootView().accentColor(.brandPrimary400)
         }
     }
 }

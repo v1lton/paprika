@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct SideBarView: View {
     
@@ -17,12 +18,58 @@ struct SideBarView: View {
                     Label("Página Inicial", systemImage: "house")
                 })
             NavigationLink(
-                destination: RecipeStepsView(viewModel: RecipeStepsView.ViewModel(), recipeSteps: [StepByStep]()),
+                destination: RecipeStepsView(viewModel: RecipeStepsView.ViewModel(), recipeSteps: [StepByStep](), recipeImage: ""),
                 label: {
                     Label("Favoritos", systemImage: "heart")
                 })
-        }.navigationTitle("Descobrir")
+            Text("Momento")
+                .font(.custom("SF Pro Display Semibold", size: 20))
+                .padding(.top, 16.0)
+            NavigationLink(
+                destination: HomeView(),
+                label: {
+                    Text("Café-da-Manhã")
+                })
+            NavigationLink(
+                destination: HomeView(),
+                label: {
+                    Text("Almoço")
+                })
+            NavigationLink(
+                destination: HomeView(),
+                label: {
+                    Text("Jantar")
+                })
+            Text("Dificuldade")
+                .font(.custom("SF Pro Display Semibold", size: 20))
+                .padding(.top, 16.0)
+            NavigationLink(
+                destination: HomeView(),
+                label: {
+                    Text("Iniciante")
+                })
+            NavigationLink(
+                destination: HomeView(),
+                label: {
+                    Text("Intermediário")
+                })
+            NavigationLink(
+                destination: HomeView(),
+                label: {
+                    Text("Avançado")
+                })
+        }.navigationTitle("Paprika")
         .listStyle(SidebarListStyle())
+        .onAppear {
+            let rootViewController = UIApplication.shared.windows.first { $0.isKeyWindow }!.rootViewController
+            guard
+                let splitViewController = rootViewController?.children.first as? UISplitViewController,
+                let sidebarViewController = splitViewController.viewController(for: .primary) else {
+                return
+            }
+            let tableView = UITableView.appearance(whenContainedInInstancesOf: [type(of: sidebarViewController)])
+            tableView.backgroundColor = UIColor(Color.primitiveWhite)
+        }
     }
 }
 

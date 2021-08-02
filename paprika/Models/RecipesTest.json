@@ -1,286 +1,1667 @@
 {
     "recipes": [
-      {
-        "name": "Panqueca de Aveia",
-        "id": 1,
-        "image": "https://images.unsplash.com/photo-1568240464340-261c0f65a455?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
-        "creditsURL": "",
-        "author": "",
-        "lvl": "Fácil",
-        "favorited": false,
-        "category": ["Café da manhã", "Vegetariano"],
-        "ingredients": [
         {
-            "name": "Banana",
-            "amount": 1,
-            "measure": "unidade"
+            "name": "Panqueca de Aveia",
+            "id": 1,
+            "image": "https://images.unsplash.com/photo-1568240464340-261c0f65a455?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
+            "creditsURL": "",
+            "author": "",
+            "lvl": "Fácil",
+            "category": ["Café da manhã", "Vegetariano"],
+            "ingredients": [
+                {
+                    "id": 1,
+                    "name": "Banana",
+                    "amount": 1,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 2,
+                    "name": "Ovo",
+                    "amount": 1,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 3,
+                    "name": "Aveia",
+                    "amount": 2,
+                    "measure": "colher de sopa"
+                },
+                {
+                    "id": 4,
+                    "name": "Canela",
+                    "amount": 1,
+                    "measure": "pitada"
+                },
+                {
+                    "id": 5,
+                    "name": "Óleo de coco",
+                    "amount": 0.5,
+                    "measure": "colher de sopa"
+                },
+                {
+                    "id": 6,
+                    "name": "Fermento biológico",
+                    "amount": 0.5,
+                    "measure": "colher de chá"
+                }
+            ],
+            "portion": 1,
+            "tools": ["vasilha", "garfo", "espátula", "frigideira"],
+            "totalTime": 5,
+            "stepByStep": [
+                {
+                    "id": 1,
+                    "title": "Passo 1",
+                    "description": "Amasse a banana até virar uma pasta. Dê preferência à banana madura",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 2,
+                    "title": "Passo 2",
+                    "description": "Em uma vasilha, bata o ovo até ele começar a espumar.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 3,
+                    "title": "Passo 3",
+                    "description": "Junte ao ovo batido a banana amassada, a aveia, a canela, o óleo de coco e o fermento. Misture até forma uma massa homogênea.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 4,
+                    "title": "Passo 4",
+                    "description": "Esquente a frigideira. Quando ela estivar quente, espalhe um pouco de óleo de coco e, em seguida, coloque a misture. Deixe cada lado por cerca de 2 minutos.",
+                    "timeInMinutes": 4
+                }
+            ]
         },
         {
-            "name": "Ovo",
-            "amount": 1,
-            "measure": "unidade"
+            "name": "Bolo de banana",
+            "id": 2,
+            "image": "https://images.unsplash.com/photo-1587121269960-d9d68bfb6f12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+            "creditsURL": "",
+            "author": "",
+            "lvl": "Fácil",
+            "category": ["Sobremesa", "Vegetariano"],
+            "ingredients": [
+                {
+                    "id": 1,
+                    "name": "Ovo",
+                    "amount": 4,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 2,
+                    "name": "Óleo de coco",
+                    "amount": 0.5,
+                    "measure": "xícara"
+                },
+                {
+                    "id": 3,
+                    "name": "Açucar mascavo",
+                    "amount": 0.25,
+                    "measure": "xícara"
+                },
+                {
+                    "id": 4,
+                    "name": "Banana",
+                    "amount": 4,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 5,
+                    "name": "Canela em pó",
+                    "amount": 1,
+                    "measure": "colher de chá"
+                },
+                {
+                    "id": 6,
+                    "name": "Farinha de aveia",
+                    "amount": 2,
+                    "measure": "xícar"
+                },
+                {
+                    "id": 6,
+                    "name": "Fermento",
+                    "amount": 1,
+                    "measure": "colher de sopa"
+                }
+            ],
+            "portion": 1,
+            "tools": ["vasilha", "espátula", "frigideira", "forno"],
+            "totalTime": 45,
+            "stepByStep":
+            [
+                {
+                    "id": 1,
+                    "title": "Passo 1",
+                    "description": "Primeiramente, preaqueça o forno a 200°C (temperatura média). Em uma vasilha, bata os ovos na mão até criar espuma. Em seguida, adicione o açucar, o óleo de coco e a canela. Misture os ingredientes.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 2,
+                    "title": "Passo 2",
+                    "description": "Amasse as bananas. Com elas amassadas, adicione aos ovos e misture bem",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 3,
+                    "title": "Passo 3",
+                    "description": "Na vasilha com a massa, adicione a aveia e o fermento. Misture até ficar uma massa homogênea. Nesse ponto, não precisa misturar mais.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 4,
+                    "title": "Passo 4",
+                    "description": "Coloque a mistura em uma forma de bolo que vá ao forno. Leve ao forno já aquecido e deixe por cerca de 35 minutos em 200°C (temperatura média).",
+                    "timeInMinutes": 35
+                }
+            ]
         },
         {
-            "name": "Aveia",
-            "amount": 2,
-            "measure": "colher de sopa"
+            "name": "Salada do dia a dia",
+            "id": 3,
+            "image": "https://cdn.pixabay.com/photo/2017/03/16/23/24/salad-2150548_1280.jpg",
+            "creditsURL": "",
+            "author": "",
+            "lvl": "Fácil",
+            "category": ["Almoço", "Vegetariano", "Vegano"],
+            "ingredients": [
+                {
+                    "id": 1,
+                    "name": "Alface Americano",
+                    "amount": 1,
+                    "measure": "maço"
+                },
+                {
+                    "id": 2,
+                    "name": "Rúcula",
+                    "amount": 1,
+                    "measure": "maço"
+                },
+                {
+                    "id": 3,
+                    "name": "Tomate",
+                    "amount": 2,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 4,
+                    "name": "Temperos de sua preferência",
+                    "amount": 1,
+                    "measure": "pitada"
+                },
+                {
+                    "id": 5,
+                    "name": "Cebola",
+                    "amount": 0.25,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 6,
+                    "name": "Hortelã",
+                    "amount": 2,
+                    "measure": "folha"
+                },
+                {
+                    "id": 7,
+                    "name": "Azeite",
+                    "amount": 2,
+                    "measure": "colher de sopa"
+                }
+            ],
+            "portion": 1,
+            "tools": ["vasilha","prato", "garfo", "espátula", "faca"],
+            "totalTime": 10,
+            "stepByStep": [
+                {
+                    "id": 1,
+                    "title": "Lavar os ingredientes",
+                    "description": "Lave o alface, a rúcula, os tomates, a cebola e hortelã. Após isso, seque-as.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 2,
+                    "title": "Cortar as tomates e cebola",
+                    "description": "Em um prato, corte as tomates em rodelas e a cebola em julienne. Reserve.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 3,
+                    "title": "Montando a salada",
+                    "description": "Em uma vasilha, acrescente o alface e a rúcula para fazer a base da salada. Depois, coloque as tomates, a cebola e hortelã por cima. Finalize com os temperos e o azeite.",
+                    "timeInMinutes": null
+                }
+            ]
         },
         {
-            "name": "Canela",
-            "amount": 1,
-            "measure": "pitada"
+            "name": "Macarrão ao molho de tomate",
+            "id": 4,
+            "image": "https://cdn.pixabay.com/photo/2016/05/14/18/20/spaghetti-1392266_1280.jpg",
+            "creditsURL": "",
+            "author": "",
+            "lvl": "Fácil",
+            "category": ["Almoço", "Vegetariano"],
+            "ingredients": [
+                {
+                    "id": 1,
+                    "name": "Macarrão tipo espaguete",
+                    "amount": 200,
+                    "measure": "grama"
+                },
+                {
+                    "id": 2,
+                    "name": "Tomate",
+                    "amount": 2,
+                    "measure": "quilograma"
+                },
+                {
+                    "id": 3,
+                    "name": "Cebola",
+                    "amount": 1,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 4,
+                    "name": "Tempero de sua preferência",
+                    "amount": 1,
+                    "measure": "pitada"
+                },
+                {
+                    "id": 5,
+                    "name": "Dente de alho",
+                    "amount": 2,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 6,
+                    "name": "Azeite",
+                    "amount": 2,
+                    "measure": "colher de sopa"
+                }
+            ],
+            "portion": 5,
+            "tools": ["vasilha","prato", "espátula", "faca", "panela"],
+            "totalTime": 5,
+            "stepByStep": [
+                {
+                    "id": 1,
+                    "title": "Lavar os ingredientes",
+                    "description": "Lave os tomates, cebola e alho. Após isso, seque-os e corte um X em cima de cada uma das tomates, a cebola em cubinhos e pique o alho.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 2,
+                    "title": "Cortar as tomates e cebola",
+                    "description": "Em uma panela, coloque água e as tomates, levando ao fogo até a pele começar a soltar da parte em que você fez um X. Quando estiverem prontos, bata no liquidificador. Enquanto isso, corte a cebola e o alho bem picadinhos.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 3,
+                    "title": "Refogando e preparando o molho",
+                    "description": "Em outra panela, refogue a cebola e o alho e tempere com sal. Após isso, adicione os tomates batidos e mexa por uma hora mais ou menos. Após isso, concerte o sal e adicione os temperos de sua preferencia. Está pronto!",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 4,
+                    "title": "Macarrão",
+                    "description": "Cozinhe o macarrão de sua preferencia de acordo com o tempo de cozimento descrito na embalagem. Após escorrer, coloque o molho por cima e está pronto.",
+                    "timeInMinutes": null
+                }
+            ]
         },
         {
-            "name": "Óleo de coco",
-            "amount": 0.5,
-            "measure": "colher de sopa"
+            "name": "Purê de batata-doce",
+            "id": 5,
+            "image": "https://cdn.panelinha.com.br/receita/1438052400000-Pure-de-batata-doce.jpg",
+            "creditsURL": "https://www.panelinha.com.br/receita/Pure-de-batata-doce",
+            "author": "Panelinha",
+            "lvl": "Fácil",
+            "category": ["Vegetariano", "Acompanhamento", "Almoço", "Janta"],
+            "ingredients": [
+                {
+                    "id": 1,
+                    "name": "Batata-doce",
+                    "amount": 3,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 2,
+                    "name": "Água do cozimento",
+                    "amount": 1,
+                    "measure": "xícara (chá)"
+                },
+                {
+                    "id": 3,
+                    "name": "Manteiga gelada",
+                    "amount": 2,
+                    "measure": "colher de sopa"
+                },
+                {
+                    "id": 4,
+                    "name": "Sal",
+                    "amount": 1,
+                    "measure": "pitada"
+                }
+            ],
+            "portion": 4,
+            "tools": [""],
+            "totalTime": 30,
+            "stepByStep": [
+                {
+                    "id": 1,
+                    "title": "Passo 1",
+                    "description": "Lave, seque e descasque as batatas-doces. Corte em meias-luas grossas e transfira para uma panela média. Cubra com água e tempere com ½ colher (chá) de sal.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 2,
+                    "title": "Passo 2",
+                    "description": "Leve ao fogo alto e, assim que ferver, deixe cozinhar por cerca de 20 minutos, ou até ficarem macias - para verificar, espete com um garfo.",
+                    "timeInMinutes": 20
+                },
+                {
+                    "id": 3,
+                    "title": "Passo 3",
+                    "description": "Desligue o fogo e reserve 1 xícara (chá) da água do cozimento. Escorra as batatas por uma peneira.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 4,
+                    "title": "Passo 4",
+                    "description": "Volte as batatas, ainda quentes, para a mesma panela e bata com um mixer até ficar bem liso. Acrescente, aos poucos, a água do cozimento para dar o ponto. Se preferir um purê mais rústico, passe as batatas por um espremedor.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 5,
+                    "title": "Passo 5",
+                    "description": "Junte a manteiga e mexa bem com uma espátula até derreter e o purê ficar cremoso. Prove e, se necessário, tempere com mais sal. Sirva a seguir.",
+                    "timeInMinutes": null
+                }
+            ]
         },
         {
-            "name": "Fermento biológico",
-            "amount": 0.5,
-            "measure": "colher de chá"
+            "name": "Bolo de chocolate",
+            "id": 7,
+            "image": "https://i.pinimg.com/originals/4a/37/a0/4a37a0bd042695bd53274f39166006ac.jpg",
+            "creditsURL": "https://www.tudogostoso.com.br/receita/62547-a-melhor-receita-de-bolo-de-chocolate.html",
+            "author": "Tudo Gostoso",
+            "lvl": "Intermediário",
+            "category": ["Bolo", "Sobremesa"],
+            "ingredients": [
+                {
+                    "id": 1,
+                    "name": "Ovo",
+                    "amount": 4,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 2,
+                    "name": "Chocolate em pó",
+                    "amount": 4,
+                    "measure": "Colher de sopa"
+                },
+                {
+                    "id": 3,
+                    "name": "Manteiga",
+                    "amount": 2,
+                    "measure": "Colher de sopa"
+                },
+                {
+                    "id": 4,
+                    "name": "Farinha de trigo",
+                    "amount": 3,
+                    "measure": "Xícara"
+                },
+                {
+                    "id": 5,
+                    "name": "Açúcar de trigo",
+                    "amount": 2,
+                    "measure": "Xícara"
+                },
+                {
+                    "id": 6,
+                    "name": "Leite",
+                    "amount": 1,
+                    "measure": "Xícara"
+                },
+                {
+                    "id": 7,
+                    "name": "Fermento",
+                    "amount": 2,
+                    "measure": "Colher de sopa"
+                },
+                {
+                    "id": 8,
+                    "name": "Manteiga",
+                    "amount": 2,
+                    "measure": "Colher de sopa"
+                },
+                {
+                    "id": 9,
+                    "name": "Chocolate em pó",
+                    "amount": 7,
+                    "measure": "Colher de sopa"
+                },
+                {
+                    "id": 10,
+                    "name": "Creme de leite com soro",
+                    "amount": 2,
+                    "measure": "Lata"
+                },
+                {
+                    "id": 11,
+                    "name": "Açúcar",
+                    "amount": 3,
+                    "measure": "Colher de sopa"
+                }
+            ],
+            "portion": 8,
+            "tools": ["Forno"],
+            "totalTime": 40,
+            "stepByStep": [
+                {
+                    "id": 1,
+                    "title": "Massa: Passo 1",
+                    "description": "Em um liquidificador adicione os ovos, o chocolate em pó, a manteiga, a farinha de trigo, o açúcar e o leite, depois bata por 5 minutos.",
+                    "timeInMinutes": 5
+                },
+                {
+                    "id": 2,
+                    "title": "Massa: Passo 2",
+                    "description": "Adicione o fermento e misture com uma espátula delicadamente.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 3,
+                    "title": "Massa: Passo 3",
+                    "description": "Em uma forma untada, despeje a massa e asse em forno médio (180 ºC) preaquecido por cerca de 40 minutos. Não se esqueça de usar uma forma alta para essa receita: como leva duas colheres de fermento, ela cresce bastante! Outra solução pode ser colocar apenas uma colher de fermento e manter a sua receita em uma forma pequena.",
+                    "timeInMinutes": 40
+                },
+                {
+                    "id": 4,
+                    "title": "Calda: Passo 1",
+                    "description": "Em uma panela, aqueça a manteiga e misture o chocolate em pó até que esteja homogêneo.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 5,
+                    "title": "Calda: Passo 2",
+                    "description": "Acrescente o creme de leite e misture bem até obter uma consistência cremosa.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 6,
+                    "title": "Calda: Passo 3",
+                    "description": "Desligue o fogo e acrescente o açúcar.",
+                    "timeInMinutes": null
+                }
+            ]
+        },
+        {
+            "name": "Sanduíche Verde",
+            "id": 9,
+            "image": "https://cdn.panelinha.com.br/receita/1335236400000-Sanduiche-verde.jpg",
+            "creditsURL": "https://www.panelinha.com.br/receita/Sanduiche-verde",
+            "author": "Panelinha",
+            "lvl": "Fácil",
+            "category": ["Café da manhã"],
+            "ingredients": [
+                {
+                    "id": 1,
+                    "name": "Pão de forma",
+                    "amount": 2,
+                    "measure": "fatia"
+                },
+                {
+                    "id": 2,
+                    "name": "Peito de frango",
+                    "amount": 1,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 3,
+                    "name": "Caldo de Limão",
+                    "amount": 1,
+                    "measure": "colher de chá"
+                },
+                {
+                    "id": 4,
+                    "name": "Azeite",
+                    "amount": 2,
+                    "measure": "colher de sopa"
+                },
+                {
+                    "id": 5,
+                    "name": "Manjericão",
+                    "amount": 5,
+                    "measure": "folha"
+                },
+                {
+                    "id": 6,
+                    "name": "Maionese",
+                    "amount": 2,
+                    "measure": "colher de sopa"
+                },
+                {
+                    "id": 7,
+                    "name": "Miniagrião",
+                    "amount": 1,
+                    "measure": "punhado"
+                },
+                {
+                    "id": 8,
+                    "name": "Sal e pimenta",
+                    "amount": 1,
+                    "measure": "pitada"
+                }
+            ],
+            "portion": 1,
+            "tools": ["Prato"],
+            "totalTime": 10,
+            "stepByStep": [
+                {
+                    "id": 1,
+                    "title": "Passo 1",
+                    "description": "Numa tigela, coloque o filé de peito de frango, apenas ½ colher (sopa) de suco de limão e 1 colher (sopa) de azeite. Tempere com sal e pimenta-do-reino, misture bem e deixe na geladeira por 15 minutos.",
+                    "timeInMinutes": 15
+                },
+                {
+                    "id": 2,
+                    "title": "Passo 2",
+                    "description": "Pique com as mãos as folhas de manjericão e coloque numa tigela. Junte a metade do azeite restante (½ colher de sopa) e o suco de limão restante. Tempere com sal e pimenta-do-reino e, com um garfo, misture a maionese até obter um creme homogêneo.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 3,
+                    "title": "Passo 3",
+                    "description": "Leve uma frigideira ao fogo médio para aquecer. Regue com o azeite restante e, quando estiver bem quente, coloque o filé de frango para dourar por 4 minutos de cada lado. Transfira o frango para uma tábua.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 4,
+                    "title": "Passo 4",
+                    "description": "Na frigideira ainda quente, coloque as fatias de pão de fôrma para dourar dos dois lados.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 5,
+                    "title": "Passo 5",
+                    "description": "Enquanto isso, com uma faca, corte o filé de frango em tiras.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 6,
+                    "title": "Passo 6",
+                    "description": "Nas duas fatias de pão, espalhe bem a pasta de maionese. Sobre uma fatia de pão, coloque metade das folhas de miniagrião e distribua as tiras de frango. Coloque o restante do miniagrião e feche com a outra fatia de pão. Coma imediatamente!",
+                    "timeInMinutes": null
+                }
+            ]
+        },
+        {
+            "name": "Banana assada com Canela",
+            "id": 6,
+            "image": "https://img.cybercook.com.br/receitas/234/banana-assada-com-canela-1.jpeg",
+            "creditsURL": "https://cybercook.com.br/receitas/doces/receita-de-banana-assada-com-canela-11234",
+            "author": "",
+            "lvl": "Fácil",
+            "category": ["Sobremesa", "Café da manhã"],
+            "ingredients": [
+                {
+                    "id": 1,
+                    "name": "Banana nanica",
+                    "amount": 5,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 2,
+                    "name": "Canela-da-China em pó",
+                    "amount": 3,
+                    "measure": "colheres(chá)"
+                },
+                {
+                    "id": 3,
+                    "name": "Açúcar",
+                    "amount": 3,
+                    "measure": "colheres(chá)"
+                }
+            ],
+            "portion": 5,
+            "tools": ["forno"],
+            "totalTime": 12,
+            "stepByStep": [
+                {
+                    "id": 1,
+                    "title": "Passo 1",
+                    "description": "1. Corte as bananas ao meio, no sentido do comprimento. Coloque 1/2 colher (chá) de canela e 1/2 colher (chá) de açúcar em cada fatia. Leve ao forno, por cerca de 8 minutos, para dourar. Sirva quente.",
+                    "timeInMinutes": 8
+                }
+            ]
+        },
+        {
+            "name": "Batata-doce assada",
+            "id": 10,
+            "image": "https://img.estadao.com.br/fotos/crop/960x540/resources/jpg/1/7/1563310257271.jpg",
+            "creditsURL": "https://paladar.estadao.com.br/noticias/receita,batata-doce-assada,10000012609",
+            "author": "Paladar Estadão",
+            "lvl": "Fácil",
+            "category": ["Almoço", "Janta", "Vegano", "Vegetariano", "Acompanhamento"],
+            "ingredients": [
+                {
+                    "id": 1,
+                    "name": "Batata-doce",
+                    "amount": 4,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 2,
+                    "name": "Dentes de alho",
+                    "amount": 4,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 3,
+                    "name": "Alecrim fresco",
+                    "amount": 3,
+                    "measure": "ramos"
+                },
+                {
+                    "id": 4,
+                    "name": "Tomilho fresco",
+                    "amount": 3,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 5,
+                    "name": "Sal grosso",
+                    "amount": 1,
+                    "measure": "pitada"
+                },
+                {
+                    "id": 6,
+                    "name": "Pimenta do reino mída",
+                    "amount": 1,
+                    "measure": "pitada"
+                },
+                {
+                    "id": 7,
+                    "name": "Azeite",
+                    "amount": 1,
+                    "measure": "colher de sopa"
+                }
+            ],
+            "portion": 5,
+            "tools": [""],
+            "totalTime": 30,
+            "stepByStep": [
+                {
+                    "id": 1,
+                    "title": "Passo 1",
+                    "description": "Corte as batatas-doces em tiras e rodelas - tente manter os pedaços em tamanhos parecidos, para que assem no mesmo tempo.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 2,
+                    "title": "Passo 2",
+                    "description": "Em uma forma antiaderente, espalhe as batatas, os dentes de alho e as ervas frescas. Tempere com sal, pimenta e azeite, misture bem e cubra com papel alumínio.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 3,
+                    "title": "Passo 3",
+                    "description": "Asse a 200ºC por 10 mintutos em forno preaquecido. Retire o papel alumínio e termine de assar até dourar.",
+                    "timeInMinutes": 10
+                },
+                {
+                    "id": 4,
+                    "title": "Passo 4",
+                    "description": "Retire do forno e sirva.",
+                    "timeInMinutes": null
+                }
+            ]
+        },
+        {
+            "name": "Salada de Legumes com Maionese",
+            "id": 11,
+            "image": "https://cdn.panelinha.com.br/receita/1479693600000-Salada-de-legumes-com-maionese-caseira.jpg",
+            "creditsURL": "https://www.panelinha.com.br/receita/Salada-de-legumes-com-maionese-caseira",
+            "author": "Panelinha",
+            "lvl": "Fácil",
+            "category": ["Acompanhamento", "Salada"],
+            "ingredients": [
+                {
+                    "id": 1,
+                    "name": "Batata",
+                    "amount": 4,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 2,
+                    "name": "Cenoura",
+                    "amount": 3,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 3,
+                    "name": "Vagem",
+                    "amount": 250,
+                    "measure": "gramas"
+                },
+                {
+                    "id": 4,
+                    "name": "Maionese",
+                    "amount": 1,
+                    "measure": "xícara de chá"
+                },
+                {
+                    "id": 5,
+                    "name": "Folha de Salsinha",
+                    "amount": 1,
+                    "measure": "pitada (a gosto)"
+                },
+                {
+                    "id": 6,
+                    "name": "Sal",
+                    "amount": 1,
+                    "measure": "pitada"
+                },
+                {
+                    "id": 7,
+                    "name": "Pimenta-do-Reino Moída",
+                    "amount": 1,
+                    "measure": "pitada"
+                }
+            ],
+            "portion": 6,
+            "tools": [""],
+            "totalTime": 30,
+            "stepByStep": [
+                {
+                    "id": 1,
+                    "title": "Passo 1",
+                    "description": "Descasque e corte as batatas em pedaços de cerca de 1,5 cm - o importante não é cortar as batatas em cubos perfeitos, mas sim em pedaços uniformes para cozinhar por igual. Transfira para uma panela, cubra com água, misture 1 colher (chá) de sal e leve ao fogo alto. Quando ferver, abaixe o fogo e deixe cozinhar por cerca de 15 minutos - teste espetando com um garfo, elas devem estar cozidas mas ainda firmes. Enquanto isso, prepare os outros ingredientes.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 2,
+                    "title": "Passo 2",
+                    "description": "Lave sob água corrente as cenouras e as vagens. Descasque e corte as cenouras ao meio, no sentido da largura. Corte as partes mais finas em quartos e fatie em pedaços de 1 cm; corte as partes mais grossas ao meio, as metades em 3 tiras e as tiras em fatias de 1 cm. Descarte as pontas e corte as vagens em fatias de 1 cm.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 3,
+                    "title": "Passo 3",
+                    "description": "Preencha uma tigela com água e gelo. Assim que estiverem cozidas, com a escumadeira, transfira as batatas para a tigela com água e gelo para cessar o cozimento. Adicione mais 1 colher (chá) de sal na água fervente e mergulhe a cenoura e a vagem picadas. Deixe por apenas 30 segundos e, com a escumadeira, passe para a tigela com gelo - esse processo de branqueamento deixa os legumes com textura crocante e cor vibrante.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 4,
+                    "title": "Passo 4",
+                    "description": "Escorra bem a água dos legumes, transfira para uma tigela e junte a maionese caseira. Tempere com sal e pimenta a gosto e misture bem. Sirva a seguir com folhas de salsinha frescas. Se preferir, prepare a salada com antecedência e mantenha na geladeira; junte as folhas de salsinha apenas na hora de servir.",
+                    "timeInMinutes": null
+                }
+            ]
+        },
+        {
+            "name": "Sopa de batata-doce e gengibre",
+            "id": 12,
+            "image": "https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2020/08/12/sopa-batata-doce-gengibre-1.jpg",
+            "creditsURL": "https://www.terra.com.br/vida-e-estilo/culinaria/guia-da-cozinha/13-receitas-com-batata-doce-que-voce-precisa-adicionar-no-cardapio,2c0f2ac0b194261825b30f9389209894z4lbq9qe.html",
+            "author": "Terra",
+            "lvl": "Fácil",
+            "category": ["Sopa", "Janta", "Vegetariano", "Vegano"],
+            "ingredients": [
+                {
+                    "id": 1,
+                    "name": "Batata-doce ",
+                    "amount": 3,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 2,
+                    "name": "Água",
+                    "amount": 4,
+                    "measure": "xícara (chá)"
+                },
+                {
+                    "id": 3,
+                    "name": "Óleo de coco",
+                    "amount": 2,
+                    "measure": "colher sopa"
+                },
+                {
+                    "id": 4,
+                    "name": "Cebola picada",
+                    "amount": 1,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 5,
+                    "name": "Dente alho",
+                    "amount": 2,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 6,
+                    "name": "Gengibre ralada",
+                    "amount": 2,
+                    "measure": "colher de sopa"
+                },
+                {
+                    "id": 7,
+                    "name": "Sal",
+                    "amount": 1,
+                    "measure": "pitada"
+                },
+                {
+                    "id": 8,
+                    "name": "Cheiro verde",
+                    "amount": 1,
+                    "measure": "pitada"
+                }
+            ],
+            "portion": 4,
+            "tools": [""],
+            "totalTime": 40,
+            "stepByStep": [
+                {
+                    "id": 1,
+                    "title": "Passo 1",
+                    "description": "Em uma panela, coloque a batata, cubra com a água e cozinhe em fogo médio até amaciar.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 2,
+                    "title": "Passo 2",
+                    "description": "Desligue, deixe amornar e bata no liquidificador até ficar cremoso. Reserve.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 3,
+                    "title": "Passo 3",
+                    "description": "Aqueça outra panela com o óleo de coco, em fogo médio, e frite a cebola, o alho e o gengibre até dourar. Adicione a batata batida, sal e cozinhe até ferver.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 4,
+                    "title": "Passo 4",
+                    "description": "Desligue e sirva polvilhado com cheiro-verde e decorado com gengibre.",
+                    "timeInMinutes": null
+                }
+            ]
+        },
+        {
+            "name": "Batata-doce de forno crocante",
+            "id": 14,
+            "image": "https://catracalivre.com.br/wp-content/thumbnails/i3P5KQ4OxDyPK7RkIDB9o4_HQkg=/640x360/smart/wp-content/uploads/2020/08/img-3068.jpg",
+            "creditsURL": "https://catracalivre.com.br/receitas/batata-doce-de-forno-crocante-pronta-em-30-minutos/",
+            "author": "Catraca Livre",
+            "lvl": "Fácil",
+            "category": ["Janta", "Almoço", "Vegano", "Vegetariano", "Acompanhamento"],
+            "ingredients": [
+                {
+                    "id": 1,
+                    "name": "Batata doce",
+                    "amount": 2,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 2,
+                    "name": "Alho em lâminas",
+                    "amount": 2,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 3,
+                    "name": "Páprica doce",
+                    "amount": 1,
+                    "measure": "colher de chá"
+                },
+                {
+                    "id": 4,
+                    "name": "Alecrim",
+                    "amount": 2,
+                    "measure": "ramo"
+                },
+                {
+                    "id": 5,
+                    "name": "Sal",
+                    "amount": 1,
+                    "measure": "pitada"
+                },
+                {
+                    "id": 6,
+                    "name": "Pimentada do reino",
+                    "amount": 1,
+                    "measure": "pitada"
+                }
+            ],
+            "portion": 4,
+            "tools": [""],
+            "totalTime": 50,
+            "stepByStep": [
+                {
+                    "id": 1,
+                    "title": "Passo 1",
+                    "description": "Corte as batatas em palitos, buscando manter a mesma espessura em todas para que elas cozinhem igualmente.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 2,
+                    "title": "Passo 2",
+                    "description": "Disponha-as em um refratário ou forma antiaderente e tempere com o alho, a páprica, sal e pimenta do reino. Quem quiser pode adicionar outras ervas e condimentos a gosto.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 3,
+                    "title": "Passo 3",
+                    "description": "Regue tudo com um fio de azeite e misture bem.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 4,
+                    "title": "Passo 4",
+                    "description": "Transfira para uma forma levemente untada com óleo deixando pelo menos 1 cm de espaço entre cada pedaço de batata.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 5,
+                    "title": "Passo 5",
+                    "description": "Se a sua forma não for antiaderente, recomendo que unte com óleo ou forre com papel manteiga.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 6,
+                    "title": "Passo 6",
+                    "description": "Por cima eu vou colocar um pouco de alecrim, mas isso é opcional.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 7,
+                    "title": "Passo 7",
+                    "description": "Leve ao forno preaquecido a 200ºC por cerca de 20 minutos.",
+                    "timeInMinutes": 20
+                },
+                {
+                    "id": 8,
+                    "title": "Passo 8",
+                    "description": "Depois deste tempo vire as batatas com a ajuda de uma espátula e devolva o refratário ao forno por mais 20 minutos ou até que as batatas estejam macias e douradas.",
+                    "timeInMinutes": 20
+                }
+            ]
+        },
+        {
+            "name": "Salada de Pepino com Manga",
+            "id": 15,
+            "image": "https://cdn.panelinha.com.br/receita/1565009503163-salada-fatuche_.jpg",
+            "creditsURL": "https://cdn.panelinha.com.br/receita/1520282179232-receita%20salada%20pepino.jpg",
+            "author": "Panelinha",
+            "lvl": "Fácil",
+            "category": ["Salada", "Vegano", "Vegetariano"],
+            "ingredients": [
+                {
+                    "id": 1,
+                    "name": "Pepino Japonês",
+                    "amount": 3,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 2,
+                    "name": "Manga",
+                    "amount": 1,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 3,
+                    "name": "Molho Shoyu",
+                    "amount": 3,
+                    "measure": "colher de sopa"
+                },
+                {
+                    "id": 4,
+                    "name": "Limão",
+                    "amount": 1,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 5,
+                    "name": "Azeite",
+                    "amount": 2,
+                    "measure": "colheres de sopa"
+                },
+                {
+                    "id": 6,
+                    "name": "Pimenta-do-Reino",
+                    "amount": 1,
+                    "measure": "pitada"
+                },
+                {
+                    "id": 7,
+                    "name": "Amedoin torrado sem sal picado",
+                    "amount": 1,
+                    "measure": "pitada"
+                }
+            ],
+            "portion": 4,
+            "tools": [""],
+            "totalTime": 10,
+            "stepByStep": [
+                {
+                    "id": 1,
+                    "title": "Passo 1",
+                    "description": "Com uma escovinha para legumes, lave bem a casca dos pepinos sob água corrente. Com um descascador de legumes, corte cada um em fatias finas, no sentido do comprimento, para formar fitas até chegar nas sementes. Vá girando o legume para fatiar os 4 lados de casca. Fatie o miolo dos pepinos com as sementes para formar cubos. Assim você aproveita todo o legume, sem desperdício.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 2,
+                    "title": "Passo 2",
+                    "description": "Descasque e corte a manga em cubos de 1,5 cm.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 3,
+                    "title": "Passo 3",
+                    "description": "Numa tigela, coloque as fitas e cubos de pepino. Tempere com o shoyu, o azeite o caldo de limão e pimenta a gosto. Junte os cubos de manga e misture delicadamente. Polvilhe com o amendoim picado e sirva a seguir.",
+                    "timeInMinutes": null
+                }
+            ]
+        },
+        {
+            "name": "Cookies com gotas de chocolate",
+            "id": 16,
+            "image": "https://cdn.panelinha.com.br/receita/1601926621338-cookie.jpg",
+            "creditsURL": "https://www.panelinha.com.br/receita/cookie-com-gotas-de-chocolate",
+            "author": "Panelinha",
+            "lvl": "Fácil",
+            "category": ["Sobremesa"],
+            "ingredients": [
+                {
+                    "id": 1,
+                    "name": "Chocolate amargo 70% cacau em gotas",
+                    "amount": 1.5,
+                    "measure": "xícara (chá)"
+                },
+                {
+                    "id": 2,
+                    "name": "Manteiga gelada em cubos",
+                    "amount": 100,
+                    "measure": "grama"
+                },
+                {
+                    "id": 3,
+                    "name": "Açúcar mascavo",
+                    "amount": 0.5,
+                    "measure": "xícara (chá)"
+                },
+                {
+                    "id": 4,
+                    "name": "Açúcar",
+                    "amount": 0.5,
+                    "measure": "xícara (chá)"
+                },
+                {
+                    "id": 5,
+                    "name": "Farinha de trigo",
+                    "amount": 2,
+                    "measure": "xícara (chá)"
+                },
+                {
+                    "id": 6,
+                    "name": "Fermento em pó",
+                    "amount": 1,
+                    "measure": "colher (chá)"
+                },
+                {
+                    "id": 7,
+                    "name": "Bicarbonato de sódio",
+                    "amount": 1,
+                    "measure": "grama"
+                },
+                {
+                    "id": 8,
+                    "name": "Sal",
+                    "amount": 1,
+                    "measure": "pitada"
+                },
+                {
+                    "id": 9,
+                    "name": "Ovo",
+                    "amount": 1,
+                    "measure": "unidade"
+                }
+            ],
+            "portion": 9,
+            "tools": ["forno"],
+            "totalTime": 60,
+            "stepByStep": [
+                {
+                    "id": 1,
+                    "title": "Passo 1",
+                    "description": "Numa tigela, misture a farinha, o fermento, o bicarbonato e o sal. Numa tigela pequena, quebre o ovo e reserve.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 2,
+                    "title": "Passo 2",
+                    "description": "Coloque a manteiga gelada na batedeira e bata com a raquete por 20 segundos para deixá-la levemente macia – não é preciso atingir o ponto pomada, é só para facilitar na hora de misturar os outros ingredientes.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 3,
+                    "title": "Passo 3",
+                    "description": "Junte o açúcar mascavo e o açúcar refinado e bata por mais 30 segundos, até formar uma farofa úmida. Acrescente o chocolate e bata apenas para misturar.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 4,
+                    "title": "Passo 4",
+                    "description": "Adicione a mistura de farinha e bata por alguns segundos, até formar uma farofa mais seca. Junte o ovo e bata por cerca de 1 minuto até a massa ficar úmida e sem pedacinhos de farinha – o processo é bem rápido mesmo, a ideia é apenas incorporar os ingredientes de maneira uniforme, a massa não deve ser batida em excesso para evitar o desenvolvimento do glúten, o que deixaria o cookie mais pesado.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 5,
+                    "title": "Passo 5",
+                    "description": "Junte a manteiga e mexa bem com uma espátula até derreter e o purê ficar cremoso. Prove e, se necessário, tempere com mais sal. Sirva a seguir.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 6,
+                    "title": "Passo 6",
+                    "description": "Para modelar os cookies: separe ¼ de xícara (chá) da massa para cada cookie, pressionando e nivelando no medidor – isso garante que todos tenham o mesmo tamanho e assem por igual. Com as mãos, modele cada porção em bolas e achate, formando discos com cerca de 7 cm de diâmetro. Transfira para uma assadeira grande, deixando cerca de 2 cm entre cada um.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 7,
+                    "title": "Passo 7",
+                    "description": "Leve a assadeira ao congelador por pelo menos 1h30 – esse descanso é essencial para o cookie ficar com a textura perfeita: crocante por fora e úmido por dentro.",
+                    "timeInMinutes": 90
+                },
+                {
+                    "id": 8,
+                    "title": "Passo 8",
+                    "description": "Faltando 30 minutos para o fim do descanso, preaqueça o forno a 180°C (temperatura média).",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 9,
+                    "title": "Passo 9",
+                    "description": "Leve a assadeira com os cookies ao forno para assar por cerca de 15 minutos. Atenção para o ponto: os cookies inflam,  ficam levemente dourados na lateral, mas ainda molinhos no centro – a casquinha vai ficar crocante após esfriar.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 10,
+                    "title": "Passo 10",
+                    "description": "Retire do forno e espere 15 minutos antes de consumir, assim os cookies ficam crocantes por fora e úmidos por dentro. Sirva a seguir.",
+                    "timeInMinutes": null
+                }
+            ]
+        },
+        {
+            "name": "Bolo de batata-doce com coco",
+            "id": 17,
+            "image": "https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2020/08/12/bolo-batata-doce-coco.jpg",
+            "creditsURL": "https://www.terra.com.br/vida-e-estilo/culinaria/guia-da-cozinha/13-receitas-com-batata-doce-que-voce-precisa-adicionar-no-cardapio,2c0f2ac0b194261825b30f9389209894z4lbq9qe.html",
+            "author": "Terra",
+            "lvl": "Fácil",
+            "category": ["Bolo", "Sobremesa", "Vegetariano"],
+            "ingredients": [
+                {
+                    "id": 1,
+                    "name": "Batata-doce",
+                    "amount": 2,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 2,
+                    "name": "Ovo",
+                    "amount": 5,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 3,
+                    "name": "Açúcar",
+                    "amount": 4,
+                    "measure": "xícara (chá)"
+                },
+                {
+                    "id": 4,
+                    "name": "Leite",
+                    "amount": 3,
+                    "measure": "xícara (chá)"
+                },
+                {
+                    "id": 5,
+                    "name": "Coco ralado",
+                    "amount": 1,
+                    "measure": "xícara (chá)"
+                },
+                {
+                    "id": 6,
+                    "name": "Manteiga",
+                    "amount": 3,
+                    "measure": "colher de sopa"
+                },
+                {
+                    "id": 7,
+                    "name": "Farinha de trigo",
+                    "amount": 4,
+                    "measure": "xícara (chá)"
+                },
+                {
+                    "id": 8,
+                    "name": "Fermento químico",
+                    "amount": 1,
+                    "measure": "colher sopa"
+                },
+                {
+                    "id": 9,
+                    "name": "Margarina para untar",
+                    "amount": 1,
+                    "measure": "pitada"
+                },
+                {
+                    "id": 10,
+                    "name": "Coco ralado para polvilhar",
+                    "amount": 1,
+                    "measure": "pitada"
+                }
+            ],
+            "portion": 10,
+            "tools": [""],
+            "totalTime": 40,
+            "stepByStep": [
+                {
+                    "id": 1,
+                    "title": "Passo 1",
+                    "description": "Bata no liquidificador a batata-doce, os ovos, o açúcar, leite, coco e a manteiga.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 2,
+                    "title": "Passo 2",
+                    "description": "Em um recipiente, junte a mistura com a farinha de trigo, acrescente o fermento e misture bem.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 3,
+                    "title": "Passo 3",
+                    "description": "Despeje o conteúdo em uma fôrma média untada e enfarinhada e leve ao forno médio, preaquecido, por 25 minutos ou até dourar.",
+                    "timeInMinutes": 25
+                },
+                {
+                    "id": 4,
+                    "title": "Passo 4",
+                    "description": "Desenforme, polvilhe com coco e sirva.",
+                    "timeInMinutes": 25
+                }
+            ]
+        },
+        {
+            "name": "Vitamina de Abacate",
+            "id": 18,
+            "image": "https://cdn.panelinha.com.br/receita/1583244322243-vitamina%20de%20abacate%20com%20leite.jpg",
+            "creditsURL": "https://www.panelinha.com.br/receita/vitamina-de-abacate",
+            "author": "Panelinha",
+            "lvl": "Fácil",
+            "category": ["Café da manhã"],
+            "ingredients": [
+                {
+                    "id": 1,
+                    "name": "Abacate em cubos",
+                    "amount": 1,
+                    "measure": "xícara"
+                },
+                {
+                    "id": 2,
+                    "name": "Mel",
+                    "amount": 2,
+                    "measure": "colheres"
+                },
+                {
+                    "id": 3,
+                    "name": "Leite gelado",
+                    "amount": 0.5,
+                    "measure": "xícara"
+                },
+                {
+                    "id":4,
+                    "name": "Gelo",
+                    "amount": 1,
+                    "measure": "unidade"
+                }
+            ],
+            "portion": 2,
+            "tools": ["Liquidificador"],
+            "totalTime": 5,
+            "stepByStep": [
+                {
+                    "id": 1,
+                    "title": "Passo Único",
+                    "description": "No liquidificador, coloque todos os ingredientes e bata até ficar liso. Divida em dois copos e sirva a seguir com cubos de gelo a gosto.",
+                    "timeInMinutes": null
+                }
+            ]
+        },
+        {
+            "name": "Ragu de costelinha",
+            "id": 19,
+            "image": "https://cdn.panelinha.com.br/receita/1531339701417-ragu%20de%20costelinha%20.jpg",
+            "creditsURL": "https://www.panelinha.com.br/receita/Ragu-de-costelinha-de-porco-na-pressao",
+            "author": "Panelinha",
+            "lvl": "Intermediário",
+            "category": ["Almoço", "Carne"],
+            "ingredients": [
+                {
+                    "id": 1,
+                    "name": "Costela de porco em ripas",
+                    "amount": 1,
+                    "measure": "kg"
+                },
+                {
+                    "id": 2,
+                    "name": "Cebola",
+                    "amount": 1,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 3,
+                    "name": "Dente de alho",
+                    "amount": 2,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 4,
+                    "name": "Lata de tomate pelado",
+                    "amount": 1,
+                    "measure": "lata"
+                },
+                {
+                    "id": 5,
+                    "name": "Vinho tinto",
+                    "amount": 1,
+                    "measure": "xícara (chá)"
+                },
+                {
+                    "id": 6,
+                    "name": "Água",
+                    "amount": 1.5,
+                    "measure": "xícara (chá)"
+                },
+                {
+                    "id": 7,
+                    "name": "Limão siciliano",
+                    "amount": 1,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 8,
+                    "name": "Folha de louro",
+                    "amount": 2,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 9,
+                    "name": "Tomilho",
+                    "amount": 3,
+                    "measure": "ramo"
+                },
+                {
+                    "id": 10,
+                    "name": "Páprica defumada",
+                    "amount": 1,
+                    "measure": "colher de chá"
+                },
+                {
+                    "id": 11,
+                    "name": "Pimenta calabresa seca",
+                    "amount": 0.5,
+                    "measure": "colher de chá"
+                },
+                {
+                    "id": 12,
+                    "name": "Sementes de erva-doce",
+                    "amount": 0.5,
+                    "measure": "colher de chá"
+                },
+                {
+                    "id": 13,
+                    "name": "Sal",
+                    "amount": 0.5,
+                    "measure": "colher de sopa"
+                },
+                {
+                    "id": 14,
+                    "name": "Azeite",
+                    "amount": 1,
+                    "measure": "colher de sopa"
+                }
+            ],
+            "portion": 4,
+            "tools": [""],
+            "totalTime": 120,
+            "stepByStep": [
+                {
+                    "id": 1,
+                    "title": "Passo 1",
+                    "description": "Retire a costelinha da geladeira e deixe em temperatura ambiente enquanto prepara os outros ingredientes.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 2,
+                    "title": "Passo 2",
+                    "description": "Descasque e pique fino a cebola e os dentes de alho. Lave os ramos de tomilho e o limão siciliano. Com um descascador de legumes, retire a casca do limão com cuidado para não extrair a parte branca e reserve a fruta.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 3,
+                    "title": "Passo 3",
+                    "description": "Leve a panela de pressão (sem a tampa) ao fogo médio. Quando aquecer, regue com ½ colher (sopa) de azeite e doure as costelinhas em etapas – se colocar todas de uma só vez vão cozinhar em vez de dourar. Deixe dourar por 2 minutos de cada lado. Transfira os pedaços dourados para uma tigela e repita com o restante, regando a panela com azeite a cada leva.",
+                    "timeInMinutes": 2
+                },
+                {
+                    "id": 4,
+                    "title": "Passo 4",
+                    "description": "Mantenha a panela em fogo médio e regue com ½ colher (sopa) de azeite. Junte a cebola, tempere com uma pitada de sal e refogue por 3 minutos até murchar bem, raspando o fundo da panela para dissolver os queimadinhos – eles são essenciais para dar sabor ao molho. Junte o alho e mexa por 1 minuto para perfumar. Tempere com a páprica defumada, a pimenta calabresa seca e a erva-doce.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 5,
+                    "title": "Passo 5",
+                    "description": "Acrescente o tomate pelado (com o líquido) e misture bem. Regue com o vinho, junte a água, as folhas de louro, o tomilho e a casca do limão. Aumente o fogo e deixe cozinhar até ferver.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 6,
+                    "title": "Passo 6",
+                    "description": "Volte as costelinhas para a panela, tempere com o sal, tampe e deixe em fogo alto. Assim que a válvula começar a apitar, abaixe o fogo e deixe cozinhar por 40 minutos.",
+                    "timeInMinutes": 40
+                },
+                {
+                    "id": 7,
+                    "title": "Passo 7",
+                    "description": "Desligue o fogo e deixe toda a pressão sair antes de abrir a panela. Com uma pinça, retire os ossos da costelinha – a carne fica tão macia, soltando do osso, que é mais fácil pescar os ossos na panela. Junte o caldo de limão e mexa com a espátula para terminar de desfiar a carne e misturar ao molho. Sirva a seguir.",
+                    "timeInMinutes": null
+                }
+            ]
+        },
+        {
+            "name": "Sopa de Legumes na Pressão",
+            "id": 13,
+            "image": "https://www.clubedereceita.com.br/wp-content/uploads/2019/05/receita-de-sopa-de-legumes.jpg",
+            "creditsURL": "https://www.panelinha.com.br/receita/sopa-de-legumes-pressao",
+            "author": "Panelinha",
+            "lvl": "Fácil",
+            "category": ["Janta", "Sopa"],
+            "ingredients": [
+                {
+                    "id": 1,
+                    "name": "Banana",
+                    "amount": 1,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 1,
+                    "name": "Abóbora japonesa descascada",
+                    "amount": 2,
+                    "measure": "xícara"
+                },
+                {
+                    "id": 2,
+                    "name": "Cebola",
+                    "amount": 0.5,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 3,
+                    "name": "Cenoura",
+                    "amount": 0.5,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 4,
+                    "name": "Alho poro",
+                    "amount":1,
+                    "measure": "Talo"
+                },
+                {
+                    "id": 5,
+                    "name": "Azeite",
+                    "amount":1,
+                    "measure": "Talo"
+                }
+            ],
+            "portion": 1,
+            "tools": ["Concha, Panela de pressão"],
+            "totalTime": 10,
+            "stepByStep": [
+                {
+                    "id": 1,
+                    "title": "Passo 1",
+                    "description": "Descasque e pique fino a cebola. Descasque e passe a cenoura pelo ralador. Corte o alho-poró em fatias finas, transfira para uma peneira e lave bem sob água corrente. Reserve 1 pedaço das folhas do alho-poró.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 2,
+                    "title": "Passo 2",
+                    "description": "Leve a panela de pressão (sem a tampa) ao fogo médio. Quando aquecer, regue com o azeite, adicione a cebola, a cenoura e o salsão. Tempere com uma pitada de sal e pimenta a gosto e refogue por cerca de 3 minutos até murchar.",
+                    "timeInMinutes": 3
+                },
+                {
+                    "id": 3,
+                    "title": "Passo 3",
+                    "description": "Junte a abóbora, regue com 2 ½ xícaras (chá) de água (se preferir uma sopa menos cremosa, utilize 3 xícaras de água).",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 4,
+                    "title": "Passo 4",
+                    "description": "Tampe a panela e ajuste o fogo para alto. Assim que a começar a apitar, abaixe o fogo e deixe cozinhar por 5 minutos. Desligue e espere toda a pressão sair e a panela parar de apitar antes de abrir. Se quiser agilizar o processo, leve a panela para esfriar sob água corrente até parar de sair vapor pela válvula. Atenção: a água não deve entrar em contato com nenhuma das válvulas, apenas com a superfície lisa da tampa.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 5,
+                    "title": "Passo 5",
+                    "description": "Transfira os legumes cozidos com o caldo para o liquidificador e bata até ficar liso (se quiser uma sopa mais pedaçuda, bata apenas metade dos legumes ou sirva sem bater). Atenção: segure firme a tampa do liquidificador com um pano de prato para evitar que o vapor da água fervente empurre a tampa. Se preferir, bata a sopa com um mixer dentro da panela. Prove e ajuste o sal. Sirva a seguir.",
+                    "timeInMinutes": null
+                }
+            ]
+        },
+        {
+            "name": "Brigadeiro de colher",
+            "id": 8,
+            "image": "https://static.clubedaanamariabraga.com.br/wp-content/uploads/2019/05/brigadeiro-de-colher-1.jpg",
+            "creditsURL": "https://anamariabraga.globo.com/receita/brigadeiro-de-colher/",
+            "author": "Ana Maria Braga",
+            "lvl": "Fácil",
+            "category": ["Sobremesa"],
+            "ingredients": [
+                {
+                    "id": 1,
+                    "name": "Leite condensado",
+                    "amount": 1,
+                    "measure": "lata"
+                },
+                {
+                    "id": 2,
+                    "name": "Achocolatado em pó",
+                    "amount": 3,
+                    "measure": "Colher(sopa)"
+                },
+                {
+                    "id": 3,
+                    "name": "Manteiga",
+                    "amount": 1,
+                    "measure": "Colher(sopa)"
+                },
+                {
+                    "id": 4,
+                    "name": "Creme de leite s/ soro",
+                    "amount": 0.5,
+                    "measure": "Caixa"
+                }
+            ],
+            "portion": 10,
+            "tools": [""],
+            "totalTime": 30 ,
+            "stepByStep": [
+                {
+                    "id": 1,
+                    "title": "Passo 1",
+                    "description": "Leve os 3 primeiros ingredientes ao fogo médio, mexendo sempre, até engrossar.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 2,
+                    "title": "Passo 2",
+                    "description": "Fora do fogo, incorpore o creme de leite.",
+                    "timeInMinutes": null
+                },
+                {
+                    "id": 3,
+                    "title": "Passo 3",
+                    "description": "Distribua em potinhos ou tacinhas e sirva",
+                    "timeInMinutes": null
+                }
+            ]
+        },
+        {
+            "name": "Bisco de banana com aveia",
+            "id": 20,
+            "image": "https://www.guiadasemana.com.br/contentFiles/image/2018/09/FEA/thumbnail/48283_w380h235_1537207893shutterstock-716366560.jpg",
+            "creditsURL": "https://www.guiadasemana.com.br/receitas/galeria/receitas-faceis-com-ate-tres-ingredientes",
+            "author": "Guia da Semana",
+            "lvl": "Fácil",
+            "category": [
+                "Sobremesa"
+            ],
+            "ingredients": [
+                {
+                    "id": 1,
+                    "name": "Banana bem madura",
+                    "amount": 2,
+                    "measure": "unidade"
+                },
+                {
+                    "id": 2,
+                    "name": "Aveia",
+                    "amount": 1,
+                    "measure": "Xícara(chá)"
+                }
+            ],
+            "portion": 6,
+            "tools": [
+                "Forno"
+            ],
+            "totalTime": 20,
+            "stepByStep": [
+                {
+                    "id": 1,
+                    "title": "Passo 1",
+                    "description": "Amasse as bananas e acrescente a aveia, misturando bem. Depois, faça bolinhas no formato de pequenos biscoitos e coloque para assar em uma forma untada por 15 minutos em forno pré-aquecido a 175 graus.",
+                    "timeInMinutes": 15
+                }
+            ]
         }
-        ],
-        "portion": 1,
-        "tools": ["vasilha", "garfo", "espátula", "frigideira"],
-        "timer": [
-        {
-            "step": 4,
-            "timeInMinutes": 4
-        }
-        ],
-        "totalTime": 5,
-        "stepByStep": [
-        {
-            "title": "Passo 1",
-            "description": "Amasse a banana até virar uma pasta. Dê preferência à banana madura"
-        },
-        {
-            "title": "Passo 2",
-            "description": "Em uma vasilha, bata o ovo até ele começar a espumar."
-        },
-        {
-            "title": "Passo 3",
-            "description": "Junte ao ovo batido a banana amassada, a aveia, a canela, o óleo de coco e o fermento. Misture até forma uma massa homogênea."
-        },
-        {
-            "title": "Passo 4",
-            "description": "Esquente a frigideira. Quando ela estivar quente, espalhe um pouco de óleo de coco e, em seguida, coloque a misture. Deixe cada lado por cerca de 2 minutos."
-        }
-        ]
-      },
-      {
-        "name": "Panqueca de Panqueca",
-        "id": 5,
-        "image": "https://images.unsplash.com/photo-1568240464340-261c0f65a455?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
-        "creditsURL": "",
-        "author": "",
-        "lvl": "Fácil",
-        "favorited": false,
-        "category": ["Café da manhã", "Vegetariano"],
-        "ingredients": [
-        {
-            "name": "Banana",
-            "amount": 1,
-            "measure": "unidade"
-        },
-        {
-            "name": "Ovo",
-            "amount": 1,
-            "measure": "unidade"
-        },
-        {
-            "name": "Aveia",
-            "amount": 2,
-            "measure": "colher de sopa"
-        },
-        {
-            "name": "Canela",
-            "amount": 1,
-            "measure": "pitada"
-        },
-        {
-            "name": "Óleo de coco",
-            "amount": 0.5,
-            "measure": "colher de sopa"
-        },
-        {
-            "name": "Fermento biológico",
-            "amount": 0.5,
-            "measure": "colher de chá"
-        }
-        ],
-        "portion": 1,
-        "tools": ["vasilha", "garfo", "espátula", "frigideira"],
-        "timer": [
-        {
-            "step": 4,
-            "timeInMinutes": 4
-        }
-        ],
-        "totalTime": 5,
-        "stepByStep": [
-        {
-            "title": "Passo 1",
-            "description": "Amasse a banana até virar uma pasta. Dê preferência à banana madura"
-        },
-        {
-            "title": "Passo 2",
-            "description": "Em uma vasilha, bata o ovo até ele começar a espumar."
-        },
-        {
-            "title": "Passo 3",
-            "description": "Junte ao ovo batido a banana amassada, a aveia, a canela, o óleo de coco e o fermento. Misture até forma uma massa homogênea."
-        },
-        {
-            "title": "Passo 4",
-            "description": "Esquente a frigideira. Quando ela estivar quente, espalhe um pouco de óleo de coco e, em seguida, coloque a misture. Deixe cada lado por cerca de 2 minutos."
-        }
-        ]
-      },
-        {
-          "name": "Panqueca de Pessego",
-          "id": 3,
-          "image": "https://images.unsplash.com/photo-1568240464340-261c0f65a455?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
-          "creditsURL": "",
-          "author": "",
-          "lvl": "Fácil",
-          "favorited": false,
-          "category": ["Café da manhã", "Vegetariano"],
-          "ingredients": [
-          {
-              "name": "Banana",
-              "amount": 1,
-              "measure": "unidade"
-          },
-          {
-              "name": "Ovo",
-              "amount": 1,
-              "measure": "unidade"
-          },
-          {
-              "name": "Aveia",
-              "amount": 2,
-              "measure": "colher de sopa"
-          },
-          {
-              "name": "Canela",
-              "amount": 1,
-              "measure": "pitada"
-          },
-          {
-              "name": "Óleo de coco",
-              "amount": 0.5,
-              "measure": "colher de sopa"
-          },
-          {
-              "name": "Fermento biológico",
-              "amount": 0.5,
-              "measure": "colher de chá"
-          }
-          ],
-          "portion": 1,
-          "tools": ["vasilha", "garfo", "espátula", "frigideira"],
-          "timer": [
-          {
-              "step": 4,
-              "timeInMinutes": 4
-          }
-          ],
-          "totalTime": 5,
-          "stepByStep": [
-          {
-              "title": "Passo 1",
-              "description": "Amasse a banana até virar uma pasta. Dê preferência à banana madura"
-          },
-          {
-              "title": "Passo 2",
-              "description": "Em uma vasilha, bata o ovo até ele começar a espumar."
-          },
-          {
-              "title": "Passo 3",
-              "description": "Junte ao ovo batido a banana amassada, a aveia, a canela, o óleo de coco e o fermento. Misture até forma uma massa homogênea."
-          },
-          {
-              "title": "Passo 4",
-              "description": "Esquente a frigideira. Quando ela estivar quente, espalhe um pouco de óleo de coco e, em seguida, coloque a misture. Deixe cada lado por cerca de 2 minutos."
-          }
-          ]
-        },
-      {
-      "name": "Bolo de banana",
-      "id": 2,
-      "image": "https://images.unsplash.com/photo-1587121269960-d9d68bfb6f12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      "creditsURL": "",
-      "author": "",
-      "lvl": "Fácil",
-      "favorited": false,
-      "category": ["Sobremesa", "Vegetariano"],
-      "ingredients": [
-      {
-          "name": "Ovo",
-          "amount": 4,
-          "measure": "unidade"
-      },
-      {
-          "name": "Óleo de coco",
-          "amount": 0.5,
-          "measure": "xícara"
-      },
-      {
-          "name": "Açucar mascavo",
-          "amount": 0.25,
-          "measure": "xícara"
-      },
-      {
-          "name": "Banana",
-          "amount": 4,
-          "measure": "unidade"
-      },
-      {
-          "name": "Canela em pó",
-          "amount": 1,
-          "measure": "colher de chá"
-      },
-      {
-          "name": "Farinha de aveia",
-          "amount": 2,
-          "measure": "xícar"
-      },
-      {
-          "name": "Fermento",
-          "amount": 1,
-          "measure": "colher de sopa"
-      }
-      ],
-      "portion": 1,
-      "tools": ["vasilha", "espátula", "frigideira", "forno"],
-      "timer": [
-      {
-          "step": 4,
-          "timeInMinutes": 35
-      }
-      ],
-      "totalTime": 45,
-      "stepByStep":
-      [
-      {
-          "title": "Passo 1",
-          "description": "Primeiramente, preaqueça o forno a 200°C (temperatura média). Em uma vasilha, bata os ovos na mão até criar espuma. Em seguida, adicione o açucar, o óleo de coco e a canela. Misture os ingredientes."
-      },
-      {
-          "title": "Passo 2",
-          "description": "Amasse as bananas. Com elas amassadas, adicione aos ovos e misture bem"
-      },
-      {
-          "title": "Passo 3",
-          "description": "Na vasilha com a massa, adicione a aveia e o fermento. Misture até ficar uma massa homogênea. Nesse ponto, não precisa misturar mais."
-      },
-      {
-          "title": "Passo 4",
-          "description": "Coloque a mistura em uma forma de bolo que vá ao forno. Leve ao forno já aquecido e deixe por cerca de 35 minutos em 200°C (temperatura média)."
-      }
-      ]
-      }
     ]
 }
