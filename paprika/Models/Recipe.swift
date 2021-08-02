@@ -25,18 +25,21 @@ struct RecipeElement: Codable, Identifiable {
 }
 
 // MARK: - Ingredient
-struct Ingredient: Codable {
+struct Ingredient: Codable, Hashable, Identifiable {
+    let id: Int
     let name: String
     let amount: Double
     let measure: String
 }
 
 // MARK: - StepByStep
-struct StepByStep: Codable, Hashable {
+struct StepByStep: Codable, Hashable, Identifiable {
+    let id: Int
     let title, stepByStepDescription: String
     let timeInMinutes: Int?
 
     enum CodingKeys: String, CodingKey {
+        case id
         case title
         case stepByStepDescription = "description"
         case timeInMinutes
@@ -58,4 +61,9 @@ enum CategoryEnum: String, Codable {
     case janta = "Janta"
     case vegano = "Vegano"
     case vegetariano = "Vegetariano"
+    case acompanhamento = "Acompanhamento"
+    case saladas = "Salada"
+    case carne = "Carne"
+    case bolo = "Bolo"
+    case sopa = "Sopa"
 }
