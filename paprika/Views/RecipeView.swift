@@ -28,6 +28,7 @@ struct RecipeView: View {
                 
                 RightView(recipe: recipe)
                     .frame(width: geometry.size.width * 0.45)
+                    .padding(.trailing, 20)
             }//.background(Color.primitive50).edgesIgnoringSafeArea(.all)
             
         }
@@ -306,7 +307,7 @@ struct RightView: View {
                         )
 
                     }
-                    
+                    //MARK: - Steps body
                     ForEach(recipe.stepByStep, id: \.id) { step in
                         HStack() {
                             Text("\(step.id)")
