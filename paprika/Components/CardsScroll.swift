@@ -15,6 +15,7 @@ struct CardsScroll: View {
         ScrollView(.horizontal) {
             HStack(spacing: 16){
                 ForEach(recipes) { recipe in
+
                     NavigationLink(
                         destination: RecipeView(recipe: recipe),
                         label: {
@@ -28,6 +29,7 @@ struct CardsScroll: View {
             .onAppear() {
                 AppDataService().getRecipes { (recipes) in
                     self.recipes = recipes
+                
                 }
             }
         }
