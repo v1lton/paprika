@@ -13,7 +13,6 @@ struct Card: View {
     @Binding var photo: String
     @Binding var title: String
     @Binding var tag: String
-    @Binding var favorited: Bool
     
     var body: some View {
         ZStack{
@@ -45,7 +44,7 @@ struct Card: View {
                             .background((tag == "Fácil") ? Color.positiveFeedback50 : (tag == "Intermediário") ? Color.alertFeedback50 : Color.alertFeedback50)
                             .cornerRadius(8)
                         Spacer()
-                        Image(systemName: favorited ? "heart.fill" : "heart")
+                        Image(systemName: "heart")
                             .font(Font.system(size: 20, weight: .semibold))
                             .foregroundColor(Color.brandPrimary400)
                     }
@@ -59,7 +58,7 @@ struct Card: View {
 
 struct card_Previews: PreviewProvider {
     static var previews: some View {
-        Card(photo: Binding.constant("placeholder"), title: Binding.constant("Omelete"), tag: Binding.constant("Intermediário"), favorited: Binding.constant(true))
+        Card(photo: Binding.constant("placeholder"), title: Binding.constant("Omelete"), tag: Binding.constant("Intermediário"))
             .previewLayout(.sizeThatFits)
             .previewDisplayName("Card")
             .background(Color(.white))

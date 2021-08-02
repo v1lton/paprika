@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct paprikaApp: App {
+    
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {

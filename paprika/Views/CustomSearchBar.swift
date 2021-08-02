@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CustomSearchBar: View {
     
-    @State private var isEditing = false
+    @Binding var isEditing: Bool
     @Binding var text: String
     var body: some View {
         
@@ -17,7 +17,7 @@ struct CustomSearchBar: View {
             
             TextField("Pesquise por nome, ingrediente ou categoria", text: $text)
                 .padding(15)
-                .padding(.horizontal, 25)
+                .padding(.horizontal, 35)
                 .foregroundColor(.primitive500)
                 .cornerRadius(10)
                 .overlay(
@@ -28,19 +28,19 @@ struct CustomSearchBar: View {
                             .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                             .padding(.leading, 15)
                         
-                        if isEditing {
+                        if isEditing == true{
                             Button(action: {
                                 self.text = ""
                             }, label: {
                                 Image(systemName: "multiply.circle.fill")
                                     .foregroundColor(Color.primitive500)
-                                    .padding(.trailing, 8 ) // corrigir padding do botao
+                                    .padding(.trailing, 8 )
                             })
                         }
                         
                     }
                 ).onTapGesture {
-                    self.isEditing = true
+                    isEditing = true
                 }
             if isEditing{
                 Button(action:{
@@ -56,8 +56,12 @@ struct CustomSearchBar: View {
             }
             
         }
+        .background(Color.primitive100)
+        .cornerRadius(10)
+        .padding(10)
     }
     
 }
+
 
 

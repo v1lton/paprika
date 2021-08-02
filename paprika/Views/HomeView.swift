@@ -11,40 +11,50 @@ struct HomeView: View {
     @State var recipes = [RecipeElement]()
     var columns = Array(repeating: GridItem(.flexible()), count: 2)
     @State var text = ""
+    @State public var isEditing = false
+    
     var body: some View {
-        VStack{
-            CustomSearchBar(text: $text)
-            Spacer()
-            ScrollView(.horizontal, showsIndicators: false){
-                //LazyVGrid(columns: columns, spacing:20){
-                    HStack(spacing: 16){
-                        ForEach(recipes) { recipe in
-                            if recipe.name.contains(text) && (text.count > 3){
-                                Card(photo: Binding.constant(recipe.image),
-                                     title: Binding.constant(recipe.name),
-                                     tag: Binding.constant(recipe.lvl),
-                                     favorited: Binding.constant(recipe.favorited))
+        ScrollView(.vertical, showsIndicators: false){
+            VStack{
+                CustomSearchBar(isEditing: Binding.constant(isEditing), text: $text)
+                Spacer()
+                ScrollView(.horizontal, showsIndicators: false){
+                    //LazyVGrid(columns: columns, spacing:20){
+                        HStack(spacing: 16){
+                            if isEditing == true{
+                                Text("Resultados da busca")
+                                    .font(.custom("SF Pro Display Bold", size: 24))
+                                    .lineLimit(2)
+                                    .foregroundColor(.primitiveBlack)
+                                Spacer()
+                            }
+                            ForEach(recipes) { recipe in
+                                if recipe.name.localizedCaseInsensitiveContains(text) && (text.count > 2){
+                                    Card(photo: Binding.constant(recipe.image),
+                                         title: Binding.constant(recipe.name),
+                                         tag: Binding.constant(recipe.lvl))
+                                }
+                            }
+                        }.padding(16)
+                        .onAppear() {
+                            AppDataService().getRecipes { (recipes) in
+                                self.recipes = recipes
                             }
                         }
-                    }.padding(16)
-                    .onAppear() {
-                        AppDataService().getRecipes { (recipes) in
-                            self.recipes = recipes
-                        }
-                    }
 
-                //}
+                    //}
+                }
             }
-        }
-        
-        ZStack {
-            Color.primitive100
-                .ignoresSafeArea()
             
-            VStack{
-                CardsScroll()
-                CardsScroll()
-                Spacer()
+            ZStack {
+                Color.primitive100
+                    .ignoresSafeArea()
+                
+                VStack{
+                    CardsScroll()
+                    CardsScroll()
+                    Spacer()
+                }
             }
         }
     }
