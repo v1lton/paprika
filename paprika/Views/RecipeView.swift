@@ -82,7 +82,7 @@ struct LeftView: View {
                         } else {
                             Text("Paprika")
                                 .font(.custom("SF Pro Display Regular", size: 16))
-                                .foregroundColor(Color.brandPrimary400)
+                                .foregroundColor(Color.primitive600)
                         }
                         
                         
@@ -255,8 +255,9 @@ struct RightView: View {
         ScrollView {
             VStack {
                 //MARK: - Ingredients
+                //MARK: - Ingredients Header
                 VStack{
-                    HStack{
+                    HStack {
                         Text("Ingredientes")
                             .font(.custom("Albra Semi", size: 32))
                             .foregroundColor(Color.primitiveBlack)
@@ -277,23 +278,33 @@ struct RightView: View {
                         })
                     }
                     
+                    //MARK: - Ingredients Body
                     ForEach(recipe.ingredients, id:\.id) { ingredient in
                         HStack {
+                            Text("\u{2022}")
+                                .font(.custom("SF Pro Display Regular", size: 20))
+                                .foregroundColor(Color.primitiveBlack)
                             
                             Text(String(ingredient.amount * Double(value)))
                                 .font(.custom("SF Pro Display Regular", size: 20))
                                 .foregroundColor(Color.primitiveBlack)
                             
-                            Text(ingredient.name)
+                            Text(ingredient.name.capitalizingFirstLetter())
                                 .font(.custom("SF Pro Display Regular", size: 20))
                                 .foregroundColor(Color.primitiveBlack)
                             
                             Spacer()
-                        }.onDrag {
+                            
+                            Text(ingredient.measure)
+                                .font(.custom("SF Pro Display Regular", size: 20))
+                                .foregroundColor(Color.primitiveBlack)
+                                .lowerCase
+                        }.padding(.bottom, 8)
+                        .onDrag {
                             NSItemProvider(object: "\(ingredient.amount * Double(value)) \(ingredient.name)" as NSString)
                          }
                     }
-                }.padding(.bottom, 80)
+                }.padding(.bottom, 64)
                 
                 Spacer()
                 
@@ -332,7 +343,7 @@ struct RightView: View {
                                 .stroke(Color.primitive200, lineWidth: 1)
                         )
 
-                    }
+                    }.padding(.bottom, 24)
                     //MARK: - Steps body
                     ForEach(recipe.stepByStep, id: \.id) { step in
                         HStack() {
@@ -342,13 +353,15 @@ struct RightView: View {
                             
                             Spacer()
                             
-                            Text(step.stepByStepDescription)
-                                .font(.custom("SF Pro Display Regular", size: 20))
-                                .foregroundColor(Color.primitiveBlack)
-                            
-                            Spacer()
-                            
-                            
+                            HStack {
+                                
+                                Text(step.stepByStepDescription)
+                                    .font(.custom("SF Pro Display Regular", size: 20))
+                                    .foregroundColor(Color.primitiveBlack)
+                                
+                                Spacer()
+                            }.padding(.leading, 16)
+            
                         }.padding(.all, 16)
                         .onDrag {
                             NSItemProvider(object: getAllSteps() as NSString)
@@ -361,5 +374,15 @@ struct RightView: View {
             }
         }
         
+    }
+}
+
+extension String {
+    func capitalizingFirstLetter() -> String {
+        return prefix(1).capitalized + dropFirst()
+    }
+
+    mutating func capitalizeFirstLetter() {
+        self = self.capitalizingFirstLetter()
     }
 }

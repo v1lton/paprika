@@ -119,10 +119,10 @@
                     "id": 6,
                     "name": "Farinha de aveia",
                     "amount": 2,
-                    "measure": "xícar"
+                    "measure": "xícara"
                 },
                 {
-                    "id": 6,
+                    "id": 7,
                     "name": "Fermento",
                     "amount": 1,
                     "measure": "colher de sopa"
