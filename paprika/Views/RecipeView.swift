@@ -227,6 +227,28 @@ struct RightView: View {
         }
     }
     
+    func getAllIngredients() -> String {
+        var ingredients: String = ""
+        for ingredient in recipe.ingredients {
+            ingredients = ingredients + String(ingredient.amount * Double(value)) + " " + ingredient.name + "\n"
+        }
+        return ingredients
+    }
+    
+    func getAllSteps() -> String {
+        var steps: String = recipe.name + "\n\n"
+        
+        for step in recipe.stepByStep {
+            if step.id < recipe.stepByStep.count {
+                steps = steps + step.title + ":\n" + step.stepByStepDescription + "\n\n"
+            } else {
+                steps = steps + step.title + ":\n" + step.stepByStepDescription
+            }
+        }
+        
+        return steps
+    }
+    
     
     var body: some View {
         
@@ -240,7 +262,9 @@ struct RightView: View {
                             .foregroundColor(Color.primitiveBlack)
                             .lineLimit(1)
                             .minimumScaleFactor(0.5)
-                        
+                            .onDrag {
+                                NSItemProvider(object: getAllIngredients() as NSString)
+                            }
                         
                         Spacer()
                         
@@ -265,7 +289,9 @@ struct RightView: View {
                                 .foregroundColor(Color.primitiveBlack)
                             
                             Spacer()
-                        }
+                        }.onDrag {
+                            NSItemProvider(object: "\(ingredient.amount * Double(value)) \(ingredient.name)" as NSString)
+                         }
                     }
                 }.padding(.bottom, 80)
                 
@@ -320,8 +346,13 @@ struct RightView: View {
                                 .font(.custom("SF Pro Display Regular", size: 20))
                                 .foregroundColor(Color.primitiveBlack)
                             
+                            Spacer()
+                            
                             
                         }.padding(.all, 16)
+                        .onDrag {
+                            NSItemProvider(object: getAllSteps() as NSString)
+                         }
                         
                         Divider()
                         
