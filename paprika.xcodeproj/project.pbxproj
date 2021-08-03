@@ -790,8 +790,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4A49P664P7;
+				DEVELOPMENT_TEAM = A9DZA4U68F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = paprika/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -799,10 +800,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = academyufpe.paprikaapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academyufpe.paprikaapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -813,7 +815,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4A49P664P7;
+				DEVELOPMENT_TEAM = A9DZA4U68F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = paprika/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -821,10 +823,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = academyufpe.paprikaapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academyufpe.paprikaapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
