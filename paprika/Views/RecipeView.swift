@@ -8,11 +8,6 @@
 import SwiftUI
 import SDWebImageSwiftUI
 
-// TODO: Mudar a cor do fundo
-// TODO: Arrumar a imagem
-// TODO: Ajustar o espaçamento entre os elementos
-
-
 struct RecipeView: View {
     var recipe: RecipeElement
     
@@ -34,8 +29,7 @@ struct RecipeView: View {
                 RightView(recipe: recipe, recipePortion: recipe.portion)
                     .frame(width: geometry.size.width * 0.45)
                     .padding(.trailing, 20)
-            }//.background(Color.primitive50).edgesIgnoringSafeArea(.all)
-            
+            }
         }
     }
 }
@@ -53,8 +47,13 @@ struct LeftView: View {
                     .resizable()
                     .placeholder(Image("placeholder"))
                     .transition(.fade(duration: 0.5))
-                    .frame(width: geometry.size.width * 0.94, height: geometry.size.height * 0.46)
-                    .scaledToFit()
+                    .scaledToFill()
+                    .frame(width: geometry.size.width ,height: geometry.size.height * 0.46)
+                    .clipped()
+                    //.scaledToFill()
+                    //.aspectRatio(contentMode: .fill)
+                    
+                    //.scaledToFill()
                 
                 VStack{
                     HStack{
@@ -321,11 +320,7 @@ struct RightView: View {
                                     .foregroundColor(Color.brandSecondary400)
                             }
                             
-                        })//.padding(.all, 16)
-//                        .overlay(
-//                            RoundedRectangle(cornerRadius: 8)
-//                                .stroke(Color.primitive200, lineWidth: 1)
-//                        )
+                        })
                         
                         Divider()
                         
@@ -337,21 +332,29 @@ struct RightView: View {
                             Text("\u{2022}")
                                 .font(.custom("SF Pro Display Regular", size: 20))
                                 .foregroundColor(Color.primitiveBlack)
+                                .layoutPriority(1)
                             
                             Text(fractionToString(fraction: ingredient.amount * Double(Double(value) / Double(recipe.portion))))
                                 .font(.custom("SF Pro Display Regular", size: 20))
                                 .foregroundColor(Color.primitiveBlack)
+                                .layoutPriority(1)
                             
                             Text(ingredient.name.capitalizingFirstLetter())
                                 .font(.custom("SF Pro Display Regular", size: 20))
                                 .foregroundColor(Color.primitiveBlack)
+                                .layoutPriority(1)
+                            
+                            Text("....................................................................................................................................................................................").font(.custom("SF Pro Display Regular", size: 20))
+                                .foregroundColor(Color.primitiveBlack)
+                                .lineLimit(1)
                             
                             Spacer()
                             
                             Text(ingredient.measure.lowercased())
                                 .font(.custom("SF Pro Display Regular", size: 20))
                                 .foregroundColor(Color.primitiveBlack)
-                            
+                                .layoutPriority(1)
+                                
                         }.padding(.bottom, 8)
                         .onDrag {
                             NSItemProvider(object: "\(ingredient.amount * Double(value)) \(ingredient.name)" as NSString)
@@ -396,7 +399,7 @@ struct RightView: View {
                                 .stroke(Color.primitive200, lineWidth: 1)
                         )
                         
-                    }.padding(.bottom, 24)
+                    }.padding(.bottom, 16)
                     //MARK: - Steps body
                     ForEach(recipe.stepByStep, id: \.id) { step in
                         HStack() {
