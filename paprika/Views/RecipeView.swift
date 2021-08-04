@@ -11,7 +11,7 @@ import SDWebImageSwiftUI
 // TODO: Mudar a cor do fundo
 // TODO: Arrumar a imagem
 // TODO: Ajustar o espaçamento entre os elementos
-// TODO: Ajustar o stepper
+
 
 struct RecipeView: View {
     var recipe: RecipeElement
@@ -255,27 +255,27 @@ struct RightView: View {
     }
     
     func fractionToString (fraction: Double) -> String {
-             switch fraction {
-             case 0.125..<0.126:
-                 return NSLocalizedString("\u{215B}", comment: "1/8")
-             case 0.25..<0.26:
-                 return NSLocalizedString("\u{00BC}", comment: "1/4")
-             case 0.33..<0.34:
-                 return NSLocalizedString("\u{2153}", comment: "1/3")
-             case 0.5..<0.6:
-                 return NSLocalizedString("\u{00BD}", comment: "1/2")
-             case 0.66..<0.67:
-                 return NSLocalizedString("\u{2154}", comment: "2/3")
-             case 0.75..<0.76:
-                 return NSLocalizedString("\u{00BE}", comment: "3/4")
-             default:
-                let formatter = NumberFormatter()
-                formatter.minimumFractionDigits = 0
-                formatter.maximumFractionDigits = 2
-                formatter.numberStyle = .decimal
-                return formatter.string(from: fraction as NSNumber)!
-            }
-         }
+        switch fraction {
+        case 0.125..<0.126:
+            return NSLocalizedString("\u{215B}", comment: "1/8")
+        case 0.25..<0.26:
+            return NSLocalizedString("\u{00BC}", comment: "1/4")
+        case 0.33..<0.34:
+            return NSLocalizedString("\u{2153}", comment: "1/3")
+        case 0.5..<0.6:
+            return NSLocalizedString("\u{00BD}", comment: "1/2")
+        case 0.66..<0.67:
+            return NSLocalizedString("\u{2154}", comment: "2/3")
+        case 0.75..<0.76:
+            return NSLocalizedString("\u{00BE}", comment: "3/4")
+        default:
+            let formatter = NumberFormatter()
+            formatter.minimumFractionDigits = 0
+            formatter.maximumFractionDigits = 2
+            formatter.numberStyle = .decimal
+            return formatter.string(from: fraction as NSNumber)!
+        }
+    }
     
     
     var body: some View {
@@ -285,25 +285,50 @@ struct RightView: View {
                 //MARK: - Ingredients
                 //MARK: - Ingredients Header
                 VStack{
-                    HStack {
-                        Text("Ingredientes")
-                            .font(.custom("Albra Semi", size: 32))
-                            .foregroundColor(Color.primitiveBlack)
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.5)
-                            .onDrag {
-                                NSItemProvider(object: getAllIngredients() as NSString)
-                            }
+                    VStack {
+                        HStack {
+                            Text("Ingredientes")
+                                .font(.custom("Albra Semi", size: 32))
+                                .foregroundColor(Color.primitiveBlack)
+                                .lineLimit(1)
+                                .minimumScaleFactor(0.5)
+                                .onDrag {
+                                    NSItemProvider(object: getAllIngredients() as NSString)
+                                }
+                            Spacer()
+                        }
                         
-                        Spacer()
+                        Divider()
                         
                         Stepper(onIncrement: {
                             incrementStep()
                         }, onDecrement: {
                             decrementStep()
                         }, label: {
-                            Text("Porções: \(value)")
-                        })
+                            HStack {
+                                if (value == 1) {
+                                    Image(systemName: "person")
+                                        .font(.custom("SF Pro Display Semibold", size: 20))
+                                        .foregroundColor(Color.brandSecondary400)
+                                } else {
+                                    Image(systemName: "person.2")
+                                        .font(.custom("SF Pro Display Semibold", size: 20))
+                                        .foregroundColor(Color.brandSecondary400)
+                                }
+                                
+                                Text("Porções: \(value)")
+                                    .font(.custom("SF Pro Display Semibold", size: 20))
+                                    .foregroundColor(Color.brandSecondary400)
+                            }
+                            
+                        })//.padding(.all, 16)
+//                        .overlay(
+//                            RoundedRectangle(cornerRadius: 8)
+//                                .stroke(Color.primitive200, lineWidth: 1)
+//                        )
+                        
+                        Divider()
+                        
                     }
                     
                     //MARK: - Ingredients Body
@@ -330,7 +355,7 @@ struct RightView: View {
                         }.padding(.bottom, 8)
                         .onDrag {
                             NSItemProvider(object: "\(ingredient.amount * Double(value)) \(ingredient.name)" as NSString)
-                         }
+                        }
                     }
                 }.padding(.bottom, 64)
                 
@@ -370,7 +395,7 @@ struct RightView: View {
                             RoundedRectangle(cornerRadius: 8)
                                 .stroke(Color.primitive200, lineWidth: 1)
                         )
-
+                        
                     }.padding(.bottom, 24)
                     //MARK: - Steps body
                     ForEach(recipe.stepByStep, id: \.id) { step in
@@ -389,11 +414,11 @@ struct RightView: View {
                                 
                                 Spacer()
                             }.padding(.leading, 16)
-            
+                            
                         }.padding(.all, 16)
                         .onDrag {
                             NSItemProvider(object: getAllSteps() as NSString)
-                         }
+                        }
                         
                         Divider()
                         
@@ -409,7 +434,7 @@ extension String {
     func capitalizingFirstLetter() -> String {
         return prefix(1).capitalized + dropFirst()
     }
-
+    
     mutating func capitalizeFirstLetter() {
         self = self.capitalizingFirstLetter()
     }
