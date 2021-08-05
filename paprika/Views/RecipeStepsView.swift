@@ -115,6 +115,9 @@ struct RecipeStepsView: View {
                                 Text(step.stepByStepDescription)
                                     .lineSpacing(10)
                                     .font(.custom("SF Pro Display Regular", size: 32))
+                                    .onDrag {
+                                        NSItemProvider(object: step.stepByStepDescription as NSString)
+                                     }
                                 
                                 Spacer().frame(height: 32)
                                 
