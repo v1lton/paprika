@@ -50,10 +50,6 @@ struct LeftView: View {
                     .scaledToFill()
                     .frame(width: geometry.size.width ,height: geometry.size.height * 0.46)
                     .clipped()
-                    //.scaledToFill()
-                    //.aspectRatio(contentMode: .fill)
-                    
-                    //.scaledToFill()
                 
                 VStack{
                     HStack{
