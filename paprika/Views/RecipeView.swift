@@ -152,6 +152,7 @@ struct LeftView: View {
                     }
                     .frame(maxWidth: geometry.size.width * 0.9, idealHeight: 100, maxHeight: 100, alignment: .leading)
                     .background(Color.primitiveWhite)
+                    .cornerRadius(8)
                     .overlay(
                         RoundedRectangle(cornerRadius: 8)
                             .stroke(Color.brandSecondary400, lineWidth: 1)
@@ -396,6 +397,7 @@ struct RightView: View {
                         .padding(.all, 12)
                         .background(Color.primitiveWhite)
                         .foregroundColor(Color.brandPrimary400)
+                        .cornerRadius(8)
                         .overlay(
                             RoundedRectangle(cornerRadius: 8)
                                 .stroke(Color.primitive200, lineWidth: 1)
