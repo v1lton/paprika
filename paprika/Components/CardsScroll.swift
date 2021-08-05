@@ -22,6 +22,7 @@ struct CardsScroll: View {
                             Card(photo: Binding.constant(recipe.image),
                                  title: Binding.constant(recipe.name),
                                  tag: Binding.constant(recipe.lvl))
+
                         }).navigationTitle("Início")
                 }
             }.padding(16)
