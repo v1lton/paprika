@@ -18,38 +18,50 @@ struct HomeView: View {
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            VStack{
-                CustomSearchBar(isEditing: Binding.constant(isEditing), text: $text)
-                
-                Spacer()
-                
-                ScrollView(.horizontal, showsIndicators: false){
+            
+            VStack {
+                VStack{
                     
-                    HStack(spacing: 16){
-                        if isEditing == true{
+                    CustomSearchBar(isEditing: $isEditing, text: $text)
+                        .edgesIgnoringSafeArea(.top)
+                        .onTapGesture {
+                            isEditing = true
+                        }
+                    
+                    if isEditing == true && text.count > 2 {
+                        HStack {
                             Text("Resultados da busca")
                                 .font(.custom("SF Pro Display Bold", size: 24))
                                 .lineLimit(2)
                                 .foregroundColor(.primitiveBlack)
+                            
                             Spacer()
                         }
-                        ForEach(recipes) { recipe in
-                            if recipe.name.localizedCaseInsensitiveContains(text) && (text.count > 2){
-                                Card(photo: Binding.constant(recipe.image),
-                                     title: Binding.constant(recipe.name),
-                                     tag: Binding.constant(recipe.lvl))
+                        
+                        ScrollView(.horizontal, showsIndicators: false){
+                            
+                            HStack {
+                                ForEach(recipes) { recipe in
+                                    if recipe.name.localizedCaseInsensitiveContains(text) && (text.count > 2){
+                                        Card(photo: Binding.constant(recipe.image),
+                                             title: Binding.constant(recipe.name),
+                                             tag: Binding.constant(recipe.lvl))
+                                    }
+                                }
                             }
-                        }
-                    }.padding(16)
-                    .onAppear() {
-                        AppDataService().getRecipes { (recipes) in
-                            self.recipes = recipes
-                        }
+                            
+                        }.padding(16)
+                        
                     }
                 }
+                
+                SectionsView(recipes: recipes)
+                
+            }.onAppear() {
+                AppDataService().getRecipes { (recipes) in
+                    self.recipes = recipes
+                }
             }
-            
-            SectionsView(recipes: recipes)
             
         }.navigationTitle("")
     }
@@ -91,7 +103,7 @@ struct SectionsView: View {
                                                 Card(photo: Binding.constant(recipe.image),
                                                      title: Binding.constant(recipe.name),
                                                      tag: Binding.constant(recipe.lvl))
-                                            }).navigationTitle("Início")
+                                            })//.navigationTitle("Início")
                                     }
                                 }
                             }
@@ -123,7 +135,7 @@ struct SectionsView: View {
                                                     Card(photo: Binding.constant(recipe.image),
                                                          title: Binding.constant(recipe.name),
                                                          tag: Binding.constant(recipe.lvl))
-                                                }).navigationTitle("Início")
+                                                })//.navigationTitle("Início")
                                         }
                                     }
                                 }
@@ -155,7 +167,7 @@ struct SectionsView: View {
                                                 Card(photo: Binding.constant(recipe.image),
                                                      title: Binding.constant(recipe.name),
                                                      tag: Binding.constant(recipe.lvl))
-                                            }).navigationTitle("Início")
+                                            })//.navigationTitle("Início")
                                     }
                                 }
                             }
@@ -175,4 +187,3 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
     }
 }
-
