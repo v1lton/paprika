@@ -34,7 +34,11 @@ struct GridView: View {
                 ScrollView {
                     LazyVGrid(columns: gridItemLayout, spacing: 16) {
                         ForEach(recipes) { recipe in
-                            Card(photo: Binding.constant(recipe.image), title: Binding.constant(recipe.name), tag: Binding.constant(recipe.lvl))
+                            NavigationLink(
+                                destination: RecipeView(recipe: recipe),
+                                label: {
+                                    Card(photo: Binding.constant(recipe.image), title: Binding.constant(recipe.name), tag: Binding.constant(recipe.lvl))
+                                })
                         }
                     }
                 }

@@ -38,10 +38,11 @@ struct HomeView: View {
                             if isEditing == true && text.count > 2 {
                                 HStack {
                                     Text("Resultados da busca")
-                                        .font(.custom("SF Pro Display Bold", size: 24))
-                                        .lineLimit(2)
-                                        .foregroundColor(.primitiveBlack)
+                                        .font(.custom("Albra Semi", size: 56))
+                                        .foregroundColor(Color.primitiveBlack)
+                                        .minimumScaleFactor(0.5)
                                         .padding(.leading, 16)
+                                        .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
                                     
                                     Spacer()
                                 }
@@ -50,7 +51,12 @@ struct HomeView: View {
                                     LazyVGrid(columns: gridItemLayout, spacing: 16) {
                                         ForEach(recipes) { recipe in
                                             if recipe.name.localizedCaseInsensitiveContains(text) && (text.count > 2) {
-                                                Card(photo: Binding.constant(recipe.image), title: Binding.constant(recipe.name), tag: Binding.constant(recipe.lvl))
+                                                NavigationLink(
+                                                    destination: RecipeView(recipe: recipe),
+                                                    label: {
+                                                        Card(photo: Binding.constant(recipe.image), title: Binding.constant(recipe.name), tag: Binding.constant(recipe.lvl))
+                                                    })
+                                                
                                             }
                                         }
                                     }
@@ -107,7 +113,7 @@ struct SectionsView: View {
                                                 Card(photo: Binding.constant(recipe.image),
                                                      title: Binding.constant(recipe.name),
                                                      tag: Binding.constant(recipe.lvl))
-                                            })//.navigationTitle("Início")
+                                            })
                                     }
                                 }
                             }
@@ -140,7 +146,7 @@ struct SectionsView: View {
                                                     Card(photo: Binding.constant(recipe.image),
                                                          title: Binding.constant(recipe.name),
                                                          tag: Binding.constant(recipe.lvl))
-                                                })//.navigationTitle("Início")
+                                                })
                                         }
                                     }
                                 }
@@ -173,7 +179,7 @@ struct SectionsView: View {
                                                 Card(photo: Binding.constant(recipe.image),
                                                      title: Binding.constant(recipe.name),
                                                      tag: Binding.constant(recipe.lvl))
-                                            })//.navigationTitle("Início")
+                                            })
                                     }
                                 }
                             }
