@@ -36,7 +36,7 @@ struct RecipeView: View {
                 
             }
             
-        }
+        }.navigationBarTitleDisplayMode(.large)
     }
 }
 
@@ -180,10 +180,9 @@ struct LeftView: View {
                                     .lineLimit(1)
                             }
                         }
-                    )
+                    ).navigationTitle("Receita")
                     .padding(.all, 12)
                     .minimumScaleFactor(0.5)
-                    //.frame(width: 278, height: 48, alignment: .center)
                     .background(Color.brandPrimary400)
                     .foregroundColor(Color.primitiveWhite)
                     .cornerRadius(8)

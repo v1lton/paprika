@@ -66,7 +66,7 @@ struct HomeView: View {
                     }
                 }
                 
-            }.navigationTitle("")
+            }.navigationBarTitle("", displayMode: .inline)
         }
     }
 }
