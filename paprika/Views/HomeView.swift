@@ -11,8 +11,8 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @State var recipes = [RecipeElement]()
-    var columns = Array(repeating: GridItem(.flexible()), count: 2)
+    @Binding var recipes: [RecipeElement]
+    let gridItemLayout = [GridItem(.adaptive(minimum: 312))]
     @State var text = ""
     @State public var isEditing = false
     
@@ -41,36 +41,28 @@ struct HomeView: View {
                                         .font(.custom("SF Pro Display Bold", size: 24))
                                         .lineLimit(2)
                                         .foregroundColor(.primitiveBlack)
+                                        .padding(.leading, 16)
                                     
                                     Spacer()
                                 }
                                 
-                                ScrollView(.horizontal, showsIndicators: false){
-                                    
-                                    HStack {
+                                ScrollView {
+                                    LazyVGrid(columns: gridItemLayout, spacing: 16) {
                                         ForEach(recipes) { recipe in
-                                            if recipe.name.localizedCaseInsensitiveContains(text) && (text.count > 2){
-                                                Card(photo: Binding.constant(recipe.image),
-                                                     title: Binding.constant(recipe.name),
-                                                     tag: Binding.constant(recipe.lvl))
+                                            if recipe.name.localizedCaseInsensitiveContains(text) && (text.count > 2) {
+                                                Card(photo: Binding.constant(recipe.image), title: Binding.constant(recipe.name), tag: Binding.constant(recipe.lvl))
                                             }
                                         }
                                     }
-                                    
-                                }.padding(16)
+                                }
+                                
+                            } else {
+                                SectionsView(recipes: recipes)
+                                    .padding(.top, 32)
                                 
                             }
                         }
-                        
-                        SectionsView(recipes: recipes)
-                            .padding(.top, 32)
-                        
-                    }.onAppear() {
-                        AppDataService().getRecipes { (recipes) in
-                            self.recipes = recipes
-                        }
                     }
-                    
                 }.navigationBarTitle("", displayMode: .inline)
             }
             
@@ -193,11 +185,5 @@ struct SectionsView: View {
             }
             
         }
-    }
-}
-
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
     }
 }
