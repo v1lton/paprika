@@ -35,7 +35,7 @@ struct CustomSearchBar: View {
                                 Image(systemName: "multiply.circle.fill")
                                     .foregroundColor(Color.primitive500)
                                     .padding(.trailing, 8 )
-                            })
+                            }).opacity((text.count > 0) ? 1 : 0)
                         }
                         
                     }
@@ -45,6 +45,7 @@ struct CustomSearchBar: View {
             if isEditing{
                 Button(action:{
                     self.isEditing = false
+                    text = ""
                     UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
                 }){
                     Text("Cancel")
@@ -59,6 +60,7 @@ struct CustomSearchBar: View {
         .background(Color.primitive100)
         .cornerRadius(10)
         .padding(10)
+        .background(Color.primitive50)
     }
     
 }

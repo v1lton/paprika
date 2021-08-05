@@ -13,24 +13,30 @@ struct RecipeView: View {
     
     var body: some View {
         GeometryReader { geometry in
-            
-            HStack() {
-                LeftView(recipe: recipe)
-                    .frame(width: geometry.size.width * 0.45)
-                    .padding(.leading, 20)
-                    .padding(.bottom, 20)
+            ZStack {
+                Color.primitive50
+                    .ignoresSafeArea()
                 
-                Spacer()
+                HStack() {
+                    LeftView(recipe: recipe)
+                        .frame(width: geometry.size.width * 0.45)
+                        .padding(.leading, 20)
+                        .padding(.bottom, 20)
+                    
+                    Spacer()
+                    
+                    Divider()
+                    
+                    Spacer()
+                    
+                    RightView(recipe: recipe, recipePortion: recipe.portion)
+                        .frame(width: geometry.size.width * 0.45)
+                        .padding(.trailing, 20)
+                }
                 
-                Divider()
-                
-                Spacer()
-                
-                RightView(recipe: recipe, recipePortion: recipe.portion)
-                    .frame(width: geometry.size.width * 0.45)
-                    .padding(.trailing, 20)
             }
-        }
+            
+        }.navigationBarTitleDisplayMode(.large)
     }
 }
 
@@ -50,10 +56,6 @@ struct LeftView: View {
                     .scaledToFill()
                     .frame(width: geometry.size.width ,height: geometry.size.height * 0.46)
                     .clipped()
-                    //.scaledToFill()
-                    //.aspectRatio(contentMode: .fill)
-                    
-                    //.scaledToFill()
                 
                 VStack{
                     HStack{
@@ -150,6 +152,7 @@ struct LeftView: View {
                     }
                     .frame(maxWidth: geometry.size.width * 0.9, idealHeight: 100, maxHeight: 100, alignment: .leading)
                     .background(Color.primitiveWhite)
+                    .cornerRadius(8)
                     .overlay(
                         RoundedRectangle(cornerRadius: 8)
                             .stroke(Color.brandSecondary400, lineWidth: 1)
@@ -177,10 +180,9 @@ struct LeftView: View {
                                     .lineLimit(1)
                             }
                         }
-                    )
+                    ).navigationTitle("Receita")
                     .padding(.all, 12)
                     .minimumScaleFactor(0.5)
-                    //.frame(width: 278, height: 48, alignment: .center)
                     .background(Color.brandPrimary400)
                     .foregroundColor(Color.primitiveWhite)
                     .cornerRadius(8)
@@ -394,6 +396,7 @@ struct RightView: View {
                         .padding(.all, 12)
                         .background(Color.primitiveWhite)
                         .foregroundColor(Color.brandPrimary400)
+                        .cornerRadius(8)
                         .overlay(
                             RoundedRectangle(cornerRadius: 8)
                                 .stroke(Color.primitive200, lineWidth: 1)

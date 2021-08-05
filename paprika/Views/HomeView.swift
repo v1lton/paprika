@@ -5,62 +5,193 @@
 //  Created by iris on 21/07/21.
 //
 
+// TODO: Retirar o título Início
+
 import SwiftUI
+
 struct HomeView: View {
     
-    @State var recipes = [RecipeElement]()
-    var columns = Array(repeating: GridItem(.flexible()), count: 2)
+    @Binding var recipes: [RecipeElement]
+    let gridItemLayout = [GridItem(.adaptive(minimum: 312))]
     @State var text = ""
     @State public var isEditing = false
     @StateObject var favorites = Favorites()
     
     var body: some View {
-        ScrollView(.vertical, showsIndicators: false){
+        ZStack {
+            Color.primitive50
+                .ignoresSafeArea()
+            
             VStack{
-                CustomSearchBar(isEditing: Binding.constant(isEditing), text: $text)
+                CustomSearchBar(isEditing: $isEditing, text: $text)
+                    .padding(.horizontal, 10)
+                    .onTapGesture {
+                        isEditing = true
+                    }
+                
                 Spacer()
-                ScrollView(.horizontal, showsIndicators: false){
-                    //LazyVGrid(columns: columns, spacing:20){
-                        HStack(spacing: 16){
-                            if isEditing == true{
-                                Text("Resultados da busca")
-                                    .font(.custom("SF Pro Display Bold", size: 24))
-                                    .lineLimit(2)
-                                    .foregroundColor(.primitiveBlack)
-                                Spacer()
-                            }
-                            ForEach(recipes) { recipe in
-                                if recipe.name.localizedCaseInsensitiveContains(text) && (text.count > 2){
-                                    Card(recipe: Binding.constant(recipe), favorites: favorites)
+                
+                ScrollView(.vertical, showsIndicators: false) {
+                    
+                    VStack {
+                        VStack{
+                            
+                            if isEditing == true && text.count > 2 {
+                                HStack {
+                                    Text("Resultados da busca")
+                                        .font(.custom("Albra Semi", size: 56))
+                                        .foregroundColor(Color.primitiveBlack)
+                                        .minimumScaleFactor(0.5)
+                                        .padding(.leading, 16)
+                                        .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
+                                    
+                                    Spacer()
                                 }
+                                
+                                ScrollView {
+                                    LazyVGrid(columns: gridItemLayout, spacing: 16) {
+                                        ForEach(recipes) { recipe in
+                                            if recipe.name.localizedCaseInsensitiveContains(text) && (text.count > 2) {
+                                                NavigationLink(
+                                                    destination: RecipeView(recipe: recipe),
+                                                    label: {
+                                                        Card(recipe: Binding.constant(recipe), favorites: favorites)
+                                                    })
+                                                
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                            } else {
+                                SectionsView(recipes: recipes)
+                                    .padding(.top, 32)
+                                
                             }
-                        }.padding(16)
-                        .onAppear() {
-                            AppDataService().getRecipes { (recipes) in
-                                self.recipes = recipes
-                            }
+//<<<<<<< HEAD
+//                            ForEach(recipes) { recipe in
+//                                if recipe.name.localizedCaseInsensitiveContains(text) && (text.count > 2){
+//                                    Card(recipe: Binding.constant(recipe), favorites: favorites)
+//=======
                         }
-
-                    //}
-                }
+                    }
+                }.navigationBarTitle("", displayMode: .inline)
             }
             
-            ZStack {
-                Color.primitive100
-                    .ignoresSafeArea()
-                
-                VStack{
-                    CardsScroll()
-                    CardsScroll()
-                    Spacer()
-                }
-            }
         }
     }
 }
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
+
+struct SectionsView: View {
+    let recipes: [RecipeElement]
+    @StateObject var favorites = Favorites()
+    
+    var body: some View {
+        ZStack {
+            Color.primitive50
+                .ignoresSafeArea()
+            
+            // MARK: - All Categories
+            
+            ScrollView {
+                VStack(spacing:48) {
+                    
+                    //MARK: - Breakfast
+                    VStack {
+                        HStack {
+                            
+                            Text("Café da manhã")
+                                .font(.custom("Albra Semi", size: 56))
+                                .foregroundColor(Color.primitiveBlack)
+                                .minimumScaleFactor(0.5)
+                                .padding(.leading, 16)
+                            
+                            Spacer()
+                        }
+                        
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: 16) {
+                                ForEach(recipes) { recipe in
+                                    if recipe.category.contains(CategoryEnum(rawValue: "Café da manhã")!) {
+                                        
+                                        NavigationLink(
+                                            destination: RecipeView(recipe: recipe),
+                                            label: {
+                                                Card(recipe: Binding.constant(recipe), favorites: favorites)
+                                            })
+                                    }
+//>>>>>>> feature/recipeStepsView
+                                }
+                            }
+                            
+                        }.padding(16)
+                    }
+                    
+                    //MARK: - Sweet potatoes
+                    VStack {
+                        HStack {
+                            
+                            Text("Receitas com batata-doce")
+                                .font(.custom("Albra Semi", size: 56))
+                                .foregroundColor(Color.primitiveBlack)
+                                .minimumScaleFactor(0.5)
+                                .padding(.leading, 16)
+                            
+                            Spacer()
+                        }
+                        
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: 16) {
+                                ForEach(recipes) { recipe in
+                                    ForEach(recipe.ingredients) { ingredient in
+                                        let ingredientName = ingredient.name.lowercased()
+                                        if ingredientName.contains("batata-doce") {
+                                            NavigationLink(
+                                                destination: RecipeView(recipe: recipe),
+                                                label: {
+                                                    Card(recipe: Binding.constant(recipe), favorites: favorites)
+                                                })
+                                        }
+                                    }
+                                }
+                            }
+                            
+                        }.padding(16)
+                    }
+                    
+                    //MARK: - Vegan
+                    VStack {
+                        HStack {
+                            
+                            Text("Para lanchar")
+                                .font(.custom("Albra Semi", size: 56))
+                                .foregroundColor(Color.primitiveBlack)
+                                .minimumScaleFactor(0.5)
+                                .padding(.leading, 16)
+                            
+                            Spacer()
+                        }
+                        
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: 16) {
+                                ForEach(recipes) { recipe in
+                                    if recipe.category.contains(CategoryEnum(rawValue: "Sobremesa")!) {
+                                        
+                                        NavigationLink(
+                                            destination: RecipeView(recipe: recipe),
+                                            label: {
+                                                Card(recipe: Binding.constant(recipe), favorites: favorites)
+                                            })
+                                    }
+                                }
+                            }
+                            
+                        }.padding(16)
+                    }
+                    
+                }
+            }
+            
+        }
     }
 }
-
