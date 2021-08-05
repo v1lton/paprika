@@ -23,20 +23,17 @@ struct HomeView: View {
             
             VStack{
                 CustomSearchBar(isEditing: $isEditing, text: $text)
-                    //.edgesIgnoringSafeArea(.top)
-                    .padding(.bottom, 32)
+                    .padding(.horizontal, 10)
                     .onTapGesture {
                         isEditing = true
                     }
-                Spacer()
                 
+                Spacer()
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     
                     VStack {
                         VStack{
-                            
-                            
                             
                             if isEditing == true && text.count > 2 {
                                 HStack {
@@ -66,6 +63,7 @@ struct HomeView: View {
                         }
                         
                         SectionsView(recipes: recipes)
+                            .padding(.top, 32)
                         
                     }.onAppear() {
                         AppDataService().getRecipes { (recipes) in
@@ -75,8 +73,6 @@ struct HomeView: View {
                     
                 }.navigationBarTitle("", displayMode: .inline)
             }
-            
-           
             
         }
     }
@@ -103,6 +99,7 @@ struct SectionsView: View {
                                 .font(.custom("Albra Semi", size: 56))
                                 .foregroundColor(Color.primitiveBlack)
                                 .minimumScaleFactor(0.5)
+                                .padding(.leading, 16)
                             
                             Spacer()
                         }
@@ -134,6 +131,7 @@ struct SectionsView: View {
                                 .font(.custom("Albra Semi", size: 56))
                                 .foregroundColor(Color.primitiveBlack)
                                 .minimumScaleFactor(0.5)
+                                .padding(.leading, 16)
                             
                             Spacer()
                         }
@@ -167,6 +165,7 @@ struct SectionsView: View {
                                 .font(.custom("Albra Semi", size: 56))
                                 .foregroundColor(Color.primitiveBlack)
                                 .minimumScaleFactor(0.5)
+                                .padding(.leading, 16)
                             
                             Spacer()
                         }
