@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CardsScroll: View {
     @State var recipes = [RecipeElement]()
+    @StateObject var favorites = Favorites()
     
     var body: some View {
         
@@ -19,9 +20,7 @@ struct CardsScroll: View {
                     NavigationLink(
                         destination: RecipeView(recipe: recipe),
                         label: {
-                            Card(photo: Binding.constant(recipe.image),
-                                 title: Binding.constant(recipe.name),
-                                 tag: Binding.constant(recipe.lvl))
+                            Card(recipe: Binding.constant(recipe), favorites: favorites)
                         }).navigationTitle("Início")
                 }
             }.padding(16)

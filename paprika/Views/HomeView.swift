@@ -12,6 +12,7 @@ struct HomeView: View {
     var columns = Array(repeating: GridItem(.flexible()), count: 2)
     @State var text = ""
     @State public var isEditing = false
+    @StateObject var favorites = Favorites()
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false){
@@ -30,9 +31,7 @@ struct HomeView: View {
                             }
                             ForEach(recipes) { recipe in
                                 if recipe.name.localizedCaseInsensitiveContains(text) && (text.count > 2){
-                                    Card(photo: Binding.constant(recipe.image),
-                                         title: Binding.constant(recipe.name),
-                                         tag: Binding.constant(recipe.lvl))
+                                    Card(recipe: Binding.constant(recipe), favorites: favorites)
                                 }
                             }
                         }.padding(16)
