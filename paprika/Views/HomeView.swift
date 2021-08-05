@@ -17,53 +17,57 @@ struct HomeView: View {
     @State public var isEditing = false
     
     var body: some View {
-        ScrollView(.vertical, showsIndicators: false) {
-            
-            VStack {
-                VStack{
-                    
-                    CustomSearchBar(isEditing: $isEditing, text: $text)
-                        .edgesIgnoringSafeArea(.top)
-                        .onTapGesture {
-                            isEditing = true
-                        }
-                    
-                    if isEditing == true && text.count > 2 {
-                        HStack {
-                            Text("Resultados da busca")
-                                .font(.custom("SF Pro Display Bold", size: 24))
-                                .lineLimit(2)
-                                .foregroundColor(.primitiveBlack)
-                            
-                            Spacer()
-                        }
+        ZStack {
+            Color.primitive50
+                .ignoresSafeArea()
+            ScrollView(.vertical, showsIndicators: false) {
+                
+                VStack {
+                    VStack{
                         
-                        ScrollView(.horizontal, showsIndicators: false){
-                            
+                        CustomSearchBar(isEditing: $isEditing, text: $text)
+                            .edgesIgnoringSafeArea(.top)
+                            .onTapGesture {
+                                isEditing = true
+                            }
+                        
+                        if isEditing == true && text.count > 2 {
                             HStack {
-                                ForEach(recipes) { recipe in
-                                    if recipe.name.localizedCaseInsensitiveContains(text) && (text.count > 2){
-                                        Card(photo: Binding.constant(recipe.image),
-                                             title: Binding.constant(recipe.name),
-                                             tag: Binding.constant(recipe.lvl))
-                                    }
-                                }
+                                Text("Resultados da busca")
+                                    .font(.custom("SF Pro Display Bold", size: 24))
+                                    .lineLimit(2)
+                                    .foregroundColor(.primitiveBlack)
+                                
+                                Spacer()
                             }
                             
-                        }.padding(16)
-                        
+                            ScrollView(.horizontal, showsIndicators: false){
+                                
+                                HStack {
+                                    ForEach(recipes) { recipe in
+                                        if recipe.name.localizedCaseInsensitiveContains(text) && (text.count > 2){
+                                            Card(photo: Binding.constant(recipe.image),
+                                                 title: Binding.constant(recipe.name),
+                                                 tag: Binding.constant(recipe.lvl))
+                                        }
+                                    }
+                                }
+                                
+                            }.padding(16)
+                            
+                        }
+                    }
+                    
+                    SectionsView(recipes: recipes)
+                    
+                }.onAppear() {
+                    AppDataService().getRecipes { (recipes) in
+                        self.recipes = recipes
                     }
                 }
                 
-                SectionsView(recipes: recipes)
-                
-            }.onAppear() {
-                AppDataService().getRecipes { (recipes) in
-                    self.recipes = recipes
-                }
-            }
-            
-        }.navigationTitle("")
+            }.navigationTitle("")
+        }
     }
 }
 

@@ -13,23 +13,29 @@ struct RecipeView: View {
     
     var body: some View {
         GeometryReader { geometry in
-            
-            HStack() {
-                LeftView(recipe: recipe)
-                    .frame(width: geometry.size.width * 0.45)
-                    .padding(.leading, 20)
-                    .padding(.bottom, 20)
+            ZStack {
+                Color.primitive50
+                    .ignoresSafeArea()
                 
-                Spacer()
+                HStack() {
+                    LeftView(recipe: recipe)
+                        .frame(width: geometry.size.width * 0.45)
+                        .padding(.leading, 20)
+                        .padding(.bottom, 20)
+                    
+                    Spacer()
+                    
+                    Divider()
+                    
+                    Spacer()
+                    
+                    RightView(recipe: recipe, recipePortion: recipe.portion)
+                        .frame(width: geometry.size.width * 0.45)
+                        .padding(.trailing, 20)
+                }
                 
-                Divider()
-                
-                Spacer()
-                
-                RightView(recipe: recipe, recipePortion: recipe.portion)
-                    .frame(width: geometry.size.width * 0.45)
-                    .padding(.trailing, 20)
             }
+            
         }
     }
 }
