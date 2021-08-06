@@ -12,7 +12,7 @@ import SwiftUI
 struct HomeView: View {
     
     @Binding var recipes: [RecipeElement]
-    let gridItemLayout = [GridItem(.adaptive(minimum: 312))]
+    let gridItemLayout = [GridItem(.adaptive(minimum: 255, maximum: 255))]
     @State var text = ""
     @State public var isEditing = false
     @StateObject var favorites = Favorites()
@@ -28,56 +28,48 @@ struct HomeView: View {
                     .onTapGesture {
                         isEditing = true
                     }
-                
                 Spacer()
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     
                     VStack {
                         VStack{
-                            
                             if isEditing == true && text.count > 2 {
-                                HStack {
-                                    Text("Resultados da busca")
-                                        .font(.custom("Albra Semi", size: 56))
-                                        .foregroundColor(Color.primitiveBlack)
-                                        .minimumScaleFactor(0.5)
-                                        .padding(.leading, 16)
-                                        .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
+                                VStack{
+                                    HStack {
+                                        Text("Resultados da busca")
+                                            .font(.custom("Albra Semi", size: 56))
+                                            .foregroundColor(Color.primitiveBlack)
+                                            .minimumScaleFactor(0.5)
+                                            .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
+                                        
+                                        Spacer()
+                                    }
                                     
-                                    Spacer()
-                                }
-                                
-                                ScrollView {
-                                    LazyVGrid(columns: gridItemLayout, spacing: 16) {
-                                        ForEach(recipes) { recipe in
-                                            if recipe.name.localizedCaseInsensitiveContains(text) && (text.count > 2) {
-                                                NavigationLink(
-                                                    destination: RecipeView(recipe: recipe),
-                                                    label: {
-                                                        Card(recipe: Binding.constant(recipe), favorites: favorites)
-                                                    })
-                                                
+                                    ScrollView(showsIndicators: false){
+                                        LazyVGrid(columns: gridItemLayout, alignment: .leading) {
+                                            ForEach(recipes) { recipe in
+                                                if recipe.name.localizedCaseInsensitiveContains(text) && (text.count > 2) {
+                                                    NavigationLink(
+                                                        destination: RecipeView(recipe: recipe),
+                                                        label: {
+                                                            Card(recipe: Binding.constant(recipe), favorites: favorites)
+                                                                .padding(.bottom, 10)
+                                                        })
+                                                }
                                             }
                                         }
                                     }
-                                }
+                                }.padding(.horizontal, 16)
                                 
                             } else {
                                 SectionsView(recipes: recipes)
                                     .padding(.top, 32)
-                                
                             }
-//<<<<<<< HEAD
-//                            ForEach(recipes) { recipe in
-//                                if recipe.name.localizedCaseInsensitiveContains(text) && (text.count > 2){
-//                                    Card(recipe: Binding.constant(recipe), favorites: favorites)
-//=======
                         }
                     }
                 }.navigationBarTitle("", displayMode: .inline)
             }
-            
         }
     }
 }
@@ -120,10 +112,8 @@ struct SectionsView: View {
                                                 Card(recipe: Binding.constant(recipe), favorites: favorites)
                                             })
                                     }
-//>>>>>>> feature/recipeStepsView
                                 }
                             }
-                            
                         }.padding(16)
                     }
                     
@@ -155,7 +145,6 @@ struct SectionsView: View {
                                     }
                                 }
                             }
-                            
                         }.padding(16)
                     }
                     
@@ -185,13 +174,10 @@ struct SectionsView: View {
                                     }
                                 }
                             }
-                            
                         }.padding(16)
                     }
-                    
                 }
             }
-            
         }
     }
 }

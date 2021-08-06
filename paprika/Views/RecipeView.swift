@@ -413,7 +413,7 @@ struct RightView: View {
                             Spacer()
                             
                             HStack {
-                                
+        
                                 Text(step.stepByStepDescription)
                                     .font(.custom("SF Pro Display Regular", size: 20))
                                     .foregroundColor(Color.primitiveBlack)
@@ -425,14 +425,11 @@ struct RightView: View {
                         .onDrag {
                             NSItemProvider(object: getAllSteps() as NSString)
                         }
-                        
                         Divider()
-                        
                     }
                 }
             }
         }
-        
     }
 }
 

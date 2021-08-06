@@ -8,13 +8,42 @@
 import SwiftUI
 
 struct FavoritesView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    @StateObject var favorites = Favorites()
+    
+    let recipes: [RecipeElement]
+    let gridItemLayout = [GridItem(.adaptive(minimum: 255, maximum: 255))]
 
-struct FavoritesView_Previews: PreviewProvider {
-    static var previews: some View {
-        FavoritesView()
+    var body: some View {
+        ZStack {
+            
+            Color.primitive50
+                .ignoresSafeArea()
+            
+            VStack {
+                HStack {
+                    Text("Favoritos")
+                        .font(.custom("Albra Semi", size: 56))
+                        .foregroundColor(Color.primitiveBlack)
+                    Spacer()
+                }
+                Spacer()
+                    .frame(height: 32)
+                
+                ScrollView(showsIndicators: false) {
+                    LazyVGrid(columns: gridItemLayout, alignment: .leading) {
+                        ForEach(recipes) { recipe in
+                            if self.favorites.contains(recipe){
+                                NavigationLink(
+                                    destination: RecipeView(recipe: recipe),
+                                    label: {
+                                        Card(recipe: Binding.constant(recipe), favorites: favorites)
+                                            .padding(.bottom, 10)
+                                    })
+                            }
+                        }
+                    }
+                }
+            }.padding(.horizontal, 16)
+        }.navigationBarTitle("", displayMode: .inline)
     }
 }

@@ -66,12 +66,3 @@ struct Card: View {
         .shadow(color: Color(#colorLiteral(red: 0.07843137255, green: 0.0862745098, blue: 0.1215686275, alpha: 0.102093425)), radius: 10, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
     }
 }
-
-//struct card_Previews: PreviewProvider {
-//    static var previews: some View {
-//        Card(photo: Binding.constant("placeholder"), title: Binding.constant("Omelete com duas linhas aaa"), tag: Binding.constant("Intermediário"))
-//            .previewLayout(.sizeThatFits)
-//            .previewDisplayName("Card")
-//            .background(Color(.white))
-//    }
-//}
