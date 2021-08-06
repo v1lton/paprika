@@ -10,6 +10,7 @@ import SwiftUI
 struct EmptyView: View {
     var body: some View {
         HStack {
+            Spacer()
             Image("coffee")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
