@@ -32,6 +32,8 @@
 		03C2264226A8D4BD00485B18 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C2264126A8D4BD00485B18 /* HomeView.swift */; };
 		03C2264426A8D4E200485B18 /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C2264326A8D4E200485B18 /* SideBarView.swift */; };
 		18DA758F8284C93ACA598C0F /* Pods_paprika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47BFB28C13677287D8EF9251 /* Pods_paprika.framework */; };
+		2C534EA826BCE8BA006DF56E /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C534EA726BCE8BA006DF56E /* EmptyView.swift */; };
+		2C534EAA26BD59CE006DF56E /* EmptySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C534EA926BD59CE006DF56E /* EmptySearchView.swift */; };
 		2C83FB3E26B0D2AB0042BB71 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C83FB3D26B0D2AB0042BB71 /* CustomSearchBar.swift */; };
 		2C83FB4426B0E40A0042BB71 /* SearchRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C83FB4326B0E40A0042BB71 /* SearchRecipe.swift */; };
 		89406A6226A1C7C2003829E4 /* RecipeStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89406A6126A1C7C2003829E4 /* RecipeStepsView.swift */; };
@@ -108,6 +110,8 @@
 		03C2264326A8D4E200485B18 /* SideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarView.swift; sourceTree = "<group>"; };
 		1821DAC7FD8C3C5359C33AC1 /* Pods-paprika-paprikaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paprika-paprikaUITests.release.xcconfig"; path = "Target Support Files/Pods-paprika-paprikaUITests/Pods-paprika-paprikaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		231B644CA898F6D8823260E3 /* Pods-paprika.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paprika.release.xcconfig"; path = "Target Support Files/Pods-paprika/Pods-paprika.release.xcconfig"; sourceTree = "<group>"; };
+		2C534EA726BCE8BA006DF56E /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		2C534EA926BD59CE006DF56E /* EmptySearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySearchView.swift; sourceTree = "<group>"; };
 		2C83FB3D26B0D2AB0042BB71 /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
 		2C83FB4326B0E40A0042BB71 /* SearchRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipe.swift; sourceTree = "<group>"; };
 		30D098D79184387B590BDA8C /* Pods-paprikaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paprikaTests.debug.xcconfig"; path = "Target Support Files/Pods-paprikaTests/Pods-paprikaTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -315,6 +319,8 @@
 				89D7C64426A8396F00D138E8 /* RecipeView.swift */,
 				89406A6126A1C7C2003829E4 /* RecipeStepsView.swift */,
 				2C83FB3D26B0D2AB0042BB71 /* CustomSearchBar.swift */,
+				2C534EA726BCE8BA006DF56E /* EmptyView.swift */,
+				2C534EA926BD59CE006DF56E /* EmptySearchView.swift */,
 				898C07EA26BC65E200374072 /* GridView.swift */,
 				03BB911526BC8AC300BB7F87 /* FavoritesView.swift */,
 			);
@@ -628,6 +634,7 @@
 				899BD6C526A3598D00E5119D /* RecipeStepsViewModel.swift in Sources */,
 				036889F126ACAF3C002B7052 /* Colors.swift in Sources */,
 				896D7EA426A0550D005CBCBA /* Persistence.swift in Sources */,
+				2C534EA826BCE8BA006DF56E /* EmptyView.swift in Sources */,
 				2C83FB4426B0E40A0042BB71 /* SearchRecipe.swift in Sources */,
 				2C83FB3E26B0D2AB0042BB71 /* CustomSearchBar.swift in Sources */,
 				03C2264426A8D4E200485B18 /* SideBarView.swift in Sources */,
@@ -636,6 +643,7 @@
 				89406A6226A1C7C2003829E4 /* RecipeStepsView.swift in Sources */,
 				899BD6C326A337B700E5119D /* RootView.swift in Sources */,
 				03C2264226A8D4BD00485B18 /* HomeView.swift in Sources */,
+				2C534EAA26BD59CE006DF56E /* EmptySearchView.swift in Sources */,
 				896D7E9B26A0550C005CBCBA /* paprikaApp.swift in Sources */,
 				03BB911426BC30A100BB7F87 /* Favorites.swift in Sources */,
 				89D7C64526A8396F00D138E8 /* RecipeView.swift in Sources */,

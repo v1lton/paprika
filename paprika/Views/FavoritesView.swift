@@ -29,6 +29,13 @@ struct FavoritesView: View {
                 Spacer()
                     .frame(height: 32)
                 
+                if (self.favorites.get()) == 0 {
+                    VStack{
+                        EmptyView()
+                        Spacer()
+                    }
+                }
+
                 ScrollView(showsIndicators: false) {
                     LazyVGrid(columns: gridItemLayout, alignment: .leading) {
                         ForEach(recipes) { recipe in
