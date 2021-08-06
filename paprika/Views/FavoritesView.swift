@@ -42,7 +42,8 @@ struct FavoritesView: View {
                             }
                         }
                         if (self.favorites.get()) == 0 {
-                            Text("Tá vazio")
+                           // Text("Tá vazio")
+                            EmptyView()
                         }
                     }
                 }
