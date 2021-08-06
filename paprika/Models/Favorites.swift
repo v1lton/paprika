@@ -22,7 +22,9 @@ class Favorites: ObservableObject {
         self.recipes = []
         self.favorites = Set(defaults.array(forKey: "Favorites") as? [String] ?? [])
     }
-    
+    func get() -> Int {
+        favorites.count
+    }
     func contains(_ recipe: RecipeElement) -> Bool {
         favorites.contains(recipe.name)
     }

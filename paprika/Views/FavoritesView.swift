@@ -41,6 +41,9 @@ struct FavoritesView: View {
                                     })
                             }
                         }
+                        if (self.favorites.get()) == 0 {
+                            Text("Tá vazio")
+                        }
                     }
                 }
             }.padding(.horizontal, 16)
