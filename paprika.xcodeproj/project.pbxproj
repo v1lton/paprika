@@ -27,9 +27,10 @@
 		03998EF626A9BC4F000E4AD5 /* SF-Pro-Display-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03998EE426A9BC4F000E4AD5 /* SF-Pro-Display-RegularItalic.otf */; };
 		03998EF726A9BC4F000E4AD5 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03998EE526A9BC4F000E4AD5 /* SF-Pro-Display-Medium.otf */; };
 		03998EF826A9BC4F000E4AD5 /* SF-Pro-Display-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03998EE626A9BC4F000E4AD5 /* SF-Pro-Display-HeavyItalic.otf */; };
+		03BB911426BC30A100BB7F87 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB911326BC30A100BB7F87 /* Favorites.swift */; };
+		03BB911626BC8AC300BB7F87 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB911526BC8AC300BB7F87 /* FavoritesView.swift */; };
 		03C2264226A8D4BD00485B18 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C2264126A8D4BD00485B18 /* HomeView.swift */; };
 		03C2264426A8D4E200485B18 /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C2264326A8D4E200485B18 /* SideBarView.swift */; };
-		03DF81F426A9F995005BB501 /* CardsScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF81F326A9F995005BB501 /* CardsScroll.swift */; };
 		18DA758F8284C93ACA598C0F /* Pods_paprika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47BFB28C13677287D8EF9251 /* Pods_paprika.framework */; };
 		2C83FB3E26B0D2AB0042BB71 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C83FB3D26B0D2AB0042BB71 /* CustomSearchBar.swift */; };
 		2C83FB4426B0E40A0042BB71 /* SearchRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C83FB4326B0E40A0042BB71 /* SearchRecipe.swift */; };
@@ -53,6 +54,7 @@
 		896D7EB226A0550D005CBCBA /* paprikaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D7EB126A0550D005CBCBA /* paprikaTests.swift */; };
 		896D7EBD26A0550D005CBCBA /* paprikaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D7EBC26A0550D005CBCBA /* paprikaUITests.swift */; };
 		896D7ED326A059FE005CBCBA /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D7ED226A059FE005CBCBA /* Recipe.swift */; };
+		898C07EB26BC65E200374072 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898C07EA26BC65E200374072 /* GridView.swift */; };
 		899BD6C326A337B700E5119D /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899BD6C226A337B700E5119D /* RootView.swift */; };
 		899BD6C526A3598D00E5119D /* RecipeStepsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899BD6C426A3598D00E5119D /* RecipeStepsViewModel.swift */; };
 		89C9F91026A9A18500CA5B1D /* AppDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C9F90F26A9A18500CA5B1D /* AppDataService.swift */; };
@@ -100,9 +102,10 @@
 		03998EE426A9BC4F000E4AD5 /* SF-Pro-Display-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-RegularItalic.otf"; sourceTree = "<group>"; };
 		03998EE526A9BC4F000E4AD5 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
 		03998EE626A9BC4F000E4AD5 /* SF-Pro-Display-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-HeavyItalic.otf"; sourceTree = "<group>"; };
+		03BB911326BC30A100BB7F87 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		03BB911526BC8AC300BB7F87 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		03C2264126A8D4BD00485B18 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		03C2264326A8D4E200485B18 /* SideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarView.swift; sourceTree = "<group>"; };
-		03DF81F326A9F995005BB501 /* CardsScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsScroll.swift; sourceTree = "<group>"; };
 		1821DAC7FD8C3C5359C33AC1 /* Pods-paprika-paprikaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paprika-paprikaUITests.release.xcconfig"; path = "Target Support Files/Pods-paprika-paprikaUITests/Pods-paprika-paprikaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		231B644CA898F6D8823260E3 /* Pods-paprika.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paprika.release.xcconfig"; path = "Target Support Files/Pods-paprika/Pods-paprika.release.xcconfig"; sourceTree = "<group>"; };
 		2C83FB3D26B0D2AB0042BB71 /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
@@ -139,6 +142,7 @@
 		896D7EBC26A0550D005CBCBA /* paprikaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paprikaUITests.swift; sourceTree = "<group>"; };
 		896D7EBE26A0550D005CBCBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		896D7ED226A059FE005CBCBA /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		898C07EA26BC65E200374072 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		899BD6C226A337B700E5119D /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		899BD6C426A3598D00E5119D /* RecipeStepsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepsViewModel.swift; sourceTree = "<group>"; };
 		89C9F90F26A9A18500CA5B1D /* AppDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataService.swift; sourceTree = "<group>"; };
@@ -179,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				03998ECD26A99A83000E4AD5 /* Card.swift */,
-				03DF81F326A9F995005BB501 /* CardsScroll.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -312,6 +315,8 @@
 				89D7C64426A8396F00D138E8 /* RecipeView.swift */,
 				89406A6126A1C7C2003829E4 /* RecipeStepsView.swift */,
 				2C83FB3D26B0D2AB0042BB71 /* CustomSearchBar.swift */,
+				898C07EA26BC65E200374072 /* GridView.swift */,
+				03BB911526BC8AC300BB7F87 /* FavoritesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -324,6 +329,7 @@
 				896D7ED226A059FE005CBCBA /* Recipe.swift */,
 				89F6F93D26A5A5380055D4B6 /* RecipesTest.json */,
 				89C9F90F26A9A18500CA5B1D /* AppDataService.swift */,
+				03BB911326BC30A100BB7F87 /* Favorites.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -625,14 +631,16 @@
 				2C83FB4426B0E40A0042BB71 /* SearchRecipe.swift in Sources */,
 				2C83FB3E26B0D2AB0042BB71 /* CustomSearchBar.swift in Sources */,
 				03C2264426A8D4E200485B18 /* SideBarView.swift in Sources */,
-				03DF81F426A9F995005BB501 /* CardsScroll.swift in Sources */,
 				03998ECE26A99A83000E4AD5 /* Card.swift in Sources */,
+				898C07EB26BC65E200374072 /* GridView.swift in Sources */,
 				89406A6226A1C7C2003829E4 /* RecipeStepsView.swift in Sources */,
 				899BD6C326A337B700E5119D /* RootView.swift in Sources */,
 				03C2264226A8D4BD00485B18 /* HomeView.swift in Sources */,
 				896D7E9B26A0550C005CBCBA /* paprikaApp.swift in Sources */,
+				03BB911426BC30A100BB7F87 /* Favorites.swift in Sources */,
 				89D7C64526A8396F00D138E8 /* RecipeView.swift in Sources */,
 				896D7ED326A059FE005CBCBA /* Recipe.swift in Sources */,
+				03BB911626BC8AC300BB7F87 /* FavoritesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -792,7 +800,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = A9DZA4U68F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = paprika/Info.plist;
@@ -816,7 +824,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = A9DZA4U68F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = paprika/Info.plist;

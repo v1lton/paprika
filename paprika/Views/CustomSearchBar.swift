@@ -37,7 +37,6 @@ struct CustomSearchBar: View {
                                     .padding(.trailing, 8 )
                             }).opacity((text.count > 0) ? 1 : 0)
                         }
-                        
                     }
                 ).onTapGesture {
                     isEditing = true
@@ -55,14 +54,12 @@ struct CustomSearchBar: View {
                         .animation(.default)
                 }
             }
-            
         }
         .background(Color.primitive100)
         .cornerRadius(10)
         .padding(10)
         .background(Color.primitive50)
     }
-    
 }
 
 

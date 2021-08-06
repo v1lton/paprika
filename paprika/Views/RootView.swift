@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct RootView: View {
-   
+    @State var recipes = [RecipeElement]()
+    
     var body: some View {
         NavigationView {
-            SideBarView()
-            HomeView()
+            SideBarView(recipes: $recipes)
+            HomeView(recipes: $recipes)
+        }.onAppear() {
+            AppDataService().getRecipes { (recipes) in
+                self.recipes = recipes
+            }
         }
     }
 }

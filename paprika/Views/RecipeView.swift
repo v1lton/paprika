@@ -36,7 +36,7 @@ struct RecipeView: View {
                 
             }
             
-        }
+        }.navigationBarTitleDisplayMode(.large)
     }
 }
 
@@ -152,6 +152,7 @@ struct LeftView: View {
                     }
                     .frame(maxWidth: geometry.size.width * 0.9, idealHeight: 100, maxHeight: 100, alignment: .leading)
                     .background(Color.primitiveWhite)
+                    .cornerRadius(8)
                     .overlay(
                         RoundedRectangle(cornerRadius: 8)
                             .stroke(Color.brandSecondary400, lineWidth: 1)
@@ -179,10 +180,9 @@ struct LeftView: View {
                                     .lineLimit(1)
                             }
                         }
-                    )
+                    ).navigationTitle("Receita")
                     .padding(.all, 12)
                     .minimumScaleFactor(0.5)
-                    //.frame(width: 278, height: 48, alignment: .center)
                     .background(Color.brandPrimary400)
                     .foregroundColor(Color.primitiveWhite)
                     .cornerRadius(8)
@@ -396,6 +396,7 @@ struct RightView: View {
                         .padding(.all, 12)
                         .background(Color.primitiveWhite)
                         .foregroundColor(Color.brandPrimary400)
+                        .cornerRadius(8)
                         .overlay(
                             RoundedRectangle(cornerRadius: 8)
                                 .stroke(Color.primitive200, lineWidth: 1)
@@ -412,7 +413,7 @@ struct RightView: View {
                             Spacer()
                             
                             HStack {
-                                
+        
                                 Text(step.stepByStepDescription)
                                     .font(.custom("SF Pro Display Regular", size: 20))
                                     .foregroundColor(Color.primitiveBlack)
@@ -424,14 +425,11 @@ struct RightView: View {
                         .onDrag {
                             NSItemProvider(object: getAllSteps() as NSString)
                         }
-                        
                         Divider()
-                        
                     }
                 }
             }
         }
-        
     }
 }
 
