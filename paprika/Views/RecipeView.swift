@@ -359,7 +359,7 @@ struct RightView: View {
                                 
                         }.padding(.bottom, 8)
                         .onDrag {
-                            NSItemProvider(object: "\(ingredient.amount * Double(value)) \(ingredient.name)" as NSString)
+                            NSItemProvider(object: "\(fractionToString(fraction: ingredient.amount * Double(Double(value) / Double(recipe.portion)))) \(ingredient.name)" as NSString)
                         }
                     }
                 }.padding(.bottom, 64)
