@@ -16,7 +16,6 @@ struct HomeView: View {
     @State var text = ""
     @State public var isEditing = false
     @StateObject var favorites = Favorites()
-    @State public var foundRecipe = false
     var body: some View {
         ZStack {
             Color.primitive50
@@ -57,28 +56,7 @@ struct HomeView: View {
                                                             Card(recipe: Binding.constant(recipe), favorites: favorites)
                                                                 .padding(.bottom, 10)
                                                         })
-                                                }
-                                                else{
-                        
-                                                    VStack{
-                                                        //Spacer()
-                                                        Image("coffee")
-                                                            .resizable()
-                                                            .aspectRatio(contentMode: .fit)
-                                                            .padding()
-
-                                                        Text("Ops! Ainda não temos resultado para essa pesquisa...")
-                                                            .font( .title2)
-                                                            .foregroundColor(.black)
-                                                            .padding()
-                                                        Text("Algumas das sugestões abaixo podem lhe interessar.")
-                                                            .font( .subheadline)
-                                                            .foregroundColor(.gray)
-                                                            .padding()
-                                                        Spacer()
-                                                    }
-                                                    .padding()
-                                                    .foregroundColor(Color(.systemIndigo))
+                            
                                                 }
                                             }
                                         }
