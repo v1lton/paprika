@@ -16,6 +16,7 @@ struct HomeView: View {
     @State var text = ""
     @State public var isEditing = false
     @StateObject var favorites = Favorites()
+    @State var counter = 0
     var body: some View {
         ZStack {
             Color.primitive50
@@ -29,22 +30,20 @@ struct HomeView: View {
                     }
                 Spacer()
                 
-                ScrollView(.vertical, showsIndicators: false) {
-                    
-                    VStack {
-                        VStack{
-                            if isEditing == true && text.count > 2 {
+                VStack {
+                    VStack{
+                        if isEditing == true && text.count > 2 {
+                            ZStack {
                                 VStack{
-                                    HStack {
-                                        Text("Resultados da busca")
-                                            .font(.custom("Albra Semi", size: 56))
-                                            .foregroundColor(Color.primitiveBlack)
-                                            .minimumScaleFactor(0.5)
-                                            .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
-                                        
-                                        Spacer()
+                                    if counter > 0 {
+                                        HStack {
+                                            Text("Resultados da busca")
+                                                .font(.custom("Albra Semi", size: 56))
+                                                .foregroundColor(Color.primitiveBlack)
+                                                .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
+                                            Spacer()
+                                        }
                                     }
-                                    
                                     ScrollView(showsIndicators: false){
                                         LazyVGrid(columns: gridItemLayout, alignment: .leading) {
                                             
@@ -55,22 +54,36 @@ struct HomeView: View {
                                                         label: {
                                                             Card(recipe: Binding.constant(recipe), favorites: favorites)
                                                                 .padding(.bottom, 10)
-                                                        })
-                            
+                                                        }).onAppear{
+                                                            counter += 1
+                                                        }
                                                 }
+                                            }.onDisappear{
+                                                counter = 0
                                             }
                                         }
                                     }
+                                    
+                                    
                                 }.padding(.horizontal, 16)
                                 
-                            } else {
-                                SectionsView(recipes: recipes)
-                                    .padding(.top, 32)
+                                if counter == 0 {
+                                    ScrollView(showsIndicators: false) {
+                                        VStack{
+                                            EmptySearchView()
+                                            SectionsView(recipes: recipes)
+                                                .padding(.top, 32)
+                                        }
+                                    }
+                                }
                             }
+                        } else {
+                            SectionsView(recipes: recipes)
+                                .padding(.top, 32)
                         }
                     }
-                }.navigationBarTitle("", displayMode: .inline)
-            }
+                }
+            }.navigationBarTitle("", displayMode: .inline)
         }
     }
 }
