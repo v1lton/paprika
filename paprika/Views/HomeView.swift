@@ -54,7 +54,8 @@ struct HomeView: View {
                                                         label: {
                                                             Card(recipe: Binding.constant(recipe), favorites: favorites)
                                                                 .padding(.bottom, 10)
-                                                        }).onAppear{
+                                                        }).buttonStyle(PlainButtonStyle())
+                                                        .onAppear{
                                                             counter += 1
                                                         }
                                                 }
@@ -71,8 +72,97 @@ struct HomeView: View {
                                     ScrollView(showsIndicators: false) {
                                         VStack{
                                             EmptySearchView()
-                                            SectionsView(recipes: recipes)
-                                                .padding(.top, 32)
+                                            VStack(spacing:48) {
+                                                
+                                                //MARK: - Breakfast
+                                                VStack {
+                                                    HStack {
+                                                        
+                                                        Text("Café da manhã")
+                                                            .font(.custom("Albra Semi", size: 56))
+                                                            .foregroundColor(Color.primitiveBlack)
+                                                            .minimumScaleFactor(0.5)
+                                                            .padding(.leading, 16)
+                                                        
+                                                        Spacer()
+                                                    }
+                                                    
+                                                    ScrollView(.horizontal, showsIndicators: false) {
+                                                        HStack(spacing: 16) {
+                                                            ForEach(recipes) { recipe in
+                                                                if recipe.category.contains(CategoryEnum(rawValue: "Café da manhã")!) {
+                                                                    
+                                                                    NavigationLink(
+                                                                        destination: RecipeView(recipe: recipe),
+                                                                        label: {
+                                                                            Card(recipe: Binding.constant(recipe), favorites: favorites)
+                                                                        }).buttonStyle(PlainButtonStyle())
+                                                                }
+                                                            }
+                                                        }
+                                                    }.padding(16)
+                                                }
+                                                
+                                                //MARK: - Sweet potatoes
+                                                VStack {
+                                                    HStack {
+                                                        
+                                                        Text("Receitas com batata-doce")
+                                                            .font(.custom("Albra Semi", size: 56))
+                                                            .foregroundColor(Color.primitiveBlack)
+                                                            .minimumScaleFactor(0.5)
+                                                            .padding(.leading, 16)
+                                                        
+                                                        Spacer()
+                                                    }
+                                                    
+                                                    ScrollView(.horizontal, showsIndicators: false) {
+                                                        HStack(spacing: 16) {
+                                                            ForEach(recipes) { recipe in
+                                                                ForEach(recipe.ingredients) { ingredient in
+                                                                    let ingredientName = ingredient.name.lowercased()
+                                                                    if ingredientName.contains("batata-doce") {
+                                                                        NavigationLink(
+                                                                            destination: RecipeView(recipe: recipe),
+                                                                            label: {
+                                                                                Card(recipe: Binding.constant(recipe), favorites: favorites)
+                                                                            }).buttonStyle(PlainButtonStyle())
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }.padding(16)
+                                                }
+                                                
+                                                //MARK: - Vegan
+                                                VStack {
+                                                    HStack {
+                                                        
+                                                        Text("Para lanchar")
+                                                            .font(.custom("Albra Semi", size: 56))
+                                                            .foregroundColor(Color.primitiveBlack)
+                                                            .minimumScaleFactor(0.5)
+                                                            .padding(.leading, 16)
+                                                        
+                                                        Spacer()
+                                                    }
+                                                    
+                                                    ScrollView(.horizontal, showsIndicators: false) {
+                                                        HStack(spacing: 16) {
+                                                            ForEach(recipes) { recipe in
+                                                                if recipe.category.contains(CategoryEnum(rawValue: "Sobremesa")!) {
+                                                                    
+                                                                    NavigationLink(
+                                                                        destination: RecipeView(recipe: recipe),
+                                                                        label: {
+                                                                            Card(recipe: Binding.constant(recipe), favorites: favorites)
+                                                                        }).buttonStyle(PlainButtonStyle())
+                                                                }
+                                                            }
+                                                        }
+                                                    }.padding(16)
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -124,7 +214,7 @@ struct SectionsView: View {
                                             destination: RecipeView(recipe: recipe),
                                             label: {
                                                 Card(recipe: Binding.constant(recipe), favorites: favorites)
-                                            })
+                                            }).buttonStyle(PlainButtonStyle())
                                     }
                                 }
                             }
@@ -154,7 +244,7 @@ struct SectionsView: View {
                                                 destination: RecipeView(recipe: recipe),
                                                 label: {
                                                     Card(recipe: Binding.constant(recipe), favorites: favorites)
-                                                })
+                                                }).buttonStyle(PlainButtonStyle())
                                         }
                                     }
                                 }
@@ -184,7 +274,7 @@ struct SectionsView: View {
                                             destination: RecipeView(recipe: recipe),
                                             label: {
                                                 Card(recipe: Binding.constant(recipe), favorites: favorites)
-                                            })
+                                            }).buttonStyle(PlainButtonStyle())
                                     }
                                 }
                             }
