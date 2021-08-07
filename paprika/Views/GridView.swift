@@ -38,7 +38,7 @@ struct GridView: View {
                                 label: {
                                     Card(recipe: Binding.constant(recipe), favorites: favorites)
                                         .padding(.bottom, 10)
-                                })
+                                }).buttonStyle(PlainButtonStyle())
                         }
                     }
                 }

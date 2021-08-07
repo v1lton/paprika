@@ -14,25 +14,29 @@ struct EmptyView: View {
             Image("coffee")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 380.0, height: 380.0)
-                .padding(.leading, 40)
+                .frame(minWidth: 80.0, maxWidth: 380, minHeight: 80.0, maxHeight: 380)
             Spacer(minLength: 20)
-            VStack{
+            
+            VStack(alignment: .leading){
                 Text("Ops! Você ainda não favoritou nenhuma receita...")
-                    .font( .largeTitle)
-                    .foregroundColor(.black)
-                    .frame(width: 400, alignment: .leading)
-                    .padding(.bottom, 20)
+                    .font(.custom("Albra Medium", size: 36))
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(5)
+                    .foregroundColor(.primitive700)
+                    .padding(.bottom, 5)
+                
                 Text("Favorite novas receitas para que possa ver depois.")
-                    .font( .title3)
-                    .foregroundColor(.gray)
-                    .frame(width: 400,  alignment: .leading)
+                    .font(.custom("SF Pro Display Regular", size: 20))
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(5)
+                    .foregroundColor(.primitive400)
+                
             }
             Spacer()
         }.padding()
     }
-    
 }
+
 
 struct EmptyView_Previews: PreviewProvider {
     static var previews: some View {
