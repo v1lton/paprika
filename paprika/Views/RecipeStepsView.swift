@@ -11,15 +11,7 @@ import SDWebImageSwiftUI
 
 struct RecipeStepsView: View {
     
-    @StateObject var viewModel: ViewModel
-    var recipeSteps: [StepByStep]
-    var recipeImage: String
-    
-    init(viewModel: ViewModel, recipeSteps steps: [StepByStep], recipeImage image: String) {
-        _viewModel = StateObject(wrappedValue: viewModel)
-        recipeSteps = steps
-        recipeImage = image
-    }
+    var recipe: RecipeElement
     
     var body: some View {
         
@@ -27,7 +19,7 @@ struct RecipeStepsView: View {
             
             TabView {
                 
-                ForEach(recipeSteps, id:\.self) { step in
+                ForEach(recipe.stepByStep, id:\.self) { step in
                     
                     VStack {
                         HStack(alignment: .top){
@@ -84,10 +76,9 @@ struct RecipeStepsView: View {
                         Spacer()
                         
                     }.frame(width: geometry.size.width * 0.95)
-                    
-                    
                 }
-                FinalStepView(recipeImage: self.recipeImage)
+                
+                FinalStepView(recipeImage: recipe.image)
                 
             }.tabViewStyle(PageTabViewStyle())
             .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))

@@ -167,7 +167,7 @@ struct LeftView: View {
                 HStack {
                     
                     NavigationLink(
-                        destination: RecipeStepsView(viewModel: RecipeStepsView.ViewModel(), recipeSteps: recipe.stepByStep, recipeImage: recipe.image),
+                        destination: RecipeStepsView(recipe: recipe),
                         label: {
                             HStack{
                                 Text("Começar o passo a passo")
@@ -397,7 +397,7 @@ struct RightView: View {
                         Spacer()
                         
                         NavigationLink(
-                            destination: RecipeStepsView(viewModel: RecipeStepsView.ViewModel(), recipeSteps: recipe.stepByStep, recipeImage: recipe.image),
+                            destination: RecipeStepsView(recipe: recipe),
                             label: {
                                 HStack{
                                     Text("Começar agora")
