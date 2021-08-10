@@ -618,13 +618,13 @@
                     "id": 2,
                     "name": "Canela-da-China em pó",
                     "amount": 3,
-                    "measure": "colheres(chá)"
+                    "measure": "colher (chá)"
                 },
                 {
                     "id": 3,
                     "name": "Açúcar",
                     "amount": 3,
-                    "measure": "colheres(chá)"
+                    "measure": "colher (chá)"
                 }
             ],
             "portion": 5,
@@ -758,7 +758,7 @@
                     "id": 5,
                     "name": "Folha de Salsinha",
                     "amount": 1,
-                    "measure": "pitada (a gosto)"
+                    "measure": "pitada"
                 },
                 {
                     "id": 6,
@@ -1028,7 +1028,7 @@
                     "id": 5,
                     "name": "Azeite",
                     "amount": 2,
-                    "measure": "colheres de sopa"
+                    "measure": "colher de sopa"
                 },
                 {
                     "id": 6,
