@@ -276,6 +276,25 @@ struct RightView: View {
         }
     }
     
+    func setPluralOrSingular(forMeasure measure: String, forAmount amount: Double) -> String {
+        var measureLowerCased = measure.lowercased()
+        let value = (amount * Double(Double(value) / Double(recipe.portion)))
+        
+        if value < 2 {
+            return measureLowerCased
+        }
+        
+        if (measureLowerCased.contains("colher")) {
+            measureLowerCased = measureLowerCased.replacingOccurrences(of: "colher", with: "colheres")
+        } else if (measureLowerCased.contains("xícara")) {
+            measureLowerCased = measureLowerCased.replacingOccurrences(of: "xícara", with: "xícaras")
+        } else {
+            measureLowerCased = measureLowerCased + "s"
+        }
+        
+        return measureLowerCased
+    }
+    
     
     var body: some View {
         
@@ -350,7 +369,7 @@ struct RightView: View {
                                 .foregroundColor(Color.primitiveBlack)
                                 .layoutPriority(1)
                             
-                            Text(ingredient.measure.lowercased())
+                            Text(setPluralOrSingular(forMeasure: ingredient.measure, forAmount: ingredient.amount))
                                 .font(.custom("SF Pro Display Regular", size: 20))
                                 .foregroundColor(Color.primitiveBlack)
                                 .layoutPriority(1)
