@@ -58,7 +58,7 @@ struct CustomSearchBar: View {
         .background(Color.primitive100)
         .cornerRadius(10)
         .padding(10)
-        .background(Color.primitive50)
+        //.background(Color.primitive50)
     }
 }
 

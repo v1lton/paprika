@@ -10,6 +10,7 @@ import SDWebImageSwiftUI
 
 struct RecipeView: View {
     var recipe: RecipeElement
+    @StateObject var favorites = Favorites()
     
     var body: some View {
         GeometryReader { geometry in
@@ -18,7 +19,7 @@ struct RecipeView: View {
                     .ignoresSafeArea()
                 
                 HStack() {
-                    LeftView(recipe: recipe)
+                    LeftView(recipe: recipe, favorites: favorites)
                         .frame(width: geometry.size.width * 0.45)
                         .padding(.leading, 20)
                         .padding(.bottom, 20)
@@ -42,6 +43,7 @@ struct RecipeView: View {
 
 struct LeftView: View {
     var recipe: RecipeElement
+    @ObservedObject var favorites: Favorites
     
     var body: some View {
         GeometryReader { geometry in
@@ -144,7 +146,7 @@ struct LeftView: View {
                             
                             Text((recipe.totalTime) >= 60 ? "~\(recipe.totalTime/60)h" : "~\(recipe.totalTime)min")
                                 .font(.custom("SF Pro Display Semibold", size: 20))
-                                .foregroundColor(Color.primitive700)
+                                .foregroundColor(Color.primitive600)
                                 .lineLimit(1)
                                 .minimumScaleFactor(0.5)
                         }
@@ -167,7 +169,7 @@ struct LeftView: View {
                 HStack {
                     
                     NavigationLink(
-                        destination: RecipeStepsView(viewModel: RecipeStepsView.ViewModel(), recipeSteps: recipe.stepByStep, recipeImage: recipe.image),
+                        destination: RecipeStepsView(recipe: recipe),
                         label: {
                             HStack{
                                 Text("Começar o passo a passo")
@@ -184,7 +186,7 @@ struct LeftView: View {
                     .padding(.all, 12)
                     .minimumScaleFactor(0.5)
                     .background(Color.brandPrimary400)
-                    .foregroundColor(Color.primitiveWhite)
+                    .foregroundColor(.white)
                     .cornerRadius(8)
                     
                     Spacer()
@@ -195,15 +197,22 @@ struct LeftView: View {
                             .foregroundColor(Color.brandPrimary400)
                             .lineLimit(1)
                             .minimumScaleFactor(0.8)
-                    })
+                    }).buttonStyle(PlainButtonStyle())
                     
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                        Image(systemName: "heart")
+                    Button(action: {
+                        if self.favorites.contains(self.recipe) {
+                            self.favorites.remove(self.recipe)
+                        }
+                        else {
+                            self.favorites.add(self.recipe)
+                        }
+                    }, label: {
+                        Image(systemName: self.favorites.contains(recipe) ? "heart.fill" : "heart")
                             .font(.system(size: 32, weight: .medium))
                             .foregroundColor(Color.brandPrimary400)
                             .lineLimit(1)
                             .minimumScaleFactor(0.8)
-                    })
+                    }).buttonStyle(PlainButtonStyle())
                 }.frame(maxWidth: geometry.size.width)
             }
         }
@@ -378,7 +387,11 @@ struct RightView: View {
                                 
                         }.padding(.bottom, 8)
                         .onDrag {
-                            NSItemProvider(object: "\(fractionToString(fraction: ingredient.amount * Double(Double(value) / Double(recipe.portion)))) \(ingredient.name)" as NSString)
+                            let correspondentAmount = fractionToString(fraction: ingredient.amount * Double(Double(value) / Double(recipe.portion)))
+                            let correspodentMeasure = setPluralOrSingular(forMeasure: ingredient.measure, forAmount: ingredient.amount)
+                            var stringToExport = "\(correspondentAmount) \(correspodentMeasure) de \(ingredient.name)"
+                            stringToExport = stringToExport.lowercased()
+                            return NSItemProvider(object: stringToExport as NSString)
                         }
                     }
                 }.padding(.bottom, 64)
@@ -397,7 +410,7 @@ struct RightView: View {
                         Spacer()
                         
                         NavigationLink(
-                            destination: RecipeStepsView(viewModel: RecipeStepsView.ViewModel(), recipeSteps: recipe.stepByStep, recipeImage: recipe.image),
+                            destination: RecipeStepsView(recipe: recipe),
                             label: {
                                 HStack{
                                     Text("Começar agora")

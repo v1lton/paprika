@@ -23,14 +23,14 @@ struct EmptySearchView: View {
                     .font(.custom("Albra Medium", size: 36))
                     .multilineTextAlignment(.leading)
                     .lineLimit(5)
-                    .foregroundColor(.primitive700)
+                    .foregroundColor(.primitiveBlack)
                     .padding(.bottom, 5)
                 
                 Text("Algumas das sugestões abaixo podem lhe interessar.")
                     .font(.custom("SF Pro Display Regular", size: 20))
                     .multilineTextAlignment(.leading)
                     .lineLimit(5)
-                    .foregroundColor(.primitive400)
+                    .foregroundColor(.primitive600)
                 
             }
             Spacer()

@@ -11,15 +11,7 @@ import SDWebImageSwiftUI
 
 struct RecipeStepsView: View {
     
-    @StateObject var viewModel: ViewModel
-    var recipeSteps: [StepByStep]
-    var recipeImage: String
-    
-    init(viewModel: ViewModel, recipeSteps steps: [StepByStep], recipeImage image: String) {
-        _viewModel = StateObject(wrappedValue: viewModel)
-        recipeSteps = steps
-        recipeImage = image
-    }
+    var recipe: RecipeElement
     
     var body: some View {
         
@@ -27,7 +19,7 @@ struct RecipeStepsView: View {
             
             TabView {
                 
-                ForEach(recipeSteps, id:\.self) { step in
+                ForEach(recipe.stepByStep, id:\.self) { step in
                     
                     VStack {
                         HStack(alignment: .top){
@@ -84,10 +76,9 @@ struct RecipeStepsView: View {
                         Spacer()
                         
                     }.frame(width: geometry.size.width * 0.95)
-                    
-                    
                 }
-                FinalStepView(recipeImage: self.recipeImage)
+                
+                FinalStepView(recipe: recipe)
                 
             }.tabViewStyle(PageTabViewStyle())
             .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
@@ -99,7 +90,19 @@ struct RecipeStepsView: View {
 
 struct FinalStepView: View {
     @State var favorited: Bool = false
-    var recipeImage: String
+    @StateObject var favorites = Favorites()
+    var recipe: RecipeElement
+    
+    func toogleFavorited() {
+        favorited.toggle()
+        
+        if self.favorites.contains(self.recipe) {
+            self.favorites.remove(self.recipe)
+        }
+        else {
+            self.favorites.add(self.recipe)
+        }
+    }
     
     var body: some View {
         
@@ -109,7 +112,7 @@ struct FinalStepView: View {
             HStack(alignment: .top) {
                 Spacer()
                 
-                WebImage(url: URL(string: recipeImage))
+                WebImage(url: URL(string: recipe.image))
                     .resizable()
                     .placeholder(Image("placeholder"))
                     .transition(.fade(duration: 0.5))
@@ -159,7 +162,7 @@ struct FinalStepView: View {
                     Spacer().frame(maxHeight: 16)
                     
                     Button(action: {
-                        favorited.toggle()
+                        toogleFavorited()
                     }, label: {
                         HStack {
                             Text(favorited ? "Receita Salva!" : "Salvar Receita" )
@@ -175,7 +178,7 @@ struct FinalStepView: View {
                     })
                     .frame(width: geometry.size.width * 0.50, height: 56, alignment: .center)
                     .background(favorited ? Color.brandPrimary400 : Color.primitiveWhite)
-                    .foregroundColor(favorited ? Color.primitiveWhite : Color.brandPrimary400)
+                    .foregroundColor(favorited ? .white : Color.brandPrimary400)
                     .cornerRadius(8)
                     .overlay(
                         RoundedRectangle(cornerRadius: 8)
@@ -188,9 +191,11 @@ struct FinalStepView: View {
                 
             }
             
+        }.onAppear() {
+            if self.favorites.contains(recipe) {
+                favorited = true
+            }
         }
     }
 }
-
-//TODO: Fazer um adapative stack baseado no geometryReader
 

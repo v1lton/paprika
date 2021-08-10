@@ -72,6 +72,7 @@ struct HomeView: View {
                                     ScrollView(showsIndicators: false) {
                                         VStack{
                                             EmptySearchView()
+                                                .padding(.bottom, 32)
                                             VStack(spacing:48) {
                                                 
                                                 //MARK: - Breakfast
@@ -79,9 +80,8 @@ struct HomeView: View {
                                                     HStack {
                                                         
                                                         Text("Café da manhã")
-                                                            .font(.custom("Albra Semi", size: 56))
+                                                            .font(.custom("Albra Semi", size: 32))
                                                             .foregroundColor(Color.primitiveBlack)
-                                                            .minimumScaleFactor(0.5)
                                                             .padding(.leading, 16)
                                                         
                                                         Spacer()
@@ -108,9 +108,8 @@ struct HomeView: View {
                                                     HStack {
                                                         
                                                         Text("Receitas com batata-doce")
-                                                            .font(.custom("Albra Semi", size: 56))
+                                                            .font(.custom("Albra Semi", size: 32))
                                                             .foregroundColor(Color.primitiveBlack)
-                                                            .minimumScaleFactor(0.5)
                                                             .padding(.leading, 16)
                                                         
                                                         Spacer()
@@ -139,9 +138,8 @@ struct HomeView: View {
                                                     HStack {
                                                         
                                                         Text("Para lanchar")
-                                                            .font(.custom("Albra Semi", size: 56))
+                                                            .font(.custom("Albra Semi", size: 32))
                                                             .foregroundColor(Color.primitiveBlack)
-                                                            .minimumScaleFactor(0.5)
                                                             .padding(.leading, 16)
                                                         
                                                         Spacer()
