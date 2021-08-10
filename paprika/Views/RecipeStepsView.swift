@@ -78,7 +78,7 @@ struct RecipeStepsView: View {
                     }.frame(width: geometry.size.width * 0.95)
                 }
                 
-                FinalStepView(recipeImage: recipe.image)
+                FinalStepView(recipe: recipe)
                 
             }.tabViewStyle(PageTabViewStyle())
             .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
@@ -90,7 +90,19 @@ struct RecipeStepsView: View {
 
 struct FinalStepView: View {
     @State var favorited: Bool = false
-    var recipeImage: String
+    @StateObject var favorites = Favorites()
+    var recipe: RecipeElement
+    
+    func toogleFavorited() {
+        favorited.toggle()
+        
+        if self.favorites.contains(self.recipe) {
+            self.favorites.remove(self.recipe)
+        }
+        else {
+            self.favorites.add(self.recipe)
+        }
+    }
     
     var body: some View {
         
@@ -100,7 +112,7 @@ struct FinalStepView: View {
             HStack(alignment: .top) {
                 Spacer()
                 
-                WebImage(url: URL(string: recipeImage))
+                WebImage(url: URL(string: recipe.image))
                     .resizable()
                     .placeholder(Image("placeholder"))
                     .transition(.fade(duration: 0.5))
@@ -150,7 +162,7 @@ struct FinalStepView: View {
                     Spacer().frame(maxHeight: 16)
                     
                     Button(action: {
-                        favorited.toggle()
+                        toogleFavorited()
                     }, label: {
                         HStack {
                             Text(favorited ? "Receita Salva!" : "Salvar Receita" )
@@ -179,9 +191,11 @@ struct FinalStepView: View {
                 
             }
             
+        }.onAppear() {
+            if self.favorites.contains(recipe) {
+                favorited = true
+            }
         }
     }
 }
-
-//TODO: Fazer um adapative stack baseado no geometryReader
 
