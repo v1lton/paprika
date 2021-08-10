@@ -334,11 +334,6 @@ struct RightView: View {
                                 .foregroundColor(Color.primitiveBlack)
                                 .layoutPriority(1)
                             
-                            Text(fractionToString(fraction: ingredient.amount * Double(Double(value) / Double(recipe.portion))))
-                                .font(.custom("SF Pro Display Regular", size: 20))
-                                .foregroundColor(Color.primitiveBlack)
-                                .layoutPriority(1)
-                            
                             Text(ingredient.name.capitalizingFirstLetter())
                                 .font(.custom("SF Pro Display Regular", size: 20))
                                 .foregroundColor(Color.primitiveBlack)
@@ -349,6 +344,11 @@ struct RightView: View {
                                 .lineLimit(1)
                             
                             Spacer()
+                            
+                            Text(fractionToString(fraction: ingredient.amount * Double(Double(value) / Double(recipe.portion))))
+                                .font(.custom("SF Pro Display Regular", size: 20))
+                                .foregroundColor(Color.primitiveBlack)
+                                .layoutPriority(1)
                             
                             Text(ingredient.measure.lowercased())
                                 .font(.custom("SF Pro Display Regular", size: 20))
