@@ -146,7 +146,7 @@ struct LeftView: View {
                             
                             Text((recipe.totalTime) >= 60 ? "~\(recipe.totalTime/60)h" : "~\(recipe.totalTime)min")
                                 .font(.custom("SF Pro Display Semibold", size: 20))
-                                .foregroundColor(Color.primitive700)
+                                .foregroundColor(Color.primitive600)
                                 .lineLimit(1)
                                 .minimumScaleFactor(0.5)
                         }
@@ -186,7 +186,7 @@ struct LeftView: View {
                     .padding(.all, 12)
                     .minimumScaleFactor(0.5)
                     .background(Color.brandPrimary400)
-                    .foregroundColor(Color.primitiveWhite)
+                    .foregroundColor(.white)
                     .cornerRadius(8)
                     
                     Spacer()

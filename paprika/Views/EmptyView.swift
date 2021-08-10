@@ -22,14 +22,14 @@ struct EmptyView: View {
                     .font(.custom("Albra Medium", size: 36))
                     .multilineTextAlignment(.leading)
                     .lineLimit(5)
-                    .foregroundColor(.primitive700)
+                    .foregroundColor(.primitiveBlack)
                     .padding(.bottom, 5)
                 
                 Text("Favorite novas receitas para que possa ver depois.")
                     .font(.custom("SF Pro Display Regular", size: 20))
                     .multilineTextAlignment(.leading)
                     .lineLimit(5)
-                    .foregroundColor(.primitive400)
+                    .foregroundColor(.primitive600)
                 
             }
             Spacer()
