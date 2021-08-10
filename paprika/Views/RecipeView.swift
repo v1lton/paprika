@@ -8,9 +8,9 @@
 import SwiftUI
 import SDWebImageSwiftUI
 
+
 struct RecipeView: View {
     var recipe: RecipeElement
-    
     var body: some View {
         GeometryReader { geometry in
             ZStack {
@@ -42,7 +42,11 @@ struct RecipeView: View {
 
 struct LeftView: View {
     var recipe: RecipeElement
-    
+    func actionSheet() {
+           guard let urlShare = URL(string: "https://developer.apple.com/xcode/swiftui/") else { return }
+           let activityVC = UIActivityViewController(activityItems: [urlShare], applicationActivities: nil)
+           UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
+       }
     var body: some View {
         GeometryReader { geometry in
             //Most out VStack
@@ -189,14 +193,21 @@ struct LeftView: View {
                     
                     Spacer()
                     
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+//                    Button(action: {}, label: {
+//                        Image(systemName: "square.and.arrow.up")
+//                            .font(.system(size: 32, weight: .medium))
+//                            .foregroundColor(Color.brandPrimary400)
+//                            .lineLimit(1)
+//                            .minimumScaleFactor(0.8)
+//                    })
+                    
+                    Button(action: actionSheet) {
                         Image(systemName: "square.and.arrow.up")
                             .font(.system(size: 32, weight: .medium))
                             .foregroundColor(Color.brandPrimary400)
                             .lineLimit(1)
                             .minimumScaleFactor(0.8)
-                    })
-                    
+                               }
                     Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                         Image(systemName: "heart")
                             .font(.system(size: 32, weight: .medium))
@@ -240,7 +251,7 @@ struct RightView: View {
         }
         return ingredients
     }
-    
+   
     func getAllSteps() -> String {
         var steps: String = recipe.name + "\n\n"
         
