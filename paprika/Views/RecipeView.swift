@@ -378,7 +378,11 @@ struct RightView: View {
                                 
                         }.padding(.bottom, 8)
                         .onDrag {
-                            NSItemProvider(object: "\(fractionToString(fraction: ingredient.amount * Double(Double(value) / Double(recipe.portion)))) \(ingredient.name)" as NSString)
+                            let correspondentAmount = fractionToString(fraction: ingredient.amount * Double(Double(value) / Double(recipe.portion)))
+                            let correspodentMeasure = setPluralOrSingular(forMeasure: ingredient.measure, forAmount: ingredient.amount)
+                            var stringToExport = "\(correspondentAmount) \(correspodentMeasure) de \(ingredient.name)"
+                            stringToExport = stringToExport.lowercased()
+                            return NSItemProvider(object: stringToExport as NSString)
                         }
                     }
                 }.padding(.bottom, 64)
