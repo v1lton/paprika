@@ -15,7 +15,7 @@ struct CustomSearchBar: View {
         
         HStack(spacing: 12){
             
-            TextField("Pesquise por nome, ingrediente ou categoria", text: $text)
+            TextField("Pesquise por uma receita", text: $text)
                 .padding(15)
                 .padding(.horizontal, 35)
                 .foregroundColor(.primitive500)
