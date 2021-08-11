@@ -128,7 +128,7 @@ struct FinalStepView: View {
                         .foregroundColor(Color.brandSecondary400)
                         .frame(width: geometry.size.width * 0.50, alignment: .leading)
                     
-                    Spacer().frame(height: 8)
+                    Spacer().frame(height: 16)
                     
                     Text("Lembrou de alguém que também iria gostar dessa receita? Compartilhe! Você também pode salvá-la nos seus Favoritos para ver sempre que quiser.")
                         .font(.custom("SF Pro Display Regular", size: 28))
@@ -137,29 +137,29 @@ struct FinalStepView: View {
                     
                     Spacer()
                     
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                        HStack {
-                            
-                            Text("Compartilhar essa receita")
-                                .font(.custom("SF Pro Display Bold", size: 24))
-                                .lineLimit(1)
-                                .minimumScaleFactor(0.3)
-                            
-                            Image(systemName: "square.and.arrow.up")
-                                .font(.custom("SF Pro Display Bold", size: 24))
-                                .minimumScaleFactor(0.3)
-                        }
-                    })
-                    .frame(width: geometry.size.width * 0.50, height: 56, alignment: .center)
-                    .background(Color.primitiveWhite)
-                    .foregroundColor(Color.brandPrimary400)
-                    .cornerRadius(8)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 8)
-                            .stroke(Color.primitive200, lineWidth: 1)
-                    )
+//                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+//                        HStack {
+//
+//                            Text("Compartilhar essa receita")
+//                                .font(.custom("SF Pro Display Bold", size: 24))
+//                                .lineLimit(1)
+//                                .minimumScaleFactor(0.3)
+//
+//                            Image(systemName: "square.and.arrow.up")
+//                                .font(.custom("SF Pro Display Bold", size: 24))
+//                                .minimumScaleFactor(0.3)
+//                        }
+//                    })
+//                    .frame(width: geometry.size.width * 0.50, height: 56, alignment: .center)
+//                    .background(Color.primitiveWhite)
+//                    .foregroundColor(Color.brandPrimary400)
+//                    .cornerRadius(8)
+//                    .overlay(
+//                        RoundedRectangle(cornerRadius: 8)
+//                            .stroke(Color.primitive200, lineWidth: 1)
+//                    )
                     
-                    Spacer().frame(maxHeight: 16)
+                    //Spacer().frame(maxHeight: 16)
                     
                     Button(action: {
                         toogleFavorited()
@@ -174,16 +174,15 @@ struct FinalStepView: View {
                                 .font(.custom("SF Pro Display Bold", size: 24))
                                 .minimumScaleFactor(0.3)
                         }
-                        
+                        .frame(width: geometry.size.width * 0.50, height: 56, alignment: .center)
+                        .background(favorited ? Color.brandPrimary400 : Color.primitiveWhite)
+                        .foregroundColor(favorited ? .white : Color.brandPrimary400)
+                        .cornerRadius(8)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 8)
+                                .stroke(favorited ? Color.brandPrimary400 : Color.primitive200, lineWidth: 1)
+                        )
                     })
-                    .frame(width: geometry.size.width * 0.50, height: 56, alignment: .center)
-                    .background(favorited ? Color.brandPrimary400 : Color.primitiveWhite)
-                    .foregroundColor(favorited ? .white : Color.brandPrimary400)
-                    .cornerRadius(8)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 8)
-                            .stroke(favorited ? Color.brandPrimary400 : Color.primitive200, lineWidth: 1)
-                    )
                     
                 }.frame(width: geometry.size.width * 0.50, height: geometry.size.height * 0.45)
                 

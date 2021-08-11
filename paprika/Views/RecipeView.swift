@@ -191,13 +191,13 @@ struct LeftView: View {
                     
                     Spacer()
                     
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                        Image(systemName: "square.and.arrow.up")
-                            .font(.system(size: 32, weight: .medium))
-                            .foregroundColor(Color.brandPrimary400)
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.8)
-                    }).buttonStyle(PlainButtonStyle())
+//                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+//                        Image(systemName: "square.and.arrow.up")
+//                            .font(.system(size: 32, weight: .medium))
+//                            .foregroundColor(Color.brandPrimary400)
+//                            .lineLimit(1)
+//                            .minimumScaleFactor(0.8)
+//                    }).buttonStyle(PlainButtonStyle())
                     
                     Button(action: {
                         if self.favorites.contains(self.recipe) {
