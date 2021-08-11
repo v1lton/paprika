@@ -12,6 +12,7 @@ import SDWebImageSwiftUI
 struct RecipeStepsView: View {
     
     var recipe: RecipeElement
+    @ObservedObject var favorites : Favorites
     
     var body: some View {
         
@@ -78,7 +79,7 @@ struct RecipeStepsView: View {
                     }.frame(width: geometry.size.width * 0.95)
                 }
                 
-                FinalStepView(recipe: recipe)
+                FinalStepView(favorites: favorites, recipe: recipe)
                 
             }.tabViewStyle(PageTabViewStyle())
             .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
@@ -90,19 +91,8 @@ struct RecipeStepsView: View {
 
 struct FinalStepView: View {
     @State var favorited: Bool = false
-    @StateObject var favorites = Favorites()
+    @ObservedObject var favorites : Favorites
     var recipe: RecipeElement
-    
-    func toogleFavorited() {
-        favorited.toggle()
-        
-        if self.favorites.contains(self.recipe) {
-            self.favorites.remove(self.recipe)
-        }
-        else {
-            self.favorites.add(self.recipe)
-        }
-    }
     
     var body: some View {
         
@@ -162,20 +152,25 @@ struct FinalStepView: View {
                     //Spacer().frame(maxHeight: 16)
                     
                     Button(action: {
-                        toogleFavorited()
+                        if self.favorites.contains(self.recipe) {
+                            self.favorites.remove(self.recipe)
+                        }
+                        else {
+                            self.favorites.add(self.recipe)
+                        }
                     }, label: {
                         HStack {
-                            Text(favorited ? "Receita Salva!" : "Salvar Receita" )
+                            Text(self.favorites.contains(recipe) ? "Receita Salva!" : "Salvar Receita" )
                                 .font(.custom("SF Pro Display Bold", size: 24))
                                 .lineLimit(1)
                                 .minimumScaleFactor(0.3)
                             
-                            Image(systemName: favorited ? "heart.fill" : "heart")
+                            Image(systemName: self.favorites.contains(recipe) ? "heart.fill" : "heart")
                                 .font(.custom("SF Pro Display Bold", size: 24))
                                 .minimumScaleFactor(0.3)
                         }
                         .frame(width: geometry.size.width * 0.50, height: 56, alignment: .center)
-                        .background(favorited ? Color.brandPrimary400 : Color.primitiveWhite)
+                        .background(self.favorites.contains(recipe) ? Color.brandPrimary400 : Color.primitiveWhite)
                         .foregroundColor(favorited ? .white : Color.brandPrimary400)
                         .cornerRadius(8)
                         .overlay(
@@ -188,11 +183,6 @@ struct FinalStepView: View {
                 
                 Spacer()
                 
-            }
-            
-        }.onAppear() {
-            if self.favorites.contains(recipe) {
-                favorited = true
             }
         }
     }

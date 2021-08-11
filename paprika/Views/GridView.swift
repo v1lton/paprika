@@ -34,7 +34,7 @@ struct GridView: View {
                     LazyVGrid(columns: gridItemLayout, alignment: .leading) {
                         ForEach(recipes) { recipe in
                             NavigationLink(
-                                destination: RecipeView(recipe: recipe),
+                                destination: RecipeView(recipe: recipe, favorites: favorites),
                                 label: {
                                     Card(recipe: Binding.constant(recipe), favorites: favorites)
                                         .padding(.bottom, 10)

@@ -41,7 +41,7 @@ struct FavoritesView: View {
                         ForEach(recipes) { recipe in
                             if self.favorites.contains(recipe){
                                 NavigationLink(
-                                    destination: RecipeView(recipe: recipe),
+                                    destination: RecipeView(recipe: recipe, favorites: favorites),
                                     label: {
                                         Card(recipe: Binding.constant(recipe), favorites: favorites)
                                             .padding(.bottom, 10)

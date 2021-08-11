@@ -10,7 +10,10 @@ import SDWebImageSwiftUI
 
 struct RecipeView: View {
     var recipe: RecipeElement
-    @StateObject var favorites = Favorites()
+    //vai ser observado na receita
+    //@StateObject var favorites2 = Favorites()
+    //observed da home
+    @ObservedObject var favorites : Favorites
     
     var body: some View {
         GeometryReader { geometry in
@@ -30,7 +33,7 @@ struct RecipeView: View {
                     
                     Spacer()
                     
-                    RightView(recipe: recipe, recipePortion: recipe.portion)
+                    RightView(recipe: recipe, recipePortion: recipe.portion, favorites: favorites)
                         .frame(width: geometry.size.width * 0.45)
                         .padding(.trailing, 20)
                 }
@@ -169,7 +172,7 @@ struct LeftView: View {
                 HStack {
                     
                     NavigationLink(
-                        destination: RecipeStepsView(recipe: recipe),
+                        destination: RecipeStepsView(recipe: recipe, favorites: favorites),
                         label: {
                             HStack{
                                 Text("Começar o passo a passo")
@@ -224,10 +227,12 @@ struct LeftView: View {
 struct RightView: View {
     @State private var value: Int
     var recipe: RecipeElement
+    @ObservedObject var favorites: Favorites
     
-    init(recipe: RecipeElement, recipePortion: Int) {
+    init(recipe: RecipeElement, recipePortion: Int, favorites: Favorites) {
         self.recipe = recipe
         self.value = recipePortion
+        self.favorites = favorites
     }
     
     func incrementStep() {
@@ -410,7 +415,7 @@ struct RightView: View {
                         Spacer()
                         
                         NavigationLink(
-                            destination: RecipeStepsView(recipe: recipe),
+                            destination: RecipeStepsView(recipe: recipe, favorites: favorites),
                             label: {
                                 HStack{
                                     Text("Começar agora")

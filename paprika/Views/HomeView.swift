@@ -50,7 +50,7 @@ struct HomeView: View {
                                             ForEach(recipes) { recipe in
                                                 if recipe.name.localizedCaseInsensitiveContains(text) && (text.count > 2) {
                                                     NavigationLink(
-                                                        destination: RecipeView(recipe: recipe),
+                                                        destination: RecipeView(recipe: recipe, favorites: favorites),
                                                         label: {
                                                             Card(recipe: Binding.constant(recipe), favorites: favorites)
                                                                 .padding(.bottom, 10)
@@ -93,7 +93,7 @@ struct HomeView: View {
                                                                 if recipe.category.contains(CategoryEnum(rawValue: "Café da manhã")!) {
                                                                     
                                                                     NavigationLink(
-                                                                        destination: RecipeView(recipe: recipe),
+                                                                        destination: RecipeView(recipe: recipe, favorites: favorites),
                                                                         label: {
                                                                             Card(recipe: Binding.constant(recipe), favorites: favorites)
                                                                         }).buttonStyle(PlainButtonStyle())
@@ -122,7 +122,7 @@ struct HomeView: View {
                                                                     let ingredientName = ingredient.name.lowercased()
                                                                     if ingredientName.contains("batata-doce") {
                                                                         NavigationLink(
-                                                                            destination: RecipeView(recipe: recipe),
+                                                                            destination: RecipeView(recipe: recipe, favorites: favorites),
                                                                             label: {
                                                                                 Card(recipe: Binding.constant(recipe), favorites: favorites)
                                                                             }).buttonStyle(PlainButtonStyle())
@@ -151,7 +151,7 @@ struct HomeView: View {
                                                                 if recipe.category.contains(CategoryEnum(rawValue: "Sobremesa")!) {
                                                                     
                                                                     NavigationLink(
-                                                                        destination: RecipeView(recipe: recipe),
+                                                                        destination: RecipeView(recipe: recipe, favorites: favorites),
                                                                         label: {
                                                                             Card(recipe: Binding.constant(recipe), favorites: favorites)
                                                                         }).buttonStyle(PlainButtonStyle())
@@ -209,7 +209,7 @@ struct SectionsView: View {
                                     if recipe.category.contains(CategoryEnum(rawValue: "Café da manhã")!) {
                                         
                                         NavigationLink(
-                                            destination: RecipeView(recipe: recipe),
+                                            destination: RecipeView(recipe: recipe, favorites: favorites),
                                             label: {
                                                 Card(recipe: Binding.constant(recipe), favorites: favorites)
                                             }).buttonStyle(PlainButtonStyle())
@@ -239,7 +239,7 @@ struct SectionsView: View {
                                         let ingredientName = ingredient.name.lowercased()
                                         if ingredientName.contains("batata-doce") {
                                             NavigationLink(
-                                                destination: RecipeView(recipe: recipe),
+                                                destination: RecipeView(recipe: recipe, favorites: favorites),
                                                 label: {
                                                     Card(recipe: Binding.constant(recipe), favorites: favorites)
                                                 }).buttonStyle(PlainButtonStyle())
@@ -269,7 +269,7 @@ struct SectionsView: View {
                                     if recipe.category.contains(CategoryEnum(rawValue: "Sobremesa")!) {
                                         
                                         NavigationLink(
-                                            destination: RecipeView(recipe: recipe),
+                                            destination: RecipeView(recipe: recipe, favorites: favorites),
                                             label: {
                                                 Card(recipe: Binding.constant(recipe), favorites: favorites)
                                             }).buttonStyle(PlainButtonStyle())
