@@ -171,7 +171,7 @@ struct FinalStepView: View {
                         }
                         .frame(width: geometry.size.width * 0.50, height: 56, alignment: .center)
                         .background(self.favorites.contains(recipe) ? Color.brandPrimary400 : Color.primitiveWhite)
-                        .foregroundColor(favorited ? .white : Color.brandPrimary400)
+                        .foregroundColor(self.favorites.contains(recipe) ? .white : Color.brandPrimary400)
                         .cornerRadius(8)
                         .overlay(
                             RoundedRectangle(cornerRadius: 8)
