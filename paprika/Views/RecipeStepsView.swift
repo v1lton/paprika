@@ -45,29 +45,29 @@ struct RecipeStepsView: View {
                                 
                                 Spacer().frame(height: 32)
                                 
-                                if let timer = step.timeInMinutes {
-                                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                                        HStack {
-                                            Text("Ativar timer (\(timer) min)")
-                                                .font(.custom("SF Pro Display Bold", size: 24))
-                                                .lineLimit(1)
-                                                .minimumScaleFactor(0.3)
-                                            
-                                            Image(systemName: "clock")
-                                                .font(.custom("SF Pro Display Bold", size: 24))
-                                                .minimumScaleFactor(0.3)
-                                        }
-                                        
-                                    })
-                                    .frame(width: geometry.size.width * 0.60, height: 56, alignment: .center)
-                                    .background(Color.primitiveWhite)
-                                    .foregroundColor(Color.brandPrimary400)
-                                    .cornerRadius(8)
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 8)
-                                            .stroke(Color.primitive200, lineWidth: 1)
-                                    )
-                                }
+//                                if let timer = step.timeInMinutes {
+//                                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+//                                        HStack {
+//                                            Text("Ativar timer (\(timer) min)")
+//                                                .font(.custom("SF Pro Display Bold", size: 24))
+//                                                .lineLimit(1)
+//                                                .minimumScaleFactor(0.3)
+//
+//                                            Image(systemName: "clock")
+//                                                .font(.custom("SF Pro Display Bold", size: 24))
+//                                                .minimumScaleFactor(0.3)
+//                                        }
+//
+//                                    })
+//                                    .frame(width: geometry.size.width * 0.60, height: 56, alignment: .center)
+//                                    .background(Color.primitiveWhite)
+//                                    .foregroundColor(Color.brandPrimary400)
+//                                    .cornerRadius(8)
+//                                    .overlay(
+//                                        RoundedRectangle(cornerRadius: 8)
+//                                            .stroke(Color.primitive200, lineWidth: 1)
+//                                    )
+//                                }
                                 
                                 
                             }.frame(width: geometry.size.width * 0.60)

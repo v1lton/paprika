@@ -30,13 +30,11 @@ struct EmptyView: View {
                     .multilineTextAlignment(.leading)
                     .lineLimit(5)
                     .foregroundColor(.primitive600)
-                
             }
             Spacer()
         }.padding()
     }
 }
-
 
 struct EmptyView_Previews: PreviewProvider {
     static var previews: some View {
