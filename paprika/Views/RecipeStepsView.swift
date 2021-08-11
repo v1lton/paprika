@@ -175,7 +175,7 @@ struct FinalStepView: View {
                         .cornerRadius(8)
                         .overlay(
                             RoundedRectangle(cornerRadius: 8)
-                                .stroke(favorited ? Color.brandPrimary400 : Color.primitive200, lineWidth: 1)
+                                .stroke(self.favorites.contains(recipe) ? Color.brandPrimary400 : Color.primitive200, lineWidth: 1)
                         )
                     })
                     
